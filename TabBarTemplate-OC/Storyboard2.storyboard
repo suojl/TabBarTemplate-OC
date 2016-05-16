@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Main Sb2-->
+        <scene sceneID="ldu-nD-uW1">
+            <objects>
+                <viewController storyboardIdentifier="main2" id="0cx-x0-fyf" customClass="Main_Sb2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A8m-Li-9yI"/>
+                        <viewControllerLayoutGuide type="bottom" id="rbh-jk-VDD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3vY-7C-udc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HD-48-jCu">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3HD-48-jCu" firstAttribute="centerY" secondItem="3vY-7C-udc" secondAttribute="centerY" id="XhI-KP-TCT"/>
+                            <constraint firstItem="3HD-48-jCu" firstAttribute="centerX" secondItem="3vY-7C-udc" secondAttribute="centerX" id="gr3-kZ-BhT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="3HD-48-jCu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="XhI-KP-TCT"/>
+                                <exclude reference="gr3-kZ-BhT"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="3HD-48-jCu"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="XhI-KP-TCT"/>
+                                <include reference="gr3-kZ-BhT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eJB-bS-4L6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="416"/>
+        </scene>
+    </scenes>
+</document>
