@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "BaseTabBarController.h"
 #import "DGAaimaView.h"
+#import "AFNetworking.h"
 
 @interface AppDelegate (){
     DGAaimaView *animaView;

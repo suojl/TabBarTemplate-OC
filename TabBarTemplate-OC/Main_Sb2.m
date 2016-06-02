@@ -21,11 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //引入文件  用下面的方法控制各个空间的速度
     
-//    animaView = [[DGAaimaView alloc]initWithFrame:self.view.bounds];
-//    [self.view addSubview:animaView];
-//    [animaView DGAaimaView:animaView BigCloudSpeed:1.5 smallCloudSpeed:1 earthSepped:1.0 huojianSepped:2.0 littleSpeed:2];
 }
 
 - (void)didReceiveMemoryWarning {
