@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4CBB0CC385953B2A0AA9B89B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519BF7C0CC0CC067CFFCD395 /* libPods.a */; };
+		654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */; };
+		654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */; };
+		654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654476BE1D00152E005659D5 /* Storyboard3.storyboard */; };
+		654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476C11D0015AD005659D5 /* Main_ViewController.m */; };
+		654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 654B4B111D0EB9E00064B637 /* ViewController2.m */; };
 		654DA17B1CE42CDC00CFF129 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654DA17A1CE42CDC00CFF129 /* Storyboard2.storyboard */; };
 		654DA1811CE42D7800CFF129 /* Main_Sb2.m in Sources */ = {isa = PBXBuildFile; fileRef = 654DA1801CE42D7800CFF129 /* Main_Sb2.m */; };
 		654DA1841CE46E3400CFF129 /* LaunchScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 654DA1831CE46E3400CFF129 /* LaunchScreenVC.m */; };
@@ -46,6 +51,15 @@
 
 /* Begin PBXFileReference section */
 		519BF7C0CC0CC067CFFCD395 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		654476B81D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		654476BA1D001503005659D5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		654476BE1D00152E005659D5 /* Storyboard3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard3.storyboard; sourceTree = "<group>"; };
+		654476C01D0015AD005659D5 /* Main_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_ViewController.h; sourceTree = "<group>"; };
+		654476C11D0015AD005659D5 /* Main_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_ViewController.m; sourceTree = "<group>"; };
+		654B4B101D0EB9E00064B637 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
+		654B4B111D0EB9E00064B637 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		654DA17A1CE42CDC00CFF129 /* Storyboard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
 		654DA17F1CE42D7800CFF129 /* Main_Sb2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_Sb2.h; sourceTree = "<group>"; };
 		654DA1801CE42D7800CFF129 /* Main_Sb2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_Sb2.m; sourceTree = "<group>"; };
@@ -119,12 +133,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		654476B71D001503005659D5 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				654476B81D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.h */,
+				654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */,
+				654476BA1D001503005659D5 /* UIView+SDAutoLayout.h */,
+				654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
 		654DA1771CE42C8800CFF129 /* storyboard1 */ = {
 			isa = PBXGroup;
 			children = (
 				657217D61CE2FCF600A04525 /* ViewController.h */,
 				657217D71CE2FCF600A04525 /* ViewController.m */,
 				657217D91CE2FCF600A04525 /* Main.storyboard */,
+				654B4B101D0EB9E00064B637 /* ViewController2.h */,
+				654B4B111D0EB9E00064B637 /* ViewController2.m */,
 			);
 			name = storyboard1;
 			sourceTree = "<group>";
@@ -142,6 +169,9 @@
 		654DA1791CE42CB500CFF129 /* storyboard3 */ = {
 			isa = PBXGroup;
 			children = (
+				654476BE1D00152E005659D5 /* Storyboard3.storyboard */,
+				654476C01D0015AD005659D5 /* Main_ViewController.h */,
+				654476C11D0015AD005659D5 /* Main_ViewController.m */,
 			);
 			name = storyboard3;
 			sourceTree = "<group>";
@@ -241,6 +271,7 @@
 		657218061CE302BC00A04525 /* 3rdLibs */ = {
 			isa = PBXGroup;
 			children = (
+				654476B71D001503005659D5 /* SDAutoLayout */,
 			);
 			name = 3rdLibs;
 			sourceTree = "<group>";
@@ -373,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				654DA17B1CE42CDC00CFF129 /* Storyboard2.storyboard in Resources */,
+				654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */,
 				657217E01CE2FCF600A04525 /* LaunchScreen.storyboard in Resources */,
 				657217DD1CE2FCF600A04525 /* Assets.xcassets in Resources */,
 				657217DB1CE2FCF600A04525 /* Main.storyboard in Resources */,
@@ -450,6 +482,7 @@
 			files = (
 				654DA1811CE42D7800CFF129 /* Main_Sb2.m in Sources */,
 				65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */,
+				654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */,
 				65DA0F771CE570A300B64405 /* LaunchView.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
 				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
@@ -458,6 +491,9 @@
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */,
 				657217D21CE2FCF600A04525 /* main.m in Sources */,
+				654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */,
+				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,
+				654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				654DA1841CE46E3400CFF129 /* LaunchScreenVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

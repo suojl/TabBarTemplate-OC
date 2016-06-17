@@ -29,8 +29,9 @@
     
     [self.window makeKeyAndVisible];
     
+    [self checkNetwork];
     //-----------------------------------------------------
-    
+    /*
     UIStoryboard *main=[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:[NSBundle mainBundle]];
     UIViewController *vc1=[main instantiateViewControllerWithIdentifier:@"launchScreen"];
     UIView* launchView = vc1.view;
@@ -71,7 +72,7 @@
 //    } completion:^(BOOL finished){
 //        [launchView removeFromSuperview];
 //    }];
-    
+    */
     return YES;
 }
 
@@ -99,6 +100,27 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)checkNetwork{
+    // 开始监听网络状态
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    // 设置网络状态改变回调函数
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
+        switch (status) {
+            case AFNetworkReachabilityStatusNotReachable:
+                NSLog(@"网络不通");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWWAN:
+                NSLog(@"通过流量上网");
+                break;
+            case AFNetworkReachabilityStatusReachableViaWiFi:
+                NSLog(@"通过WiFi上网");
+                break;
+            default:
+                break;
+        }
+    }];
 }
 
 @end

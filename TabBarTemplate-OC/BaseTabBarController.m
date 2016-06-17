@@ -7,9 +7,12 @@
 //
 
 #import "BaseTabBarController.h"
+#import "UIView+SDAutoLayout.h"
 
-@interface BaseTabBarController ()
-
+@interface BaseTabBarController () <UITabBarControllerDelegate>
+{
+    UIButton *centerBtn;
+}
 @end
 
 @implementation BaseTabBarController
@@ -26,22 +29,43 @@
     
     UIStoryboard *main=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     UIStoryboard *main1=[UIStoryboard storyboardWithName:@"Storyboard2" bundle:[NSBundle mainBundle]];
-    UIStoryboard *main2=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    UIStoryboard *main2=[UIStoryboard storyboardWithName:@"Storyboard3" bundle:[NSBundle mainBundle]];
     
-    
+    //
     UIViewController *vc1=[main instantiateViewControllerWithIdentifier:@"main"];//根据storyboard和controller的storyId找到控制器
-    vc1.tabBarItem.title = @"111";
-    UIViewController *vc2=[main1 instantiateViewControllerWithIdentifier:@"main2"];
-    vc2.tabBarItem.title = @"222";
+//    vc1.tabBarItem.title = @"111";
+    vc1.tabBarItem.image = [UIImage imageNamed:@"ico_fenlei_01"];
+    vc1.tabBarItem.selectedImage = [[UIImage imageNamed:@"ico_fenlei_02"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    
+    UIViewController *vc2=[main1 instantiateViewControllerWithIdentifier:@"main"];
+//    vc2.tabBarItem.title = @"222";
+//    vc2.tabBarItem.image = [UIImage imageNamed:@"ico_shouye_01"];
+//    vc2.tabBarItem.selectedImage = [[UIImage imageNamed:@"ico_shouye_02"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+
+    
     UIViewController *vc3=[main2 instantiateViewControllerWithIdentifier:@"main"];
-    vc3.tabBarItem.title = @"333";
+//    vc3.tabBarItem.title = @"333";
+    vc3.tabBarItem.image = [UIImage imageNamed:@"ico_wode_01"];
+    vc3.tabBarItem.selectedImage = [UIImage imageNamed:@"ico_wode_02"];
     
     [vcs addObject:vc1];
     [vcs addObject:vc2];
     [vcs addObject:vc3];
     
+//    self.tabBar.tintColor = [UIColor redColor];
+    
+    centerBtn = [[UIButton alloc] init];
+    centerBtn.center = CGPointMake(self.tabBar.center.x, self.tabBar.center.y - 5);
+    centerBtn.bounds = CGRectMake(0, 0, 60, 60);
+    [centerBtn setImage:[UIImage imageNamed:@"ico_shouye_01"] forState:UIControlStateNormal];
+    [centerBtn setImage:[UIImage imageNamed:@"ico_shouye_02"] forState:UIControlStateHighlighted];
+    [centerBtn setImage:[UIImage imageNamed:@"ico_shouye_02"] forState:UIControlStateSelected];
+    [centerBtn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:centerBtn];
+    
+    self.delegate = self;
     [self setViewControllers:vcs animated:NO];//用当前的viewController数组替换原本的tabbarControlle的 viewControllers数组
-    self.selectedIndex = 1;
+    self.selectedIndex = 0;
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -51,7 +75,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)clickBtn:(id) sender{
+    UIButton *sen = (UIButton *)sender;
+    self.selectedIndex = 1;
+    sen.selected = YES;
+}
 /*
 #pragma mark - Navigation
 
@@ -61,5 +89,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - UITabBarControllerDelegate
+-(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    NSLog(@"%s",__FUNCTION__);
+}
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    NSLog(@"%s",__FUNCTION__);
+    if (self.selectedIndex != 1) {
+        centerBtn.selected = NO;
+    }else{
+        centerBtn.selected = YES;
+    }
+}
 
 @end
