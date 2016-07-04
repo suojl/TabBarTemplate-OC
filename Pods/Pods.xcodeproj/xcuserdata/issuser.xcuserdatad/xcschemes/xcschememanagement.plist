@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFMInfoBanner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CVKHierarchySearcher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>CWStatusBarNotification.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -15,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>IQKeyboardManager.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,6 +52,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>407ADEFA62030F7CA0205AEC52CCD245</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>47263DC90E59A5843F045A6D39DD1743</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BD4729A13121AD64EE8F054005578AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
 		<dict>
 			<key>primary</key>
@@ -42,17 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B329C64B06E3315C870F10999477733C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C743C42395D3C33F9883CB4690B475A0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3F885609C1AF18DB09AF51071AB087D</key>
+		<key>D7C7D5BE80D9A225BF88F0CA731F4383</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3F413B2545D99EE8FE1EBD110DCD05F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

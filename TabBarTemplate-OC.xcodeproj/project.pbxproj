@@ -30,6 +30,7 @@
 		65DA0F771CE570A300B64405 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F761CE570A300B64405 /* LaunchView.m */; };
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
 		65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F7C1CE573AC00B64405 /* DGEarthView.m */; };
+		65F504EB1D227885006C27BA /* LXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F504EA1D227885006C27BA /* LXNetworking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,8 @@
 		65DA0F791CE5735700B64405 /* DGAaimaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGAaimaView.m; sourceTree = "<group>"; };
 		65DA0F7B1CE573AC00B64405 /* DGEarthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGEarthView.h; sourceTree = "<group>"; };
 		65DA0F7C1CE573AC00B64405 /* DGEarthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGEarthView.m; sourceTree = "<group>"; };
+		65F504E91D227885006C27BA /* LXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworking.h; sourceTree = "<group>"; };
+		65F504EA1D227885006C27BA /* LXNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworking.m; sourceTree = "<group>"; };
 		E86B0DC0BFA16633F41AF06E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,6 +282,8 @@
 		657218071CE3049600A04525 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				65F504E91D227885006C27BA /* LXNetworking.h */,
+				65F504EA1D227885006C27BA /* LXNetworking.m */,
 				657218091CE3198400A04525 /* AuxFileManage.h */,
 				6572180A1CE3198400A04525 /* AuxFileManage.m */,
 				6572180C1CE31A1500A04525 /* AuxDBOperation.h */,
@@ -485,6 +490,7 @@
 				654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */,
 				65DA0F771CE570A300B64405 /* LaunchView.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
+				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
 				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,

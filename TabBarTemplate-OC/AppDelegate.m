@@ -10,6 +10,8 @@
 #import "BaseTabBarController.h"
 #import "DGAaimaView.h"
 #import "AFNetworking.h"
+#import "IQKeyboardManager.h"
+#import "AFNetworkActivityIndicatorManager.h"
 
 @interface AppDelegate (){
     DGAaimaView *animaView;
@@ -24,6 +26,11 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    /*设置键盘*/
+    [IQKeyboardManager sharedManager].toolbarManageBehaviour = IQAutoToolbarByTag;
+    [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];//显示工具条
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;//点击空白收回键盘
+//    [IQKeyboardManager sharedManager].shouldPlayInputClicks = NO;
     
     self.window.rootViewController = [[BaseTabBarController alloc] init];
     
@@ -105,6 +112,7 @@
 - (void)checkNetwork{
     // 开始监听网络状态
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     // 设置网络状态改变回调函数
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
         switch (status) {
@@ -121,6 +129,7 @@
                 break;
         }
     }];
+    
 }
 
 @end
