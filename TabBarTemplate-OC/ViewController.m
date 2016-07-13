@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "IQKeyboardManager.h"
 //#import "IQKeyboardReturnKeyHandler.h"
-//#import "IQUIView+IQKeyboardToolbar.h"
+#import "IQUIView+IQKeyboardToolbar.h"
 #import "AFMInfoBanner.h"
 
 @interface ViewController ()<UIAlertViewDelegate>
@@ -23,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.userNameTF.shouldHideTitle = YES;
     // Do any additional setup after loading the view, typically from a nib.
     /**
 //    设置状态栏样式
@@ -57,6 +58,7 @@
 
 - (IBAction)unwindSegue:(UIStoryboardSegue *)sender{
     NSLog(@"unwindSegue %@", sender);
+    DLog(@"------打印内容!!!-------");
 }
 
 - (void)didReceiveMemoryWarning {

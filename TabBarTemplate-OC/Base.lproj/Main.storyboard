@@ -174,7 +174,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.81679173520000004" blue="0.003585102591" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="1Pn-BN-blL" secondAttribute="trailing" constant="16" id="I7f-zY-m8q"/>
                                     <constraint firstItem="1Pn-BN-blL" firstAttribute="top" secondItem="ueu-Qi-CeI" secondAttribute="top" constant="26" id="dr1-Li-rQT"/>
@@ -279,7 +279,7 @@
                                             <constraint firstAttribute="height" constant="30" id="bYB-b3-pFN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                                         <variation key="default">
                                             <mask key="constraints">
                                                 <exclude reference="YMr-Ph-Pt8"/>

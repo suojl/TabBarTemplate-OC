@@ -27,6 +27,7 @@
 		6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180A1CE3198400A04525 /* AuxFileManage.m */; };
 		6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* AuxDBOperation.m */; };
 		657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657218111CE32FAF00A04525 /* BaseTabBarController.m */; };
+		65B0E2CD1D34B600004F948C /* SB2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */; };
 		65DA0F771CE570A300B64405 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F761CE570A300B64405 /* LaunchView.m */; };
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
 		65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F7C1CE573AC00B64405 /* DGEarthView.m */; };
@@ -89,6 +90,8 @@
 		6572180D1CE31A1500A04525 /* AuxDBOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuxDBOperation.m; sourceTree = "<group>"; };
 		657218101CE32FAF00A04525 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		657218111CE32FAF00A04525 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB2_ViewController.h; sourceTree = "<group>"; };
+		65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB2_ViewController.m; sourceTree = "<group>"; };
 		65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		65DA0F751CE570A300B64405 /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchView.h; sourceTree = "<group>"; };
 		65DA0F761CE570A300B64405 /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchView.m; sourceTree = "<group>"; };
@@ -165,6 +168,8 @@
 				654DA17A1CE42CDC00CFF129 /* Storyboard2.storyboard */,
 				654DA17F1CE42D7800CFF129 /* Main_Sb2.h */,
 				654DA1801CE42D7800CFF129 /* Main_Sb2.m */,
+				65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */,
+				65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */,
 			);
 			name = storyboard2;
 			sourceTree = "<group>";
@@ -485,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B0E2CD1D34B600004F948C /* SB2_ViewController.m in Sources */,
 				654DA1811CE42D7800CFF129 /* Main_Sb2.m in Sources */,
 				65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */,
 				654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */,
