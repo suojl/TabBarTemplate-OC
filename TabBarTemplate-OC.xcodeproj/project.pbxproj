@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		4CBB0CC385953B2A0AA9B89B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519BF7C0CC0CC067CFFCD395 /* libPods.a */; };
+		650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7CF1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m */; };
+		650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7E81D3CAE7800BA4AD7 /* SimpleAnimatedControll.m */; };
+		650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7EB1D3CC19D00BA4AD7 /* TwoPageControll.m */; };
+		650EB7F01D3CDC9500BA4AD7 /* Present2PageControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7EF1D3CDC9500BA4AD7 /* Present2PageControll.m */; };
 		654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */; };
 		654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654476BE1D00152E005659D5 /* Storyboard3.storyboard */; };
@@ -53,6 +57,14 @@
 
 /* Begin PBXFileReference section */
 		519BF7C0CC0CC067CFFCD395 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		650EB7CE1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimatedTransitioningControll.h; sourceTree = "<group>"; };
+		650EB7CF1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimatedTransitioningControll.m; sourceTree = "<group>"; };
+		650EB7E71D3CAE7800BA4AD7 /* SimpleAnimatedControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnimatedControll.h; sourceTree = "<group>"; };
+		650EB7E81D3CAE7800BA4AD7 /* SimpleAnimatedControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleAnimatedControll.m; sourceTree = "<group>"; };
+		650EB7EA1D3CC19D00BA4AD7 /* TwoPageControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoPageControll.h; sourceTree = "<group>"; };
+		650EB7EB1D3CC19D00BA4AD7 /* TwoPageControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoPageControll.m; sourceTree = "<group>"; };
+		650EB7EE1D3CDC9500BA4AD7 /* Present2PageControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Present2PageControll.h; sourceTree = "<group>"; };
+		650EB7EF1D3CDC9500BA4AD7 /* Present2PageControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Present2PageControll.m; sourceTree = "<group>"; };
 		654476B81D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
 		654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
 		654476BA1D001503005659D5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
@@ -139,6 +151,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		650EB7CD1D3C76D800BA4AD7 /* AnimationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				650EB7CE1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.h */,
+				650EB7CF1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m */,
+				650EB7E71D3CAE7800BA4AD7 /* SimpleAnimatedControll.h */,
+				650EB7E81D3CAE7800BA4AD7 /* SimpleAnimatedControll.m */,
+				650EB7EA1D3CC19D00BA4AD7 /* TwoPageControll.h */,
+				650EB7EB1D3CC19D00BA4AD7 /* TwoPageControll.m */,
+			);
+			name = AnimationControllers;
+			sourceTree = "<group>";
+		};
+		650EB7ED1D3CDA9400BA4AD7 /* PresentationController */ = {
+			isa = PBXGroup;
+			children = (
+				650EB7EE1D3CDC9500BA4AD7 /* Present2PageControll.h */,
+				650EB7EF1D3CDC9500BA4AD7 /* Present2PageControll.m */,
+			);
+			name = PresentationController;
+			sourceTree = "<group>";
+		};
 		654476B71D001503005659D5 /* SDAutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +256,8 @@
 		657217CF1CE2FCF500A04525 /* TabBarTemplate-OC */ = {
 			isa = PBXGroup;
 			children = (
+				650EB7ED1D3CDA9400BA4AD7 /* PresentationController */,
+				650EB7CD1D3C76D800BA4AD7 /* AnimationControllers */,
 				654DA1851CE46E5100CFF129 /* Views */,
 				654DA1791CE42CB500CFF129 /* storyboard3 */,
 				654DA1781CE42CAB00CFF129 /* storyboard2 */,
@@ -371,9 +407,9 @@
 		657217C51CE2FCF500A04525 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = "";
+				CLASSPREFIX = SJL;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = suojl;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					657217CC1CE2FCF500A04525 = {
 						CreatedOnToolsVersion = 7.3;
@@ -497,11 +533,15 @@
 				65DA0F771CE570A300B64405 /* LaunchView.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
 				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
+				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
 				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
+				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
 				657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */,
+				650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */,
+				650EB7F01D3CDC9500BA4AD7 /* Present2PageControll.m in Sources */,
 				657217D21CE2FCF600A04525 /* main.m in Sources */,
 				654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */,
 				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,

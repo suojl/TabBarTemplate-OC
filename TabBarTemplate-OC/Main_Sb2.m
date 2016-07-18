@@ -7,11 +7,16 @@
 //
 
 #import "Main_Sb2.h"
+#import "ViewController2.h"
+#import "BaseAnimatedTransitioningControll.h"
+#import "SimpleAnimatedControll.h"
+#import "TwoPageControll.h"
 
-@interface Main_Sb2 () <UITextFieldDelegate>{
+@interface Main_Sb2 () <UITextFieldDelegate, UIViewControllerTransitioningDelegate>{
     
 }
 
+@property (nonatomic, strong) BaseAnimatedTransitioningControll * animatedControll;
 @property (nonatomic, strong) IBOutlet UIScrollView* scroView;
 @end
 
@@ -61,15 +66,46 @@
 
     DLog(@"------打印内容!!!-------");
 }
+-(void)dealloc{
+    DLog(@"------释放资源!!!-------");
+}
 
-/*
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"VC1ToVC2_Segue"]){
+        ViewController2* vc2 = [segue destinationViewController];
+        vc2.modalPresentationStyle = UIModalPresentationCustom;
+        vc2.transitioningDelegate = self;
+        
+        self.animatedControll = [[SimpleAnimatedControll alloc] init];
+    }
+    if ([segue.identifier isEqualToString:@"VC1ToVC2_Segue2"]){
+        ViewController2* vc2 = [segue destinationViewController];
+        vc2.modalPresentationStyle = UIModalPresentationCustom;
+        vc2.transitioningDelegate = self;
+        
+        self.animatedControll = [[TwoPageControll alloc] init];
+    }
+    
 }
-*/
 
+#pragma mark - TransitioningDelegate    自定义转场动画代理实现
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+    
+    self.animatedControll.duration = 2.0f;
+    self.animatedControll.reverse = NO;
+    return self.animatedControll;
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
+    
+    self.animatedControll.duration = 2.0f;
+    self.animatedControll.reverse = YES;
+    return self.animatedControll;
+}
 @end
