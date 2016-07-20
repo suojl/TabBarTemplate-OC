@@ -92,10 +92,10 @@
 
 #pragma mark - UITabBarControllerDelegate
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
-    NSLog(@"%s",__FUNCTION__);
+    DLog(@"🐶🐶🐶🐶🐶🐶");
 }
 -(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
-    NSLog(@"%s",__FUNCTION__);
+    DLog(@"🌻🌻🌻🌻🌻🌻");
     if (self.selectedIndex != 1) {
         centerBtn.selected = NO;
     }else{

@@ -18,7 +18,8 @@
     
     if (!self.reverse) {
         
-        CGRect finalFrame = toVC.view.frame;
+//        CGRect finalFrame = toVC.view.frame;
+        CGRect finalFrame = [transitionContext finalFrameForViewController:toVC];
         CGRect initFrame = CGRectOffset(finalFrame, 0, ScreenHeight);
         toVC.view.frame = initFrame;
         
@@ -35,22 +36,18 @@
                              [transitionContext completeTransition:YES];
                          }];
     }else{
-        CGRect initFrame= fromVC.view.frame;
+        
+        CGRect initFrame = [transitionContext initialFrameForViewController:fromVC];
         CGRect finalFrame = CGRectOffset(initFrame, 0, ScreenHeight);
         
         [containerView addSubview:fromVC.view];
         
-        [UIView animateWithDuration:duration
-                              delay:0.0
-             usingSpringWithDamping:1.0
-              initialSpringVelocity:0.0
-                            options:UIViewAnimationOptionCurveLinear
-                         animations:^{
-                             fromVC.view.frame = finalFrame;
-                         } completion:^(BOOL finished) {
-                             // 5. Tell context that we completed.
-                             [transitionContext completeTransition:YES];
-                         }];
+        [UIView animateWithDuration:duration animations:^{
+            fromVC.view.frame = finalFrame;
+        } completion:^(BOOL finished) {
+            [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+        }];
+        
     }
     
 }

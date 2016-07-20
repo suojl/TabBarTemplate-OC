@@ -1,14 +1,14 @@
 //
-//  Present2PageControll.m
+//  SimplePresentationControll.m
 //  TabBarTemplate-OC
 //
-//  Created by issuser on 16/7/18.
-//
+//  Created by issuser on 16/7/20.
+//  Copyright © 2016年 suojl. All rights reserved.
 //
 
-#import "Present2PageControll.h"
+#import "SimplePresentationControll.h"
 
-@implementation Present2PageControll
+@implementation SimplePresentationControll
 {
     UIControl* dimmingView;
 }
@@ -21,7 +21,7 @@
     dimmingView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.5];
     dimmingView.alpha = 0;
     [self.containerView addSubview:dimmingView];
-    [dimmingView addTarget:self action:@selector(closePressingVC) forControlEvents:UIControlEventTouchDown];
+        [dimmingView addTarget:self action:@selector(closePressingVC) forControlEvents:UIControlEventTouchDown];
     
     //调整背景亮度
     [self.presentingViewController.transitionCoordinator animateAlongsideTransition:^(id anima){
@@ -50,8 +50,8 @@
 }
 
 -(CGRect)frameOfPresentedViewInContainerView{
-    CGRect finalRect = CGRectInset(self.containerView.frame, 0, 25);
-    finalRect.origin.y += 25;
+    CGRect finalRect = CGRectInset(self.containerView.frame, 50, 50);
+//    finalRect.origin.y += 25;
     return finalRect;
 }
 

@@ -26,7 +26,7 @@
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
 #ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"调用方法:%s [行号:Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#   define DLog(fmt, ...) NSLog((@"🌻调用方法:%s [行号:Line %d]🌻 " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
 #else
 #   define DLog(...)
 #endif

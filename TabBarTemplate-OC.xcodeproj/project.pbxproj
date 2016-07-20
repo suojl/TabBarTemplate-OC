@@ -31,10 +31,12 @@
 		6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180A1CE3198400A04525 /* AuxFileManage.m */; };
 		6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* AuxDBOperation.m */; };
 		657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657218111CE32FAF00A04525 /* BaseTabBarController.m */; };
+		6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */; };
 		65B0E2CD1D34B600004F948C /* SB2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */; };
 		65DA0F771CE570A300B64405 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F761CE570A300B64405 /* LaunchView.m */; };
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
 		65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F7C1CE573AC00B64405 /* DGEarthView.m */; };
+		65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */; };
 		65F504EB1D227885006C27BA /* LXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F504EA1D227885006C27BA /* LXNetworking.m */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +104,8 @@
 		6572180D1CE31A1500A04525 /* AuxDBOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuxDBOperation.m; sourceTree = "<group>"; };
 		657218101CE32FAF00A04525 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		657218111CE32FAF00A04525 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		6590CC351D3F092A00FF1F07 /* SimplePresentationControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePresentationControll.h; sourceTree = "<group>"; };
+		6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePresentationControll.m; sourceTree = "<group>"; };
 		65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB2_ViewController.h; sourceTree = "<group>"; };
 		65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB2_ViewController.m; sourceTree = "<group>"; };
 		65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		65DA0F791CE5735700B64405 /* DGAaimaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGAaimaView.m; sourceTree = "<group>"; };
 		65DA0F7B1CE573AC00B64405 /* DGEarthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGEarthView.h; sourceTree = "<group>"; };
 		65DA0F7C1CE573AC00B64405 /* DGEarthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGEarthView.m; sourceTree = "<group>"; };
+		65EE41A11D3E13E60092C271 /* PanGestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureInteractiveTransition.h; sourceTree = "<group>"; };
+		65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanGestureInteractiveTransition.m; sourceTree = "<group>"; };
 		65F504E91D227885006C27BA /* LXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworking.h; sourceTree = "<group>"; };
 		65F504EA1D227885006C27BA /* LXNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworking.m; sourceTree = "<group>"; };
 		E86B0DC0BFA16633F41AF06E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +175,8 @@
 			children = (
 				650EB7EE1D3CDC9500BA4AD7 /* Present2PageControll.h */,
 				650EB7EF1D3CDC9500BA4AD7 /* Present2PageControll.m */,
+				6590CC351D3F092A00FF1F07 /* SimplePresentationControll.h */,
+				6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */,
 			);
 			name = PresentationController;
 			sourceTree = "<group>";
@@ -256,6 +264,7 @@
 		657217CF1CE2FCF500A04525 /* TabBarTemplate-OC */ = {
 			isa = PBXGroup;
 			children = (
+				65EE41A01D3E117F0092C271 /* InteractionControllers */,
 				650EB7ED1D3CDA9400BA4AD7 /* PresentationController */,
 				650EB7CD1D3C76D800BA4AD7 /* AnimationControllers */,
 				654DA1851CE46E5100CFF129 /* Views */,
@@ -342,6 +351,15 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		65EE41A01D3E117F0092C271 /* InteractionControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65EE41A11D3E13E60092C271 /* PanGestureInteractiveTransition.h */,
+				65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */,
+			);
+			name = InteractionControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,7 +427,7 @@
 			attributes = {
 				CLASSPREFIX = SJL;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "";
+				ORGANIZATIONNAME = suojl;
 				TargetAttributes = {
 					657217CC1CE2FCF500A04525 = {
 						CreatedOnToolsVersion = 7.3;
@@ -545,6 +563,8 @@
 				657217D21CE2FCF600A04525 /* main.m in Sources */,
 				654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */,
 				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,
+				65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */,
+				6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */,
 				654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				654DA1841CE46E3400CFF129 /* LaunchScreenVC.m in Sources */,
 			);
