@@ -15,7 +15,11 @@
 #import "PanGestureInteractiveTransition.h"
 #import "SimplePresentationControll.h"
 
-@interface Main_Sb2 () <UITextFieldDelegate, UIViewControllerTransitioningDelegate>{
+#import "TestViewController.h"
+#import "DismissViewControllerProtocol.h"
+#import "TestVCAnimatedTransitionController.h"
+
+@interface Main_Sb2 () <UITextFieldDelegate, UIViewControllerTransitioningDelegate,DismissViewControllerProtocol>{
     
 }
 
@@ -46,7 +50,7 @@
     self.scroView.contentSize = CGSizeMake(3 * ScreenWidth, self.scroView.frame.size.height);
     UIView* redView = [UIView new];
     [redView setFrame:CGRectMake(0, 0, ScreenWidth, heightScroll)];
-    redView.backgroundColor = [UIColor redColor];
+    redView.backgroundColor = [UIColor grayColor];
     UIView* greenView = [[UIView alloc] initWithFrame:CGRectMake(ScreenWidth, 0, ScreenWidth, heightScroll)];
     greenView.backgroundColor = [UIColor greenColor];
     UIView* blueView = [[UIView alloc] initWithFrame:CGRectMake(2 * ScreenWidth, 0, ScreenWidth, heightScroll)];
@@ -61,17 +65,28 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)abcd:(id)sender{
-    DLog(@"111111");
+-(IBAction)toTestVCAction:(id)sender{
+    
+    TestViewController* testVC = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
+    
+    testVC.delegate = self;
+    
+    // 设置转场模式
+    testVC.modalPresentationStyle = UIModalPresentationCustom;
+    // 转场动画代理
+    testVC.transitioningDelegate = self;
+//    self.segueFlag = @"testVC";
+    [self.interactiveTransition writeToViewController:testVC];
+    
+    // 设置转场动画使用的控制器
+    self.animatedControll = [TestVCAnimatedTransitionController new];
+    
+    [self presentViewController:testVC animated:YES completion:nil];
 }
--(IBAction)abcde:(id)sender{
-    DLog(@"222222");
-}
-
 
 - (IBAction)unwindToMain_SB2:(UIStoryboardSegue *)sender{
-
-    DLog(@"------打印内容!!!-------");
+    
+    
 }
 -(void)dealloc{
     DLog(@"------释放资源!!!-------");
@@ -106,27 +121,33 @@
     
 }
 
-#pragma mark - TransitioningDelegate    自定义转场动画代理实现
+#pragma mark - 
+-(void)presentingViewControllerDidClickedDismissButton:(UIViewController *)viewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
+#pragma mark - TransitioningDelegate    自定义转场动画代理实现
+// 返回呈现新视图控制器时使用的转场动画
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
     
-    self.animatedControll.duration = 2.0f;
+    self.animatedControll.duration = 1.0f;
     self.animatedControll.reverse = NO;
     return self.animatedControll;
 }
-
+// 返回父视图控制器时使用的转场动画
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
     
-    self.animatedControll.duration = 2.0f;
+    self.animatedControll.duration = 1.0f;
     self.animatedControll.reverse = YES;
     return self.animatedControll;
 }
 
-
+// 返回父视图控制器时使用的手势交互控制器
 - (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator{
     return self.interactiveTransition.interacting ? self.interactiveTransition : nil;
 }
 
+// 返回 转场动画控制器
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0){
     
     DLog(@"---%@",[presenting class]);
@@ -139,6 +160,9 @@
     if ([self.segueFlag isEqualToString:@"VC1ToVC2_Segue2"]){
         
         return [[Present2PageControll alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+    }
+    if([self.segueFlag isEqualToString:@"testVC"]){
+        return [[SimplePresentationControll alloc] initWithPresentedViewController:presented presentingViewController:presenting];
     }
     return nil;
 }

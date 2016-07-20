@@ -32,6 +32,9 @@
 		6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* AuxDBOperation.m */; };
 		657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657218111CE32FAF00A04525 /* BaseTabBarController.m */; };
 		6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */; };
+		6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC391D3F246D00FF1F07 /* TestViewController.m */; };
+		6590CC3C1D3F246E00FF1F07 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6590CC3A1D3F246D00FF1F07 /* TestViewController.xib */; };
+		6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC471D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m */; };
 		65B0E2CD1D34B600004F948C /* SB2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */; };
 		65DA0F771CE570A300B64405 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F761CE570A300B64405 /* LaunchView.m */; };
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
@@ -106,6 +109,12 @@
 		657218111CE32FAF00A04525 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		6590CC351D3F092A00FF1F07 /* SimplePresentationControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePresentationControll.h; sourceTree = "<group>"; };
 		6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePresentationControll.m; sourceTree = "<group>"; };
+		6590CC381D3F246D00FF1F07 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		6590CC391D3F246D00FF1F07 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		6590CC3A1D3F246D00FF1F07 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		6590CC451D3F51AB00FF1F07 /* DismissViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissViewControllerProtocol.h; sourceTree = "<group>"; };
+		6590CC461D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVCAnimatedTransitionController.h; sourceTree = "<group>"; };
+		6590CC471D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVCAnimatedTransitionController.m; sourceTree = "<group>"; };
 		65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB2_ViewController.h; sourceTree = "<group>"; };
 		65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB2_ViewController.m; sourceTree = "<group>"; };
 		65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +175,8 @@
 				650EB7E81D3CAE7800BA4AD7 /* SimpleAnimatedControll.m */,
 				650EB7EA1D3CC19D00BA4AD7 /* TwoPageControll.h */,
 				650EB7EB1D3CC19D00BA4AD7 /* TwoPageControll.m */,
+				6590CC461D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.h */,
+				6590CC471D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m */,
 			);
 			name = AnimationControllers;
 			sourceTree = "<group>";
@@ -212,6 +223,9 @@
 				654DA1801CE42D7800CFF129 /* Main_Sb2.m */,
 				65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */,
 				65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */,
+				6590CC381D3F246D00FF1F07 /* TestViewController.h */,
+				6590CC391D3F246D00FF1F07 /* TestViewController.m */,
+				6590CC3A1D3F246D00FF1F07 /* TestViewController.xib */,
 			);
 			name = storyboard2;
 			sourceTree = "<group>";
@@ -264,6 +278,7 @@
 		657217CF1CE2FCF500A04525 /* TabBarTemplate-OC */ = {
 			isa = PBXGroup;
 			children = (
+				6590CC3D1D3F4E7600FF1F07 /* Protocol */,
 				65EE41A01D3E117F0092C271 /* InteractionControllers */,
 				650EB7ED1D3CDA9400BA4AD7 /* PresentationController */,
 				650EB7CD1D3C76D800BA4AD7 /* AnimationControllers */,
@@ -349,6 +364,14 @@
 				657218111CE32FAF00A04525 /* BaseTabBarController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		6590CC3D1D3F4E7600FF1F07 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6590CC451D3F51AB00FF1F07 /* DismissViewControllerProtocol.h */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		65EE41A01D3E117F0092C271 /* InteractionControllers */ = {
@@ -471,6 +494,7 @@
 				654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */,
 				657217E01CE2FCF600A04525 /* LaunchScreen.storyboard in Resources */,
 				657217DD1CE2FCF600A04525 /* Assets.xcassets in Resources */,
+				6590CC3C1D3F246E00FF1F07 /* TestViewController.xib in Resources */,
 				657217DB1CE2FCF600A04525 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,7 +573,9 @@
 				65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */,
 				654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */,
 				65DA0F771CE570A300B64405 /* LaunchView.m in Sources */,
+				6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
+				6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */,
 				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
 				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
 				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,

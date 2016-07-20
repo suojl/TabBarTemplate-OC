@@ -10,6 +10,5 @@
 
 @interface Main_Sb2 : UIViewController
 
--(IBAction)abcd:(id)sender;
--(IBAction)abcde:(id)sender;
+-(IBAction)toTestVCAction:(id)sender;
 @end
