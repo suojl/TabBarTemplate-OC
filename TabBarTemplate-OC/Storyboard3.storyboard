@@ -34,13 +34,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VVe-MD-LvE">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.0" green="0.81679173520000004" blue="0.003585102591" alpha="1" colorSpace="calibratedRGB"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="40" y="277" width="106" height="75"/>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -51,7 +44,6 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="gFm-gi-vfw"/>
-                                <exclude reference="VVe-MD-LvE"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="HwM-qe-IUP"/>
@@ -62,7 +54,6 @@
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="gFm-gi-vfw"/>
-                                <include reference="VVe-MD-LvE"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="HwM-qe-IUP"/>
@@ -72,11 +63,6 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <connections>
-                        <outlet property="view0" destination="gFm-gi-vfw" id="EOo-qn-U39"/>
-                        <outlet property="view1" destination="VVe-MD-LvE" id="SGo-HD-9bw"/>
-                        <outlet property="withContraint" destination="q6a-dk-RBb" id="tkz-dx-Jyd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49G-ge-7Ez" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

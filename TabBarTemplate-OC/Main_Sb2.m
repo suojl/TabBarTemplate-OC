@@ -19,6 +19,8 @@
 #import "DismissViewControllerProtocol.h"
 #import "TestVCAnimatedTransitionController.h"
 
+#import "AFNetworking.h"
+
 @interface Main_Sb2 () <UITextFieldDelegate, UIViewControllerTransitioningDelegate,DismissViewControllerProtocol>{
     
 }
@@ -36,6 +38,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.interactiveTransition = [[PanGestureInteractiveTransition alloc] init];
+    
 }
 
 -(void) viewDidAppear:(BOOL)animated{

@@ -115,10 +115,6 @@
     // 网络状态指示器
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     
-    AFNetworkReachabilityManager *ada = [AFNetworkReachabilityManager sharedManager];
-    if ([ada isReachableViaWiFi]) {
-        
-    }
     // 设置网络状态改变回调函数
     [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status){
         switch (status) {

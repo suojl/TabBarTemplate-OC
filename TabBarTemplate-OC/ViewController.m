@@ -11,6 +11,7 @@
 //#import "IQKeyboardReturnKeyHandler.h"
 #import "IQUIView+IQKeyboardToolbar.h"
 #import "AFMInfoBanner.h"
+#import "AFNetworking.h"
 
 @interface ViewController ()<UIAlertViewDelegate>
 
@@ -35,6 +36,14 @@
 //    [returnKeyHandler setLastTextFieldReturnKeyType:UIReturnKeyDone];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    
+    AFNetworkReachabilityManager *ada = [AFNetworkReachabilityManager sharedManager];
+    if ([ada isReachableViaWiFi]) {
+        DLog(@"当前处于WiFi环境下!!!");
+    }
+}
 -(IBAction)gotonext:(id)sender{
     [[IQKeyboardManager sharedManager] goNext];
 }
