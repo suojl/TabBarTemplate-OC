@@ -15,6 +15,7 @@
 @property (nonatomic, strong) IBOutlet UIView* topView;
 @property (nonatomic, strong) IBOutlet UIView* centerView;
 @property (nonatomic, strong) IBOutlet UIView* aboveBannerView;
+@property (nonatomic, strong) IBOutlet UIImageView* sdImageView;
 
 -(IBAction)alertTest:(id)sender;
 @end

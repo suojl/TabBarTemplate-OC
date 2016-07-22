@@ -14,5 +14,17 @@ platform :ios
 
     pod 'MBProgressHUD', '~> 0.9.2'
 
+    pod 'SDWebImage', '~> 3.8.1'
+
 platform :ios, '8.0'
     pod 'AFNetworking', '~> 3.0'
+
+#Using AFMInfoBanner (1.2.1)
+#Using AFNetworking (3.1.0)
+#Using CVKHierarchySearcher (0.2.0)
+#Using CWStatusBarNotification (2.3.4)
+#Using FMDB (2.6.2)
+#Using IQKeyboardManager (4.0.2)
+#Using MBProgressHUD (0.9.2)
+#Using Reachability (3.2)
+#Using SDWebImage (3.8.1)

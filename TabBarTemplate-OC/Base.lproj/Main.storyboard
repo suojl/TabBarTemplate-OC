@@ -201,7 +201,7 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-So-ICa" userLabel="CenterView">
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-So-ICa" userLabel="CenterView" customClass="UIImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc0-Wx-DaH">
@@ -414,6 +414,7 @@
                     <connections>
                         <outlet property="centerView" destination="jB0-So-ICa" id="jVB-EO-b3p"/>
                         <outlet property="passwordTF" destination="Lho-64-JVN" id="caQ-NJ-DMf"/>
+                        <outlet property="sdImageView" destination="jB0-So-ICa" id="TmD-lg-G3E"/>
                         <outlet property="topView" destination="ueu-Qi-CeI" id="Qpb-oj-GtP"/>
                         <outlet property="userNameTF" destination="OwU-JI-96t" id="oko-LI-jeu"/>
                     </connections>

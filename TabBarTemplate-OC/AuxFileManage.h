@@ -30,4 +30,10 @@
  * Return  Documents路径
  */
 +(NSString *) getHomePath;
+
+/** 获取APP的Cache路径
+ *
+ * Return  Cache路径
+ */
++(NSString *) getCachesPath;
 @end
