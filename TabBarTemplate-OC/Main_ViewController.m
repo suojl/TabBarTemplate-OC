@@ -60,17 +60,19 @@
     CustomTableViewCell* cell =[self.tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     NSString* imageURLString = _imagesRULArr[indexPath.row];
     
-    __block UIImage* cellImage = nil;
+    UIImage* cellImage = nil;
     SDImageCache *imageCache = [SDImageCache sharedImageCache];
-    [imageCache queryDiskCacheForKey:imageURLString done:^(UIImage *image2,SDImageCacheType cacheType) {
-        if (image2) {
-            [cell.loadImageView sd_cancelCurrentImageLoad];
-            cell.loadImageView.image = image2;
-            cellImage = image2;
-        }
-    }];
-    
-    if (!cellImage) {
+//    [imageCache queryDiskCacheForKey:imageURLString done:^(UIImage *image2,SDImageCacheType cacheType) {
+//        if (image2) {
+//            [cell.loadImageView sd_cancelCurrentImageLoad];
+//            cell.loadImageView.image = image2;
+//            cellImage = image2;
+//        }
+//    }];
+    cellImage = [imageCache imageFromDiskCacheForKey:imageURLString];
+    if (cellImage) {
+        cell.loadImageView.image = cellImage;
+    }else {
         if ([ada isReachableViaWiFi]) {
             DLog(@"当前处于WiFi环境下!!!");
             cell.imageURLString = imageURLString;
@@ -106,6 +108,11 @@
     return [[UIView alloc] init];
 }
 
+#pragma mark -
+- (IBAction)unwindTab3Segue:(UIStoryboardSegue *)sender{
+    NSLog(@"unwindSegue %@", sender);
+    DLog(@"------打印内容!!!-------");
+}
 /*
 #pragma mark - Navigation
 

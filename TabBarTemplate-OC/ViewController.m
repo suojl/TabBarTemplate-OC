@@ -30,8 +30,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     /**
 //    设置状态栏样式
-//    self.navigationController.navigationBarHidden = YES;
-//    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationController.navigationBarHidden = YES;
+//    self.navigationController.navigationBar.barStyle = UIBarStyleBlack; // 导航栏为黑色，状态栏字体为白色
      */
 //    
 //    returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
@@ -51,6 +51,7 @@
     
 //    [AFMInfoBanner showAndHideWithText:@"hello" style:AFMInfoBannerStyleInfo];
     /* --------------AFMInfoBanner---警告提示----------------*/
+    
     AFMInfoBanner* afmtest = [[AFMInfoBanner alloc] initWithTargetView:self.centerView viewAboveBanner:nil additionalTopSpacing:0];
     
     afmtest.style = AFMInfoBannerStyleInfo;
@@ -75,7 +76,7 @@
 
 // 设置状态栏样式
 -(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+    return UIStatusBarStyleDefault;
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{

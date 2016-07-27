@@ -10,7 +10,7 @@
         <!--第二个-->
         <scene sceneID="ThU-Qr-8hW">
             <objects>
-                <viewController id="g0u-KZ-kGV" userLabel="第二个" customClass="ViewController2" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="g0u-KZ-kGV" userLabel="第二个" customClass="ViewController2" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TSP-32-yfS"/>
                         <viewControllerLayoutGuide type="bottom" id="gKs-lK-aVb"/>
@@ -427,14 +427,17 @@
         <!--Navigation Controller-->
         <scene sceneID="fDD-R0-zxl">
             <objects>
-                <navigationController storyboardIdentifier="main" automaticallyAdjustsScrollViewInsets="NO" id="cPQ-Xv-0U6" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="main" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cPQ-Xv-0U6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="gva-2X-OO9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gva-2X-OO9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DC8-v0-ikc">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ylb-2D-MWX"/>
                     </connections>

@@ -14,7 +14,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="uyH-hG-RNZ">
-            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myY-pv-tSP" userLabel="TopView">
@@ -79,10 +79,10 @@
                         </mask>
                         <mask key="constraints">
                             <exclude reference="XQ0-nc-pgX"/>
-                            <exclude reference="Uh9-Oo-bBV"/>
-                            <exclude reference="YkD-rh-tiI"/>
                             <exclude reference="P0u-7c-vjn"/>
                             <exclude reference="x6R-cI-GDi"/>
+                            <exclude reference="Uh9-Oo-bBV"/>
+                            <exclude reference="YkD-rh-tiI"/>
                         </mask>
                     </variation>
                     <variation key="heightClass=regular-widthClass=compact">
@@ -92,10 +92,10 @@
                         </mask>
                         <mask key="constraints">
                             <include reference="XQ0-nc-pgX"/>
-                            <include reference="Uh9-Oo-bBV"/>
-                            <include reference="YkD-rh-tiI"/>
                             <include reference="P0u-7c-vjn"/>
                             <include reference="x6R-cI-GDi"/>
+                            <include reference="Uh9-Oo-bBV"/>
+                            <include reference="YkD-rh-tiI"/>
                         </mask>
                     </variation>
                 </view>

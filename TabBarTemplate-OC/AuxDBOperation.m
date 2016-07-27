@@ -23,14 +23,14 @@
         NSString * path = [AuxFileManage getPathForFileName:@"FMDBTest.db" toCreate:NO];
         NSLog(@"----%@",path);
         
-        sharedDBOperation = [[AuxDBOperation alloc] initWithPath:path];
-        
         /* create dataTable BY Existing */
         if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
             NSLog(@"数据库文件不存在!!!");
             NSString* dbPath = [[NSBundle mainBundle] pathForResource:@"FMDBTest" ofType:@"db"];
             [[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:path error:nil];
         }
+        
+        sharedDBOperation = [[AuxDBOperation alloc] initWithPath:path];
         /* create dataTable BY Existing */
         
         /* create dataTable BY Code */

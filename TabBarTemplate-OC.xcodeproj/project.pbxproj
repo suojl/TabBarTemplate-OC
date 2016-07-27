@@ -42,6 +42,9 @@
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
 		65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F7C1CE573AC00B64405 /* DGEarthView.m */; };
 		65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */; };
+		65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */; };
+		65EE5AA21D4892A1008FBCF7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 65EE5AA11D4892A1008FBCF7 /* File */; };
+		65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5AA41D4892DA008FBCF7 /* CommonTool.m */; };
 		65F504EB1D227885006C27BA /* LXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F504EA1D227885006C27BA /* LXNetworking.m */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +135,11 @@
 		65DA0F7C1CE573AC00B64405 /* DGEarthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGEarthView.m; sourceTree = "<group>"; };
 		65EE41A11D3E13E60092C271 /* PanGestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureInteractiveTransition.h; sourceTree = "<group>"; };
 		65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanGestureInteractiveTransition.m; sourceTree = "<group>"; };
+		65EE5A9E1D489090008FBCF7 /* UIColor+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tool.h"; sourceTree = "<group>"; };
+		65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tool.m"; sourceTree = "<group>"; };
+		65EE5AA11D4892A1008FBCF7 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
+		65EE5AA31D4892DA008FBCF7 /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
+		65EE5AA41D4892DA008FBCF7 /* CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
 		65F504E91D227885006C27BA /* LXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworking.h; sourceTree = "<group>"; };
 		65F504EA1D227885006C27BA /* LXNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworking.m; sourceTree = "<group>"; };
 		E86B0DC0BFA16633F41AF06E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -363,6 +371,11 @@
 				6572180A1CE3198400A04525 /* AuxFileManage.m */,
 				6572180C1CE31A1500A04525 /* AuxDBOperation.h */,
 				6572180D1CE31A1500A04525 /* AuxDBOperation.m */,
+				65EE5A9E1D489090008FBCF7 /* UIColor+Tool.h */,
+				65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */,
+				65EE5AA11D4892A1008FBCF7 /* File */,
+				65EE5AA31D4892DA008FBCF7 /* CommonTool.h */,
+				65EE5AA41D4892DA008FBCF7 /* CommonTool.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -502,6 +515,7 @@
 			files = (
 				654DA17B1CE42CDC00CFF129 /* Storyboard2.storyboard in Resources */,
 				654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */,
+				65EE5AA21D4892A1008FBCF7 /* File in Resources */,
 				657217E01CE2FCF600A04525 /* LaunchScreen.storyboard in Resources */,
 				657217DD1CE2FCF600A04525 /* Assets.xcassets in Resources */,
 				6590CC3C1D3F246E00FF1F07 /* TestViewController.xib in Resources */,
@@ -592,6 +606,7 @@
 				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
 				658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */,
+				65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
@@ -605,6 +620,7 @@
 				6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */,
 				654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				654DA1841CE46E3400CFF129 /* LaunchScreenVC.m in Sources */,
+				65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,7 +767,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TabBarTemplate-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -766,7 +782,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TabBarTemplate-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -163,7 +163,7 @@
                                         <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                         <state key="normal" title="返回"/>
                                         <connections>
-                                            <segue destination="CVv-VJ-dNI" kind="unwind" unwindAction="unwindToMain_SB2:" id="CPf-7L-b37"/>
+                                            <segue destination="CVv-VJ-dNI" kind="unwind" unwindAction="unwindToMain_SB2:" id="nv6-aQ-cK6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPT-0p-LW2">
@@ -185,6 +185,9 @@
                                                 <include reference="r34-aJ-eG1"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <segue destination="CVv-VJ-dNI" kind="unwind" unwindAction="unwindToMain_SB2:" id="9xW-7P-WpM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41540193520673641" green="0.42249840887237566" blue="0.41292665762283715" alpha="1" colorSpace="calibratedRGB"/>

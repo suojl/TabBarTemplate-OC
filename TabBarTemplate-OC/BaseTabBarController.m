@@ -55,13 +55,13 @@
 //    self.tabBar.tintColor = [UIColor redColor];
     
     centerBtn = [[UIButton alloc] init];
-    centerBtn.center = CGPointMake(self.tabBar.center.x, self.tabBar.center.y - 5);
+    centerBtn.center = CGPointMake(self.tabBar.center.x, self.tabBar.bounds.size.height/2 - 5);
     centerBtn.bounds = CGRectMake(0, 0, 60, 60);
     [centerBtn setImage:[UIImage imageNamed:@"ico_shouye_01"] forState:UIControlStateNormal];
     [centerBtn setImage:[UIImage imageNamed:@"ico_shouye_02"] forState:UIControlStateHighlighted];
     [centerBtn setImage:[UIImage imageNamed:@"ico_shouye_02"] forState:UIControlStateSelected];
     [centerBtn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:centerBtn];
+    [self.tabBar addSubview:centerBtn];
     
     self.delegate = self;
     [self setViewControllers:vcs animated:NO];//用当前的viewController数组替换原本的tabbarControlle的 viewControllers数组
