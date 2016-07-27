@@ -31,6 +31,8 @@
 		6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180A1CE3198400A04525 /* AuxFileManage.m */; };
 		6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* AuxDBOperation.m */; };
 		657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657218111CE32FAF00A04525 /* BaseTabBarController.m */; };
+		658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D55441D4704D4007B8788 /* CustomTableViewCell.m */; };
+		658D554A1D4738E6007B8788 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D55491D4738E6007B8788 /* CustomTableViewController.m */; };
 		6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */; };
 		6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC391D3F246D00FF1F07 /* TestViewController.m */; };
 		6590CC3C1D3F246E00FF1F07 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6590CC3A1D3F246D00FF1F07 /* TestViewController.xib */; };
@@ -107,6 +109,10 @@
 		6572180D1CE31A1500A04525 /* AuxDBOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuxDBOperation.m; sourceTree = "<group>"; };
 		657218101CE32FAF00A04525 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		657218111CE32FAF00A04525 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
+		658D55431D4704D4007B8788 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
+		658D55441D4704D4007B8788 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
+		658D55481D4738E6007B8788 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
+		658D55491D4738E6007B8788 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		6590CC351D3F092A00FF1F07 /* SimplePresentationControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePresentationControll.h; sourceTree = "<group>"; };
 		6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePresentationControll.m; sourceTree = "<group>"; };
 		6590CC381D3F246D00FF1F07 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -236,6 +242,10 @@
 				654476BE1D00152E005659D5 /* Storyboard3.storyboard */,
 				654476C01D0015AD005659D5 /* Main_ViewController.h */,
 				654476C11D0015AD005659D5 /* Main_ViewController.m */,
+				658D55431D4704D4007B8788 /* CustomTableViewCell.h */,
+				658D55441D4704D4007B8788 /* CustomTableViewCell.m */,
+				658D55481D4738E6007B8788 /* CustomTableViewController.h */,
+				658D55491D4738E6007B8788 /* CustomTableViewController.m */,
 			);
 			name = storyboard3;
 			sourceTree = "<group>";
@@ -575,11 +585,13 @@
 				65DA0F771CE570A300B64405 /* LaunchView.m in Sources */,
 				6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
+				658D554A1D4738E6007B8788 /* CustomTableViewController.m in Sources */,
 				6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */,
 				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
 				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
 				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
+				658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,

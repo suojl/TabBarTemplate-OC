@@ -13,7 +13,7 @@
 @property (nonatomic, strong) IBOutlet UITextField* userNameTF;
 @property (nonatomic, strong) IBOutlet UITextField* passwordTF;
 @property (nonatomic, strong) IBOutlet UIView* topView;
-@property (nonatomic, strong) IBOutlet UIView* centerView;
+@property (nonatomic, strong) IBOutlet UIImageView* centerView;
 @property (nonatomic, strong) IBOutlet UIView* aboveBannerView;
 @property (nonatomic, strong) IBOutlet UIImageView* sdImageView;
 

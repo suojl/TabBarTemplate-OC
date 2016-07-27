@@ -78,7 +78,7 @@
     testVC.modalPresentationStyle = UIModalPresentationCustom;
     // 转场动画代理
     testVC.transitioningDelegate = self;
-//    self.segueFlag = @"testVC";
+    self.segueFlag = @"testVC";
     [self.interactiveTransition writeToViewController:testVC];
     
     // 设置转场动画使用的控制器
@@ -164,9 +164,9 @@
         
         return [[Present2PageControll alloc] initWithPresentedViewController:presented presentingViewController:presenting];
     }
-    if([self.segueFlag isEqualToString:@"testVC"]){
-        return [[SimplePresentationControll alloc] initWithPresentedViewController:presented presentingViewController:presenting];
-    }
+//    if([self.segueFlag isEqualToString:@"testVC"]){
+//        return [[SimplePresentationControll alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+//    }
     return nil;
 }
 @end

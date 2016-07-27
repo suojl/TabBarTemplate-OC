@@ -43,7 +43,7 @@
 //    vc2.tabBarItem.selectedImage = [[UIImage imageNamed:@"ico_shouye_02"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 
     
-    UIViewController *vc3=[main2 instantiateViewControllerWithIdentifier:@"main"];
+    UIViewController *vc3=[main2 instantiateViewControllerWithIdentifier:@"NavigationController"];
 //    vc3.tabBarItem.title = @"333";
     vc3.tabBarItem.image = [UIImage imageNamed:@"ico_wode_01"];
     vc3.tabBarItem.selectedImage = [UIImage imageNamed:@"ico_wode_02"];
