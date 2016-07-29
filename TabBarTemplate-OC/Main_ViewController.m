@@ -35,6 +35,8 @@
                      @"http://pic.pptbz.com/pptpic/201401/2014010920425522_S.jpg",
                      @"http://pic.pptbz.com/pptpic/201208/2012081320100052_S.jpg",
                      @"http://pic.pptbz.com/pptpic/201303/2013032521245830_S.jpg"];
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 88.0f;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,13 +64,6 @@
     
     UIImage* cellImage = nil;
     SDImageCache *imageCache = [SDImageCache sharedImageCache];
-//    [imageCache queryDiskCacheForKey:imageURLString done:^(UIImage *image2,SDImageCacheType cacheType) {
-//        if (image2) {
-//            [cell.loadImageView sd_cancelCurrentImageLoad];
-//            cell.loadImageView.image = image2;
-//            cellImage = image2;
-//        }
-//    }];
     cellImage = [imageCache imageFromDiskCacheForKey:imageURLString];
     if (cellImage) {
         cell.loadImageView.image = cellImage;

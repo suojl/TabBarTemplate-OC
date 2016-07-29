@@ -1,6 +1,6 @@
 platform :ios
 #    pod 'SBJson', '~> 4.0.1'
-#    pod 'SDAutoLayout', '~> 1.53'
+#    pod 'SDAutoLayout', '~> 2.1.3'
 
 #键盘自动调整框架
     pod 'IQKeyboardManager'
@@ -15,6 +15,8 @@ platform :ios
     pod 'MBProgressHUD', '~> 0.9.2'
 
     pod 'SDWebImage', '~> 3.8.1'
+#label数字自动增长
+    pod 'UICountingLabel'
 
 platform :ios, '8.0'
     pod 'AFNetworking', '~> 3.0'
