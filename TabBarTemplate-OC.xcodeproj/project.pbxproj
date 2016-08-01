@@ -63,6 +63,7 @@
 		654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */; };
 		654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654476BE1D00152E005659D5 /* Storyboard3.storyboard */; };
 		654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476C11D0015AD005659D5 /* Main_ViewController.m */; };
+		65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 65449AD41D4F22FF0060D068 /* CustomTableViewCell2.m */; };
 		654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 654B4B111D0EB9E00064B637 /* ViewController2.m */; };
 		654DA17B1CE42CDC00CFF129 /* Storyboard2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654DA17A1CE42CDC00CFF129 /* Storyboard2.storyboard */; };
 		654DA1811CE42D7800CFF129 /* Main_Sb2.m in Sources */ = {isa = PBXBuildFile; fileRef = 654DA1801CE42D7800CFF129 /* Main_Sb2.m */; };
@@ -176,6 +177,8 @@
 		654476BE1D00152E005659D5 /* Storyboard3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard3.storyboard; sourceTree = "<group>"; };
 		654476C01D0015AD005659D5 /* Main_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_ViewController.h; sourceTree = "<group>"; };
 		654476C11D0015AD005659D5 /* Main_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_ViewController.m; sourceTree = "<group>"; };
+		65449AD31D4F22FF0060D068 /* CustomTableViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell2.h; sourceTree = "<group>"; };
+		65449AD41D4F22FF0060D068 /* CustomTableViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell2.m; sourceTree = "<group>"; };
 		654B4B101D0EB9E00064B637 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		654B4B111D0EB9E00064B637 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		654DA17A1CE42CDC00CFF129 /* Storyboard2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard2.storyboard; sourceTree = "<group>"; };
@@ -418,6 +421,8 @@
 				658D55441D4704D4007B8788 /* CustomTableViewCell.m */,
 				658D55481D4738E6007B8788 /* CustomTableViewController.h */,
 				658D55491D4738E6007B8788 /* CustomTableViewController.m */,
+				65449AD31D4F22FF0060D068 /* CustomTableViewCell2.h */,
+				65449AD41D4F22FF0060D068 /* CustomTableViewCell2.m */,
 			);
 			name = storyboard3;
 			sourceTree = "<group>";
@@ -821,6 +826,7 @@
 				65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
+				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
 				657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */,
 				650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */,
