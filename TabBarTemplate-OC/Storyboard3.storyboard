@@ -26,7 +26,7 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" id="1Rz-6o-5qN" customClass="CustomTableViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Rz-6o-5qN" id="uEz-j6-cRQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="87"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKC-VM-jmo">
@@ -34,7 +34,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="wKC-VM-jmo" secondAttribute="height" multiplier="1:1" id="Mbx-OI-CUH"/>
                                                         <constraint firstAttribute="width" constant="208" id="phX-za-OeJ">
-                                                            <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" constant="40"/>
                                                         </constraint>
                                                     </constraints>
                                                     <variation key="default">
@@ -50,18 +50,32 @@
                                                         </mask>
                                                     </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCQ-0M-QIt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCQ-0M-QIt">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUb-5W-KjT">
+                                                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="更多"/>
+                                                    <connections>
+                                                        <action selector="moreClick:" destination="1Rz-6o-5qN" eventType="touchUpInside" id="DzA-b3-6l7"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="DCQ-0M-QIt" firstAttribute="top" secondItem="uEz-j6-cRQ" secondAttribute="top" constant="11" id="QXl-EU-3xz">
                                                     <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                                 </constraint>
-                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DCQ-0M-QIt" secondAttribute="bottom" constant="55" id="nCH-Ew-zig">
+                                                <constraint firstItem="hUb-5W-KjT" firstAttribute="top" secondItem="DCQ-0M-QIt" secondAttribute="bottom" constant="18" id="RQL-E5-EZS">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                                                </constraint>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hUb-5W-KjT" secondAttribute="bottom" constant="19" id="S9P-yC-KDN">
+                                                    <variation key="heightClass=regular-widthClass=compact" constant="5"/>
+                                                </constraint>
+                                                <constraint firstItem="hUb-5W-KjT" firstAttribute="leading" secondItem="wKC-VM-jmo" secondAttribute="trailing" constant="8" id="g2W-bK-8n7">
                                                     <variation key="heightClass=regular-widthClass=compact" constant="10"/>
                                                 </constraint>
                                                 <constraint firstItem="DCQ-0M-QIt" firstAttribute="leading" secondItem="wKC-VM-jmo" secondAttribute="trailing" constant="46" id="nuV-AJ-qDI">
@@ -77,35 +91,42 @@
                                                 <mask key="subviews">
                                                     <exclude reference="wKC-VM-jmo"/>
                                                     <exclude reference="DCQ-0M-QIt"/>
+                                                    <exclude reference="hUb-5W-KjT"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="o0w-nR-eu4"/>
-                                                    <exclude reference="wwt-VE-4FE"/>
+                                                    <exclude reference="RQL-E5-EZS"/>
+                                                    <exclude reference="S9P-yC-KDN"/>
+                                                    <exclude reference="g2W-bK-8n7"/>
                                                     <exclude reference="QXl-EU-3xz"/>
-                                                    <exclude reference="nCH-Ew-zig"/>
                                                     <exclude reference="nuV-AJ-qDI"/>
                                                     <exclude reference="pPA-Xr-gry"/>
+                                                    <exclude reference="o0w-nR-eu4"/>
+                                                    <exclude reference="wwt-VE-4FE"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="subviews">
                                                     <include reference="wKC-VM-jmo"/>
                                                     <include reference="DCQ-0M-QIt"/>
+                                                    <include reference="hUb-5W-KjT"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="o0w-nR-eu4"/>
-                                                    <include reference="wwt-VE-4FE"/>
+                                                    <include reference="RQL-E5-EZS"/>
+                                                    <include reference="S9P-yC-KDN"/>
+                                                    <include reference="g2W-bK-8n7"/>
                                                     <include reference="QXl-EU-3xz"/>
-                                                    <include reference="nCH-Ew-zig"/>
                                                     <include reference="nuV-AJ-qDI"/>
                                                     <include reference="pPA-Xr-gry"/>
+                                                    <include reference="o0w-nR-eu4"/>
+                                                    <include reference="wwt-VE-4FE"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="label" destination="DCQ-0M-QIt" id="Owm-55-ZQD"/>
                                             <outlet property="loadImageView" destination="wKC-VM-jmo" id="cMU-Cz-FcK"/>
-                                            <segue destination="y4S-yH-LTQ" kind="show" id="OWg-sa-RKm"/>
+                                            <outlet property="moreBtn" destination="hUb-5W-KjT" id="HfP-nj-ZLJ"/>
+                                            <segue destination="y4S-yH-LTQ" kind="show" id="eG8-K8-aAk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -167,7 +188,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3FQ-tc-bTv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p1I-kg-pLZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVE-I8-3U8">

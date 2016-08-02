@@ -9,15 +9,12 @@
 #import "Main_ViewController.h"
 #import "CustomTableViewCell.h"
 #import "UIImageView+WebCache.h"
-#import "CustomTableViewCell2.h"
 
 @interface Main_ViewController () <UITableViewDataSource,UITableViewDelegate>
 {
     UIView* _view1;
     NSArray* _imagesRULArr;
     NSArray* _minImageURL;
-    
-    BOOL isIOS7;
     
     AFNetworkReachabilityManager *_networkManager;
     NSMutableDictionary* _offscreenCells;
@@ -44,7 +41,7 @@
                      @"http://pic.pptbz.com/pptpic/201401/2014010920425522_S.jpg",
                      @"http://pic.pptbz.com/pptpic/201208/2012081320100052_S.jpg",
                      @"http://pic.pptbz.com/pptpic/201303/2013032521245830_S.jpg"];
-    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;// iOS8 tableViewCell自适应高度
     self.tableView.estimatedRowHeight = 88.0f;
     
 #ifndef __IPHONE_8_0
@@ -71,19 +68,10 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (isIOS7) {
-        CustomTableViewCell2* cell =[self.tableView dequeueReusableCellWithIdentifier:@"CustomCell2"];
-        
-        
-        cell.titleLabel.text = @"标题";
-        cell.contentLabel.text = [NSString stringWithFormat:@"考得上几分氨基酸掉飞机接收到刷卡机大佛我驾驶的空间就圣诞节快捷 电视剧佛尔圣诞节佛为了撒娇的佛巨额玩傻大姐佛额外撒打发我几个考试费离开圣诞节佛为就 快速机动费文件四大皆空佛为福建啥都看见个is阿见附件-%ld-",indexPath.row];
-        return  cell;
-    }
+
     CustomTableViewCell* cell =[self.tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     NSString* imageURLString = _imagesRULArr[indexPath.row];
     
-//    [cell layoutIfNeeded];
-//    [cell updateConstraintsIfNeeded];
     UIImage* cellImage = nil;
     SDImageCache *imageCache = [SDImageCache sharedImageCache];
     cellImage = [imageCache imageFromDiskCacheForKey:imageURLString];

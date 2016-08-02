@@ -12,6 +12,7 @@
 @interface CustomTableViewCell ()
 {
     NSString* _imageURLString;
+    BOOL showAllFlag;
 }
 
 
@@ -48,6 +49,18 @@
     [self.loadImageView setShowActivityIndicatorView:YES];
     [self.loadImageView sd_setImageWithURL:[NSURL URLWithString:lessImageURL]placeholderImage:[UIImage imageNamed:@"img_04"]];
    
+}
+
+
+-(IBAction)moreClick:(id)sender{
+    if (showAllFlag) {
+        self.label.numberOfLines = 3;
+        showAllFlag = !showAllFlag;
+    }else{
+        self.label.numberOfLines = 0;
+        showAllFlag = !showAllFlag;
+    }
+    
 }
 
 @end
