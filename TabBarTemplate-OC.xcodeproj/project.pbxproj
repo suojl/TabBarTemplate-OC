@@ -80,11 +80,11 @@
 		6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* AuxDBOperation.m */; };
 		657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657218111CE32FAF00A04525 /* BaseTabBarController.m */; };
 		658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D55441D4704D4007B8788 /* CustomTableViewCell.m */; };
-		658D554A1D4738E6007B8788 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D55491D4738E6007B8788 /* CustomTableViewController.m */; };
 		6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */; };
 		6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC391D3F246D00FF1F07 /* TestViewController.m */; };
 		6590CC3C1D3F246E00FF1F07 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6590CC3A1D3F246D00FF1F07 /* TestViewController.xib */; };
 		6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC471D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m */; };
+		65918B911D51C2E6009DA4AE /* CellStatusEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 65918B901D51C2E6009DA4AE /* CellStatusEntity.m */; };
 		65B0E2CD1D34B600004F948C /* SB2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */; };
 		65DA0F771CE570A300B64405 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F761CE570A300B64405 /* LaunchView.m */; };
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
@@ -211,8 +211,6 @@
 		657218111CE32FAF00A04525 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		658D55431D4704D4007B8788 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
 		658D55441D4704D4007B8788 /* CustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewCell.m; sourceTree = "<group>"; };
-		658D55481D4738E6007B8788 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
-		658D55491D4738E6007B8788 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
 		6590CC351D3F092A00FF1F07 /* SimplePresentationControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePresentationControll.h; sourceTree = "<group>"; };
 		6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePresentationControll.m; sourceTree = "<group>"; };
 		6590CC381D3F246D00FF1F07 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
@@ -221,6 +219,8 @@
 		6590CC451D3F51AB00FF1F07 /* DismissViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DismissViewControllerProtocol.h; sourceTree = "<group>"; };
 		6590CC461D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVCAnimatedTransitionController.h; sourceTree = "<group>"; };
 		6590CC471D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVCAnimatedTransitionController.m; sourceTree = "<group>"; };
+		65918B8F1D51C2E6009DA4AE /* CellStatusEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellStatusEntity.h; sourceTree = "<group>"; };
+		65918B901D51C2E6009DA4AE /* CellStatusEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellStatusEntity.m; sourceTree = "<group>"; };
 		65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB2_ViewController.h; sourceTree = "<group>"; };
 		65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB2_ViewController.m; sourceTree = "<group>"; };
 		65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -414,13 +414,12 @@
 		654DA1791CE42CB500CFF129 /* storyboard3 */ = {
 			isa = PBXGroup;
 			children = (
+				65918B8E1D51C28A009DA4AE /* Models */,
 				654476BE1D00152E005659D5 /* Storyboard3.storyboard */,
 				654476C01D0015AD005659D5 /* Main_ViewController.h */,
 				654476C11D0015AD005659D5 /* Main_ViewController.m */,
 				658D55431D4704D4007B8788 /* CustomTableViewCell.h */,
 				658D55441D4704D4007B8788 /* CustomTableViewCell.m */,
-				658D55481D4738E6007B8788 /* CustomTableViewController.h */,
-				658D55491D4738E6007B8788 /* CustomTableViewController.m */,
 				65449AD31D4F22FF0060D068 /* CustomTableViewCell2.h */,
 				65449AD41D4F22FF0060D068 /* CustomTableViewCell2.m */,
 			);
@@ -565,6 +564,15 @@
 				6590CC451D3F51AB00FF1F07 /* DismissViewControllerProtocol.h */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		65918B8E1D51C28A009DA4AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65918B8F1D51C2E6009DA4AE /* CellStatusEntity.h */,
+				65918B901D51C2E6009DA4AE /* CellStatusEntity.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		65EE41A01D3E117F0092C271 /* InteractionControllers */ = {
@@ -816,7 +824,6 @@
 				65DA0F771CE570A300B64405 /* LaunchView.m in Sources */,
 				6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
-				658D554A1D4738E6007B8788 /* CustomTableViewController.m in Sources */,
 				6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */,
 				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
 				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
@@ -824,6 +831,7 @@
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
 				658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */,
 				65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */,
+				65918B911D51C2E6009DA4AE /* CellStatusEntity.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,

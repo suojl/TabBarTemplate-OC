@@ -12,7 +12,6 @@
 @interface CustomTableViewCell ()
 {
     NSString* _imageURLString;
-    BOOL showAllFlag;
 }
 
 
@@ -53,14 +52,9 @@
 
 
 -(IBAction)moreClick:(id)sender{
-    if (showAllFlag) {
-        self.label.numberOfLines = 3;
-        showAllFlag = !showAllFlag;
-    }else{
-        self.label.numberOfLines = 0;
-        showAllFlag = !showAllFlag;
+    if (self.reloadCellBlock != nil ) {
+        self.reloadCellBlock(_cellIndexPath);
     }
-    
 }
 
 @end
