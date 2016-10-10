@@ -37,7 +37,7 @@
     _imageURLString = imageURLString;
     
     [self.loadImageView setShowActivityIndicatorView:YES];
-    [self.loadImageView sd_setImageWithURL:[NSURL URLWithString:imageURLString]placeholderImage:[UIImage imageNamed:@"img_04"]];
+    [self.loadImageView sd_setImageWithURL:[NSURL URLWithString:imageURLString] placeholderImage:[UIImage imageNamed:@"img_04"]];
     
 }
 
@@ -46,7 +46,7 @@
     _lessImageURL = lessImageURL;
     
     [self.loadImageView setShowActivityIndicatorView:YES];
-    [self.loadImageView sd_setImageWithURL:[NSURL URLWithString:lessImageURL]placeholderImage:[UIImage imageNamed:@"img_04"]];
+    [self.loadImageView sd_setImageWithURL:[NSURL URLWithString:lessImageURL] placeholderImage:[UIImage imageNamed:@"img_04"]];
    
 }
 

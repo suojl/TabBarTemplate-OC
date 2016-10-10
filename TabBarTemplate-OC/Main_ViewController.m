@@ -45,7 +45,7 @@
                      @"http://pic.pptbz.com/pptpic/201208/2012081320100052_S.jpg",
                      @"http://pic.pptbz.com/pptpic/201303/2013032521245830_S.jpg"];
     self.tableView.rowHeight = UITableViewAutomaticDimension;// iOS8 tableViewCell自适应高度
-    self.tableView.estimatedRowHeight = 88.0f;
+    self.tableView.estimatedRowHeight = 200.0; // 预估Cell的高度,
     
     [_imagesRULArr enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * stop) {
         CellStatusEntity* cellEntity = [[CellStatusEntity alloc] init];
@@ -76,7 +76,6 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
 
-    NSLog(@"--xx--%ld",indexPath.row);
     CustomTableViewCell* cell =[self.tableView dequeueReusableCellWithIdentifier:@"CustomCell"];
     
     cell.cellIndexPath = indexPath;
@@ -87,8 +86,8 @@
         cell.reloadCellBlock = ^(NSIndexPath* cellIndexPath){
             CellStatusEntity* cellStatus = weakSelf.cellInfoArr[cellIndexPath.row];
             cellStatus.showAllLines = !cellStatus.showAllLines;
-            [weakSelf.tableView reloadRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationFade];
-            NSLog(@"xxxxxxxxxxxxxx%ld",cellIndexPath.row);
+            DLog(@"xxxxxxxxxxxxxx%ld",cellIndexPath.row);
+            [weakSelf.tableView reloadRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationNone];
         };
     }
     
