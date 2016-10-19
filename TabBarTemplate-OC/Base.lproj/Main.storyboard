@@ -105,10 +105,10 @@
                             <mask key="constraints">
                                 <exclude reference="UqQ-Xz-qRP"/>
                                 <exclude reference="yof-n3-hec"/>
-                                <exclude reference="5AZ-zK-NyR"/>
-                                <exclude reference="ns6-Rr-ElY"/>
                                 <exclude reference="BGc-iA-VGg"/>
                                 <exclude reference="DHq-Zy-USr"/>
+                                <exclude reference="5AZ-zK-NyR"/>
+                                <exclude reference="ns6-Rr-ElY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -120,10 +120,10 @@
                             <mask key="constraints">
                                 <include reference="UqQ-Xz-qRP"/>
                                 <include reference="yof-n3-hec"/>
-                                <include reference="5AZ-zK-NyR"/>
-                                <include reference="ns6-Rr-ElY"/>
                                 <include reference="BGc-iA-VGg"/>
                                 <include reference="DHq-Zy-USr"/>
+                                <include reference="5AZ-zK-NyR"/>
+                                <include reference="ns6-Rr-ElY"/>
                             </mask>
                         </variation>
                     </view>
@@ -241,10 +241,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <exclude reference="Kkc-SP-76j"/>
-                                        <exclude reference="XME-0R-umr"/>
-                                        <exclude reference="c7j-Ik-3JD"/>
                                         <exclude reference="KTq-Jw-tSx"/>
                                         <exclude reference="gK5-de-ulL"/>
+                                        <exclude reference="XME-0R-umr"/>
+                                        <exclude reference="c7j-Ik-3JD"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -254,10 +254,10 @@
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="Kkc-SP-76j"/>
-                                        <include reference="XME-0R-umr"/>
-                                        <include reference="c7j-Ik-3JD"/>
                                         <include reference="KTq-Jw-tSx"/>
                                         <include reference="gK5-de-ulL"/>
+                                        <include reference="XME-0R-umr"/>
+                                        <include reference="c7j-Ik-3JD"/>
                                     </mask>
                                 </variation>
                             </view>

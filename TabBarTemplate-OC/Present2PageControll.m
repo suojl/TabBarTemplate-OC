@@ -18,7 +18,7 @@
     [super presentationTransitionWillBegin];
     
     dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
-    dimmingView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.5];
+    dimmingView.backgroundColor = [UIColor blackColor];
     dimmingView.alpha = 0;
     [self.containerView addSubview:dimmingView];
     [dimmingView addTarget:self action:@selector(closePressingVC) forControlEvents:UIControlEventTouchDown];

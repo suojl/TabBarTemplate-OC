@@ -130,14 +130,14 @@
 }
 
 #pragma mark - TransitioningDelegate    自定义转场动画代理实现
-// 返回呈现新视图控制器时使用的转场动画
+// 返回呈现新视图控制器时使用的转场动画 ②
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
     
     self.animatedControll.duration = 1.0f;
     self.animatedControll.reverse = NO;
     return self.animatedControll;
 }
-// 返回父视图控制器时使用的转场动画
+// 返回父视图控制器时使用的转场动画 ③
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
     
     self.animatedControll.duration = 1.0f;
@@ -145,12 +145,12 @@
     return self.animatedControll;
 }
 
-// 返回父视图控制器时使用的手势交互控制器
+// 返回父视图控制器时使用的手势交互控制器 ④
 - (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator{
     return self.interactiveTransition.interacting ? self.interactiveTransition : nil;
 }
 
-// 返回 转场动画控制器
+// 返回 转场动画控制器 ①
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0){
     
     DLog(@"---%@",[presenting class]);

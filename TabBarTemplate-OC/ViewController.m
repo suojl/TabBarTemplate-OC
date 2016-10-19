@@ -15,7 +15,9 @@
 #import "UIImageView+WebCache.h"
 #import "AuxFileManage.h"
 
-@interface ViewController ()<UIAlertViewDelegate>
+#import "Login_VC.h"
+
+@interface ViewController ()<UIAlertViewDelegate,DismissViewControllerProtocol>
 
 @end
 
@@ -60,8 +62,15 @@
     [afmtest showAndHideAfter:2.0 animated:YES];
     /* --------------AFMInfoBanner-------------------*/
     
+    Login_VC *loginVC = [[Login_VC alloc] initWithNibName:@"Login_VC" bundle:nil];
+    loginVC.delegate = self;
+    [self presentViewController:loginVC animated:YES completion:nil];
     
-    
+}
+
+
+-(void)presentingViewControllerDidClickedDismissButton:(UIViewController *)viewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (IBAction)unwindSegue:(UIStoryboardSegue *)sender{

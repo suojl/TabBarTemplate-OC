@@ -11,7 +11,7 @@
 
 @interface TestViewController : UIViewController
 
-@property (nonatomic, strong) id<DismissViewControllerProtocol> delegate;
+@property (nonatomic, weak) id<DismissViewControllerProtocol> delegate;
 
 @property (nonatomic, strong) IBOutlet UIView* topView;
 @property (nonatomic, strong) IBOutlet UIView* bottomView;

@@ -14,6 +14,9 @@
 
 @optional
 
+/**
+ * @param 关闭弹出控制器
+ */
 -(void) presentingViewControllerDidClickedDismissButton:(UIViewController *)viewController;
 
 @end

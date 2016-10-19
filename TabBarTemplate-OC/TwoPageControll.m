@@ -7,6 +7,7 @@
 //
 
 #import "TwoPageControll.h"
+#import "UIImage+FKCategory.h"
 
 @implementation TwoPageControll
 
@@ -18,9 +19,16 @@
     if (!self.reverse) {
         // 转场动画背景图片
         UIView* bgView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        bgView.backgroundColor = [UIColor whiteColor];
+        bgView.backgroundColor = [UIColor clearColor];
         [containerView insertSubview:bgView atIndex:0];
-        UIView* fromView = [fromVC.view snapshotViewAfterScreenUpdates:NO];
+        /* snapshotViewAfterScreenUpdates 在IOS 10中失效 */
+//        UIView* fromView = [fromVC.view snapshotViewAfterScreenUpdates:NO];
+        
+        // 使用fromVC.view 作为动画
+        UIImage *fromViewSnapshot = [UIImage captureView:fromVC.view];
+        UIImageView* fromView = [[UIImageView alloc] initWithImage:fromViewSnapshot];
+        fromView.frame = fromVC.view.bounds;
+        
         [containerView addSubview:fromView];
         
 //        CGRect finalFrame = toVC.view.frame;
@@ -46,12 +54,18 @@
     }else{
         // 转场动画背景图片
 //        UIView* bgView = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        containerView.backgroundColor = [UIColor whiteColor];
+        containerView.backgroundColor = [UIColor clearColor];
 //        [containerView addSubview:bgView];
-        UIView* toView = [toVC.view snapshotViewAfterScreenUpdates:NO];
-        toView.transform = CGAffineTransformIdentity;
-        toView.transform = CGAffineTransformMakeScale(0.9, 0.9);
-        [containerView addSubview:toView];
+        /* snapshotViewAfterScreenUpdates 在IOS 10中失效 */
+//        UIView* toView = [toVC.view snapshotViewAfterScreenUpdates:NO];
+        UIImage *toViewSnapshot = [UIImage captureView:toVC.view];
+        
+        UIImageView* toView1 = [[UIImageView alloc] initWithImage:toViewSnapshot];
+        toView1.frame = toVC.view.bounds;
+        
+        toView1.transform = CGAffineTransformIdentity;
+        toView1.transform = CGAffineTransformMakeScale(0.9, 0.9);
+        [containerView addSubview:toView1];
         
 //        CGRect initFrame= fromVC.view.frame;
         CGRect initFrame = [transitionContext initialFrameForViewController:fromVC];
@@ -61,7 +75,7 @@
         
         [UIView animateWithDuration:duration animations:^{
             fromVC.view.frame = finalFrame;
-            toView.transform = CGAffineTransformMakeScale(1.0, 1.0);
+            toView1.transform = CGAffineTransformMakeScale(1.0, 1.0);
         } completion:^(BOOL finished) {
             [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         }];

@@ -46,7 +46,6 @@
                 CGFloat fraction = fabs(translation.y / 400.0);
                 //Limit it between 0 and 1
                 fraction = fminf(fmaxf(fraction, 0.0), 1.0);
-                NSLog(@"----%lf",fraction);
                 self->_shouldComplete = (fraction > 0.5);
                 if (fraction >= 1.0)
                     fraction = 0.99;

@@ -8,8 +8,10 @@
 
 #import "BaseTabBarController.h"
 #import "UIView+SDAutoLayout.h"
+#import "Login_VC.h"
+#import "DismissViewControllerProtocol.h"
 
-@interface BaseTabBarController () <UITabBarControllerDelegate>
+@interface BaseTabBarController () <UITabBarControllerDelegate,DismissViewControllerProtocol>
 {
     UIButton *centerBtn;
 }
@@ -71,6 +73,18 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:YES];
 }
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:YES];
+    BOOL logined = [[NSUserDefaults standardUserDefaults] objectForKey:USER_LOGINED];
+    if (!logined) {
+    
+        Login_VC *loginVC = [[Login_VC alloc] initWithNibName:@"Login_VC" bundle:nil];
+        loginVC.delegate = self;
+        [self presentViewController:loginVC animated:YES completion:nil];
+        
+    }
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -80,15 +94,10 @@
     self.selectedIndex = 1;
     sen.selected = YES;
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)presentingViewControllerDidClickedDismissButton:(UIViewController *)viewController{
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
-*/
 
 #pragma mark - UITabBarControllerDelegate
 -(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{

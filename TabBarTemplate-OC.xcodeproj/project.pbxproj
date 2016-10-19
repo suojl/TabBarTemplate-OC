@@ -59,6 +59,8 @@
 		651B08721D4AF1750083EBFB /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 651B08431D4AF1750083EBFB /* test2.jpg */; };
 		651B08731D4AF1750083EBFB /* test3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 651B08441D4AF1750083EBFB /* test3.jpg */; };
 		651B08741D4AF1750083EBFB /* test4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 651B08451D4AF1750083EBFB /* test4.jpg */; };
+		653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 653F13CB1DB4765D000FED51 /* Login_VC.m */; };
+		653F13CE1DB4765D000FED51 /* Login_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 653F13CC1DB4765D000FED51 /* Login_VC.xib */; };
 		654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */; };
 		654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654476BE1D00152E005659D5 /* Storyboard3.storyboard */; };
@@ -86,9 +88,13 @@
 		6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC471D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m */; };
 		65918B911D51C2E6009DA4AE /* CellStatusEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 65918B901D51C2E6009DA4AE /* CellStatusEntity.m */; };
 		65B0E2CD1D34B600004F948C /* SB2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */; };
+		65C880341DB4B33F0049B5A5 /* UIImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C880331DB4B33F0049B5A5 /* UIImageEffects.m */; };
+		65C880371DB4BFAF0049B5A5 /* UIImage+FKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C880361DB4BFAF0049B5A5 /* UIImage+FKCategory.m */; };
 		65DA0F771CE570A300B64405 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F761CE570A300B64405 /* LaunchView.m */; };
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
 		65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F7C1CE573AC00B64405 /* DGEarthView.m */; };
+		65E1879C1DB619EF00857009 /* Login_PresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1879B1DB619EF00857009 /* Login_PresentController.m */; };
+		65E1879F1DB61DA600857009 /* Login_AnimatedTransitioningControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1879E1DB61DA600857009 /* Login_AnimatedTransitioningControll.m */; };
 		65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */; };
 		65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */; };
 		65EE5AA21D4892A1008FBCF7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 65EE5AA11D4892A1008FBCF7 /* File */; };
@@ -170,6 +176,9 @@
 		651B08431D4AF1750083EBFB /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
 		651B08441D4AF1750083EBFB /* test3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test3.jpg; sourceTree = "<group>"; };
 		651B08451D4AF1750083EBFB /* test4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test4.jpg; sourceTree = "<group>"; };
+		653F13CA1DB4765D000FED51 /* Login_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_VC.h; sourceTree = "<group>"; };
+		653F13CB1DB4765D000FED51 /* Login_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_VC.m; sourceTree = "<group>"; };
+		653F13CC1DB4765D000FED51 /* Login_VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login_VC.xib; sourceTree = "<group>"; };
 		654476B81D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
 		654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
 		654476BA1D001503005659D5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
@@ -224,12 +233,20 @@
 		65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB2_ViewController.h; sourceTree = "<group>"; };
 		65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB2_ViewController.m; sourceTree = "<group>"; };
 		65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		65C880321DB4B33F0049B5A5 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
+		65C880331DB4B33F0049B5A5 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
+		65C880351DB4BFAF0049B5A5 /* UIImage+FKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FKCategory.h"; sourceTree = "<group>"; };
+		65C880361DB4BFAF0049B5A5 /* UIImage+FKCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FKCategory.m"; sourceTree = "<group>"; };
 		65DA0F751CE570A300B64405 /* LaunchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchView.h; sourceTree = "<group>"; };
 		65DA0F761CE570A300B64405 /* LaunchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchView.m; sourceTree = "<group>"; };
 		65DA0F781CE5735700B64405 /* DGAaimaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGAaimaView.h; sourceTree = "<group>"; };
 		65DA0F791CE5735700B64405 /* DGAaimaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGAaimaView.m; sourceTree = "<group>"; };
 		65DA0F7B1CE573AC00B64405 /* DGEarthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGEarthView.h; sourceTree = "<group>"; };
 		65DA0F7C1CE573AC00B64405 /* DGEarthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGEarthView.m; sourceTree = "<group>"; };
+		65E1879A1DB619EF00857009 /* Login_PresentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_PresentController.h; sourceTree = "<group>"; };
+		65E1879B1DB619EF00857009 /* Login_PresentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_PresentController.m; sourceTree = "<group>"; };
+		65E1879D1DB61DA600857009 /* Login_AnimatedTransitioningControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_AnimatedTransitioningControll.h; sourceTree = "<group>"; };
+		65E1879E1DB61DA600857009 /* Login_AnimatedTransitioningControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_AnimatedTransitioningControll.m; sourceTree = "<group>"; };
 		65EE41A11D3E13E60092C271 /* PanGestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureInteractiveTransition.h; sourceTree = "<group>"; };
 		65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PanGestureInteractiveTransition.m; sourceTree = "<group>"; };
 		65EE5A9E1D489090008FBCF7 /* UIColor+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tool.h"; sourceTree = "<group>"; };
@@ -288,6 +305,8 @@
 				650EB7EB1D3CC19D00BA4AD7 /* TwoPageControll.m */,
 				6590CC461D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.h */,
 				6590CC471D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m */,
+				65E1879D1DB61DA600857009 /* Login_AnimatedTransitioningControll.h */,
+				65E1879E1DB61DA600857009 /* Login_AnimatedTransitioningControll.m */,
 			);
 			name = AnimationControllers;
 			sourceTree = "<group>";
@@ -299,6 +318,8 @@
 				650EB7EF1D3CDC9500BA4AD7 /* Present2PageControll.m */,
 				6590CC351D3F092A00FF1F07 /* SimplePresentationControll.h */,
 				6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */,
+				65E1879A1DB619EF00857009 /* Login_PresentController.h */,
+				65E1879B1DB619EF00857009 /* Login_PresentController.m */,
 			);
 			name = PresentationController;
 			sourceTree = "<group>";
@@ -534,6 +555,10 @@
 		657218071CE3049600A04525 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				65C880351DB4BFAF0049B5A5 /* UIImage+FKCategory.h */,
+				65C880361DB4BFAF0049B5A5 /* UIImage+FKCategory.m */,
+				65C880321DB4B33F0049B5A5 /* UIImageEffects.h */,
+				65C880331DB4B33F0049B5A5 /* UIImageEffects.m */,
 				65F504E91D227885006C27BA /* LXNetworking.h */,
 				65F504EA1D227885006C27BA /* LXNetworking.m */,
 				657218091CE3198400A04525 /* AuxFileManage.h */,
@@ -554,6 +579,9 @@
 			children = (
 				657218101CE32FAF00A04525 /* BaseTabBarController.h */,
 				657218111CE32FAF00A04525 /* BaseTabBarController.m */,
+				653F13CA1DB4765D000FED51 /* Login_VC.h */,
+				653F13CB1DB4765D000FED51 /* Login_VC.m */,
+				653F13CC1DB4765D000FED51 /* Login_VC.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -655,6 +683,8 @@
 				TargetAttributes = {
 					657217CC1CE2FCF500A04525 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9R6K2YQ2VF;
+						ProvisioningStyle = Manual;
 					};
 					657217E51CE2FCF600A04525 = {
 						CreatedOnToolsVersion = 7.3;
@@ -695,6 +725,7 @@
 				651B084F1D4AF1750083EBFB /* 17.jpg in Resources */,
 				651B08721D4AF1750083EBFB /* test2.jpg in Resources */,
 				651B08551D4AF1750083EBFB /* 22.jpg in Resources */,
+				653F13CE1DB4765D000FED51 /* Login_VC.xib in Resources */,
 				651B086A1D4AF1750083EBFB /* pic4.jpg in Resources */,
 				651B085D1D4AF1750083EBFB /* 9.jpg in Resources */,
 				651B086F1D4AF1750083EBFB /* picon.jpg in Resources */,
@@ -829,6 +860,7 @@
 				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
 				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
+				65C880341DB4B33F0049B5A5 /* UIImageEffects.m in Sources */,
 				658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */,
 				65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */,
 				65918B911D51C2E6009DA4AE /* CellStatusEntity.m in Sources */,
@@ -836,6 +868,9 @@
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
+				653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */,
+				65E1879C1DB619EF00857009 /* Login_PresentController.m in Sources */,
+				65C880371DB4BFAF0049B5A5 /* UIImage+FKCategory.m in Sources */,
 				657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */,
 				650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */,
 				650EB7F01D3CDC9500BA4AD7 /* Present2PageControll.m in Sources */,
@@ -844,6 +879,7 @@
 				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,
 				65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */,
 				6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */,
+				65E1879F1DB61DA600857009 /* Login_AnimatedTransitioningControll.m in Sources */,
 				654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				654DA1841CE46E3400CFF129 /* LaunchScreenVC.m in Sources */,
 				65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */,
@@ -991,12 +1027,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9R6K2YQ2VF;
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "TabBarTemplate-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isoftstone.innovationCenter.TabBarTemplate-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6da136e-e71f-4e2f-ab9c-f809b2eda78a";
+				PROVISIONING_PROFILE_SPECIFIER = MultiAppProfile;
 			};
 			name = Debug;
 		};
@@ -1006,12 +1046,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9R6K2YQ2VF;
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "TabBarTemplate-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.isoftstone.innovationCenter.TabBarTemplate-OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "a6da136e-e71f-4e2f-ab9c-f809b2eda78a";
+				PROVISIONING_PROFILE_SPECIFIER = MultiAppProfile;
 			};
 			name = Release;
 		};

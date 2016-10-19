@@ -19,9 +19,10 @@
     if (!self.reverse) {
         
 //        CGRect finalFrame = toVC.view.frame;
+        // 获取视图最终的frame
         CGRect finalFrame = [transitionContext finalFrameForViewController:toVC];
-        CGRect initFrame = CGRectOffset(finalFrame, 0, ScreenHeight);
-        toVC.view.frame = initFrame;
+        CGRect initFrame = CGRectOffset(finalFrame, 0, ScreenHeight-50);
+        toVC.view.frame = initFrame;    // 设置视图为最终frame,即自动布局完成后的状态
         
         [containerView addSubview:toVC.view];
         [UIView animateWithDuration:duration
@@ -38,7 +39,7 @@
     }else{
         
         CGRect initFrame = [transitionContext initialFrameForViewController:fromVC];
-        CGRect finalFrame = CGRectOffset(initFrame, 0, ScreenHeight);
+        CGRect finalFrame = CGRectOffset(initFrame, 0, ScreenHeight-50);
         
         [containerView addSubview:fromVC.view];
         
