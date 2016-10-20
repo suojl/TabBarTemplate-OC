@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController">
             <connections>
-                <outlet property="bottomView" destination="rsh-1O-iqj" id="Fku-AS-Tcq"/>
+                <outlet property="bottomView" destination="TRh-dY-Dpo" id="EOi-OX-chS"/>
                 <outlet property="topView" destination="myY-pv-tSP" id="ZUj-UP-xux"/>
                 <outlet property="view" destination="uyH-hG-RNZ" id="VaB-VV-1uO"/>
             </connections>
@@ -18,12 +18,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myY-pv-tSP" userLabel="TopView">
+                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="myY-pv-tSP" userLabel="TopView">
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHt-My-1ec">
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="C7V-IJ-bfT"/>
-                                <constraint firstAttribute="width" constant="30" id="abc-Ty-LNS"/>
+                                <constraint firstAttribute="width" constant="45" id="abc-Ty-LNS"/>
                             </constraints>
                             <state key="normal" title="返回"/>
                             <variation key="default">
@@ -44,7 +44,7 @@
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g3-5A-Hg2">
                             <constraints>
-                                <constraint firstAttribute="width" constant="45" id="CIV-0C-zQ9"/>
+                                <constraint firstAttribute="width" constant="55" id="CIV-0C-zQ9"/>
                                 <constraint firstAttribute="height" constant="30" id="VDK-Dp-8OA"/>
                             </constraints>
                             <state key="normal" title="下一步"/>
@@ -97,60 +97,43 @@
                         </mask>
                     </variation>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsh-1O-iqj" userLabel="BottomView">
-                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TRh-dY-Dpo" userLabel="BottomView">
+                    <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="128" id="YLq-sK-npD"/>
+                        <constraint firstAttribute="height" constant="148" id="KfT-tw-QWu"/>
                     </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="YLq-sK-npD"/>
-                        </mask>
-                    </variation>
-                    <variation key="heightClass=regular-widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="YLq-sK-npD"/>
-                        </mask>
-                    </variation>
                 </view>
             </subviews>
             <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="rsh-1O-iqj" secondAttribute="bottom" id="A6Z-4G-vb6"/>
+                <constraint firstAttribute="trailing" secondItem="TRh-dY-Dpo" secondAttribute="trailing" id="58u-iV-sYU"/>
                 <constraint firstAttribute="trailing" secondItem="myY-pv-tSP" secondAttribute="trailing" id="Djz-f2-qFk"/>
+                <constraint firstAttribute="bottom" secondItem="TRh-dY-Dpo" secondAttribute="bottom" id="L5Z-e6-nRf"/>
                 <constraint firstItem="myY-pv-tSP" firstAttribute="top" secondItem="uyH-hG-RNZ" secondAttribute="top" id="lMt-WE-B7s"/>
-                <constraint firstItem="rsh-1O-iqj" firstAttribute="leading" secondItem="uyH-hG-RNZ" secondAttribute="leading" id="lNd-SO-Kxj"/>
-                <constraint firstAttribute="trailing" secondItem="rsh-1O-iqj" secondAttribute="trailing" id="rZt-Gx-gdW"/>
                 <constraint firstItem="myY-pv-tSP" firstAttribute="leading" secondItem="uyH-hG-RNZ" secondAttribute="leading" id="sxa-jE-n2a"/>
+                <constraint firstItem="TRh-dY-Dpo" firstAttribute="leading" secondItem="uyH-hG-RNZ" secondAttribute="leading" id="y3o-SK-vyo"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="myY-pv-tSP"/>
-                    <exclude reference="rsh-1O-iqj"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="Djz-f2-qFk"/>
                     <exclude reference="lMt-WE-B7s"/>
                     <exclude reference="sxa-jE-n2a"/>
-                    <exclude reference="A6Z-4G-vb6"/>
-                    <exclude reference="lNd-SO-Kxj"/>
-                    <exclude reference="rZt-Gx-gdW"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="myY-pv-tSP"/>
-                    <include reference="rsh-1O-iqj"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="Djz-f2-qFk"/>
                     <include reference="lMt-WE-B7s"/>
                     <include reference="sxa-jE-n2a"/>
-                    <include reference="A6Z-4G-vb6"/>
-                    <include reference="lNd-SO-Kxj"/>
-                    <include reference="rZt-Gx-gdW"/>
                 </mask>
             </variation>
+            <point key="canvasLocation" x="26.5" y="51.5"/>
         </view>
     </objects>
 </document>

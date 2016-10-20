@@ -20,15 +20,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HD-48-jCu">
+                            <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Storyboard2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3HD-48-jCu">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-Eh-Dc2">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iLB-Eh-Dc2">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwm-11-gAJ">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwm-11-gAJ">
                                 <state key="normal" title="Next"/>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
@@ -37,13 +37,13 @@
                                     <segue destination="5bV-5l-2bX" kind="show" identifier="VC1ToVC2_Segue" id="bxB-Ru-n6J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaq-qv-shv">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xaq-qv-shv">
                                 <state key="normal" title="Next2"/>
                                 <connections>
                                     <segue destination="5bV-5l-2bX" kind="show" identifier="VC1ToVC2_Segue2" id="Pud-IT-7al"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNO-UX-VYq">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNO-UX-VYq">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kFg-Zi-G7E"/>
                                 </constraints>
@@ -90,19 +90,19 @@
                                 <exclude reference="aNO-UX-VYq"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="KMA-6s-q7b"/>
+                                <exclude reference="XhI-KP-TCT"/>
+                                <exclude reference="gr3-kZ-BhT"/>
                                 <exclude reference="WRY-22-keX"/>
                                 <exclude reference="apg-k4-5Xo"/>
                                 <exclude reference="lVw-Rz-mZX"/>
                                 <exclude reference="a7p-9D-dLk"/>
                                 <exclude reference="kiF-sq-egh"/>
+                                <exclude reference="QNE-JB-j1L"/>
+                                <exclude reference="W38-Lz-0gX"/>
                                 <exclude reference="7Xo-0m-X6I"/>
                                 <exclude reference="hTM-sY-Sqg"/>
                                 <exclude reference="pb5-Rc-uXI"/>
-                                <exclude reference="KMA-6s-q7b"/>
-                                <exclude reference="XhI-KP-TCT"/>
-                                <exclude reference="gr3-kZ-BhT"/>
-                                <exclude reference="QNE-JB-j1L"/>
-                                <exclude reference="W38-Lz-0gX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -114,19 +114,19 @@
                                 <include reference="aNO-UX-VYq"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="KMA-6s-q7b"/>
+                                <include reference="XhI-KP-TCT"/>
+                                <include reference="gr3-kZ-BhT"/>
                                 <include reference="WRY-22-keX"/>
                                 <include reference="apg-k4-5Xo"/>
                                 <include reference="lVw-Rz-mZX"/>
                                 <include reference="a7p-9D-dLk"/>
                                 <include reference="kiF-sq-egh"/>
+                                <include reference="QNE-JB-j1L"/>
+                                <include reference="W38-Lz-0gX"/>
                                 <include reference="7Xo-0m-X6I"/>
                                 <include reference="hTM-sY-Sqg"/>
                                 <include reference="pb5-Rc-uXI"/>
-                                <include reference="KMA-6s-q7b"/>
-                                <include reference="XhI-KP-TCT"/>
-                                <include reference="gr3-kZ-BhT"/>
-                                <include reference="QNE-JB-j1L"/>
-                                <include reference="W38-Lz-0gX"/>
                             </mask>
                         </variation>
                     </view>

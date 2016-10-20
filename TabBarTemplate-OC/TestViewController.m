@@ -19,13 +19,17 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 -(IBAction)goBackAction:(id)sender{
-    
     if (self.delegate && [self.delegate respondsToSelector:@selector(presentingViewControllerDidClickedDismissButton:)]) {
         [self.delegate presentingViewControllerDidClickedDismissButton:self];
     }
