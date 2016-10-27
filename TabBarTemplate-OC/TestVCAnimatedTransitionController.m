@@ -14,7 +14,7 @@
 
 
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext fromVC:(UIViewController *)fromVC toVC:(UIViewController *)toVC fromView:(UIView *)fromView toView:(UIView *)toView{
-    TestViewController* toViewController = (TestViewController *)toVC;
+//    TestViewController* toViewController = (TestViewController *)toVC;
     // 展现动画的容器视图
     UIView *containerView = [transitionContext containerView];
     NSTimeInterval duration = [self transitionDuration:transitionContext];

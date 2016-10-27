@@ -26,6 +26,7 @@
 }
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self animaInit];
 }
 - (id)initWithFrame:(CGRect)frame

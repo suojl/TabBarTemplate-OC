@@ -160,7 +160,7 @@ static NSMutableArray *tasks;
     
     AFHTTPSessionManager *manager=[self sharedAFManager];
     
-    LXURLSessionTask *sessionTask = [manager POST:urlStr parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+    __block LXURLSessionTask *sessionTask = [manager POST:urlStr parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         //压缩图片
         NSData *imageData = UIImageJPEGRepresentation(image, 1.0);
         

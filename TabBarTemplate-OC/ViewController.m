@@ -73,8 +73,7 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)unwindSegue:(UIStoryboardSegue *)sender{
-    NSLog(@"unwindSegue %@", sender);
+- (IBAction)unwindSegueToStoryboard1_navMain:(UIStoryboardSegue *)sender{
     DLog(@"------打印内容!!!-------");
 }
 

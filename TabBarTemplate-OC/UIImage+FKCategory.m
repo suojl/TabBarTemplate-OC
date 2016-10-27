@@ -44,7 +44,7 @@
 	CGImageRef imageRef = CGImageCreateWithImageInRect(srcImage, rect);
 	// 将“挖取”出来的CGImageRef转换为UIImage对象
 	UIImage* subImage = [UIImage imageWithCGImage: imageRef];
-	CGImageRelease(srcImage);
+//	CGImageRelease(srcImage);
 	CGImageRelease(imageRef);
 	return subImage;
 }
