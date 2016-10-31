@@ -46,6 +46,10 @@
     [self setUpScrollView];
 }
 
+-(void) viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:YES];
+}
+
 -(void)setUpScrollView{
     
     NSLog(@"--%lf,--%lf",self.scroView.frame.size.height,self.scroView.frame.size.width);

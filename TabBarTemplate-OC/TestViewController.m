@@ -35,6 +35,10 @@
     }
 }
 
+-(void)dealloc{
+    DLog(@"--------释放资源!!!");
+}
+
 /*
 #pragma mark - Navigation
 

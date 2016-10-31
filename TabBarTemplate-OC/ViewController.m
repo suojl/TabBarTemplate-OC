@@ -14,6 +14,7 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "AuxFileManage.h"
+#import "Login_PresentController.h"
 
 #import "Login_VC.h"
 
@@ -65,7 +66,6 @@
     Login_VC *loginVC = [[Login_VC alloc] initWithNibName:@"Login_VC" bundle:nil];
     loginVC.delegate = self;
     [self presentViewController:loginVC animated:YES completion:nil];
-    
 }
 
 
@@ -88,7 +88,7 @@
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    NSLog(@"--%s--%ld",__FUNCTION__,buttonIndex);
+    NSLog(@"--%s--%ld",__FUNCTION__,(long)buttonIndex);
     if (buttonIndex == 1) {
         self.userNameTF.text = [alertView textFieldAtIndex:0].text;
         self.passwordTF.text = [alertView textFieldAtIndex:1].text;

@@ -7,16 +7,11 @@
 //
 
 #import "Login_VC.h"
-#import "PanGestureInteractiveTransition.h"
-#import "Login_PresentController.h"
-#import "Login_AnimatedTransitioningControll.h"
 
 @interface Login_VC () <UIViewControllerTransitioningDelegate,FrameOfViewControllerPresentedProtocol>
-{
-    Login_PresentController* _presentController;
-}
 
 @property (nonatomic, strong) BaseAnimatedTransitioningControll * animatedControll;
+
 @end
 
 @implementation Login_VC
@@ -60,12 +55,15 @@
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0){
     
     if(!_presentController){
-        _presentController = [[Login_PresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
-        _presentController.frameDelegate = self;
+        Login_PresentController *as = [[Login_PresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+        as.frameDelegate = self;
+        _presentController = as;
+        return _presentController;
     }
+    
     return _presentController;
 }
-// 返回呈现新视图控制器时使用的转场动画 ②
+// 呈现新视图控制器时使用的转场动画 ②
 - (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
     if (!self.animatedControll) {
         self.animatedControll = [[Login_AnimatedTransitioningControll alloc] init];
@@ -86,7 +84,12 @@
 //}
 #pragma mark - FrameOfViewControllerPresentedProtocol
 -(CGRect)frameOfPresentedViewForPresentationController:(UIPresentationController *)presentationController{
-    
+//    _presentController = nil;
     return CGRectInset(presentationController.containerView.frame, 50, 100);
+}
+
+-(void)dealloc{
+    _presentController = nil;
+    _animatedControll = nil;
 }
 @end

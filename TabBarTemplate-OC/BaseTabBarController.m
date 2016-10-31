@@ -76,7 +76,7 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:YES];
-    BOOL logined = [[NSUserDefaults standardUserDefaults] objectForKey:USER_LOGINED];
+    BOOL logined = [[[NSUserDefaults standardUserDefaults] objectForKey:USER_LOGINED] intValue];
     if (!logined) {
     
         Login_VC *loginVC = [[Login_VC alloc] initWithNibName:@"Login_VC" bundle:nil];

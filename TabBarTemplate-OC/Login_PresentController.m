@@ -26,7 +26,9 @@
     UIImageView *bgImgView = [[UIImageView alloc] initWithImage:blurImg];
     
     
-    dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
+    if (!dimmingView) {
+        dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
+    }
     //    dimmingView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.5];
     dimmingView.alpha = 0;
     [dimmingView addSubview:bgImgView];
@@ -69,4 +71,8 @@
     return finalRect;
 }
 
+-(void)dealloc{
+    
+    dimmingView = nil;
+}
 @end

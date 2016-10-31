@@ -53,7 +53,7 @@
         
         value=1;
     }
-    imageName = [NSString stringWithFormat:@"fire%ld@3X(1)",value];
+    imageName = [NSString stringWithFormat:@"fire%ld@3X(1)",(long)value];
     
     imageView.image = [UIImage imageNamed:imageName];
     value++;
