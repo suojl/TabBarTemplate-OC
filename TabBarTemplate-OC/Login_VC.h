@@ -10,16 +10,17 @@
 
 #import "DismissViewControllerProtocol.h"
 #import "PanGestureInteractiveTransition.h"
-#import "Login_PresentController.h"
 #import "Login_AnimatedTransitioningControll.h"
 
-@interface Login_VC : UIViewController
+#import "AnimatedTransitioningViewController.h"
+
+@interface Login_VC : AnimatedTransitioningViewController
 
 @property (nonatomic, strong) IBOutlet UITextField* accountView;
 @property (nonatomic, strong) IBOutlet UITextField* passwordView;
 @property (nonatomic, strong) IBOutlet UITextField* verificView;
 
-@property (nonatomic, weak) Login_PresentController *presentController;
+
 @property (nonatomic, weak) id<DismissViewControllerProtocol> delegate;
 
 @property (nonatomic, strong) UIButton* loginBtn;

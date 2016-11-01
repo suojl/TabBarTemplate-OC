@@ -14,7 +14,6 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "AuxFileManage.h"
-#import "Login_PresentController.h"
 
 #import "Login_VC.h"
 
@@ -65,6 +64,8 @@
     
     Login_VC *loginVC = [[Login_VC alloc] initWithNibName:@"Login_VC" bundle:nil];
     loginVC.delegate = self;
+    loginVC.blurBackground = YES;
+//    loginVC.animateControllerClass = @"Login_PresentController";
     [self presentViewController:loginVC animated:YES completion:nil];
 }
 

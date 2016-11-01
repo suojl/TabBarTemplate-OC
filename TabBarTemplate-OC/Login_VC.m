@@ -8,9 +8,8 @@
 
 #import "Login_VC.h"
 
-@interface Login_VC () <UIViewControllerTransitioningDelegate,FrameOfViewControllerPresentedProtocol>
+@interface Login_VC ()
 
-@property (nonatomic, strong) BaseAnimatedTransitioningControll * animatedControll;
 
 @end
 
@@ -29,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.animatedControll = [[Login_AnimatedTransitioningControll alloc] init];
+//    self.animatedControll = [[Login_AnimatedTransitioningControll alloc] init];
 }
 
 -(void)viewDidLayoutSubviews{
@@ -51,46 +50,45 @@
 }
 
 #pragma mark - UIViewControllerTransitioningDelegate    自定义转场动画代理实现
-// 返回 转场动画控制器() ①
-- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0){
-//        弱引用类型变量不能直接使用新建对象指针
-//        _presentController = [[Login_PresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
-    if(!_presentController){
-        Login_PresentController *as = [[Login_PresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
-        as.frameDelegate = self;
-        _presentController = as;
-        return _presentController;
-    }
-    
-    return _presentController;
-}
-// 呈现新视图控制器时使用的转场动画 ②
-- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
-    if (!self.animatedControll) {
-        self.animatedControll = [[Login_AnimatedTransitioningControll alloc] init];
-    }
-    self.animatedControll.reverse = NO;
-    return self.animatedControll;
-}
-// 返回父视图控制器时使用的转场动画 ③
-- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
-    
-    self.animatedControll.reverse = YES;
-    return self.animatedControll;
-}
+//// 返回 转场动画控制器() ①
+//- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0){
+////        弱引用类型变量不能直接使用新建对象指针
+////        _presentController = [[Login_PresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+//    if(!_presentController){
+//        Login_PresentController *as = [[Login_PresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+//        as.frameDelegate = self;
+//        _presentController = as;
+//        return _presentController;
+//    }
+//    
+//    return _presentController;
+//}
+//// 呈现新视图控制器时使用的转场动画 ②
+//- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+//    if (!self.animatedControll) {
+//        self.animatedControll = [[Login_AnimatedTransitioningControll alloc] init];
+//    }
+//    self.animatedControll.reverse = NO;
+//    return self.animatedControll;
+//}
+//// 返回父视图控制器时使用的转场动画 ③
+//- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
+//    
+//    self.animatedControll.reverse = YES;
+//    return self.animatedControll;
+//}
 
 // 返回父视图控制器时使用的手势交互控制器 ④
 //- (id <UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id <UIViewControllerAnimatedTransitioning>)animator{
 //    return nil;
 //}
-#pragma mark - FrameOfViewControllerPresentedProtocol
+#pragma mark - PopPresentationControllerDelegate
 -(CGRect)frameOfPresentedViewForPresentationController:(UIPresentationController *)presentationController{
-//    _presentController = nil;
     return CGRectInset(presentationController.containerView.frame, 50, 100);
 }
 
--(void)dealloc{
-    _presentController = nil;
-    _animatedControll = nil;
-}
+//-(void)dealloc{
+//    _presentController = nil;
+//    _animatedControll = nil;
+//}
 @end

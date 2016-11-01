@@ -22,23 +22,22 @@
 - (void)presentationTransitionWillBegin{
     [super presentationTransitionWillBegin];
     
+    if (!dimmingView) {
+        dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
+    }
     //
     UIImage *clipImg = [UIImage captureView:self.presentingViewController.view];
-    if (_blur_Flag) {
+    if (_blur_Flag) {   //是否设置模糊背景效果
         UIColor *tintColor = [UIColor colorWithWhite:0.10 alpha:0.3];
         clipImg = [UIImageEffects imageByApplyingBlurToImage:clipImg withRadius:10 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
     }
     UIImageView *bgImgView = [[UIImageView alloc] initWithImage:clipImg];
+//    dimmingView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.5];
+    dimmingView.alpha = 0;
     [dimmingView addSubview:bgImgView];
     
-    if (!dimmingView) {
-        dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
-    }
-    //    dimmingView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.5];
-    dimmingView.alpha = 0;
-    
     [self.containerView addSubview:dimmingView];//设置转场动画的背景
-    if (_shouldDismissWhenTap) {
+    if (_shouldDismissWhenTap) {//点击背景是否关闭
         [dimmingView addTarget:self action:@selector(closePresentedVC) forControlEvents:UIControlEventTouchUpInside];
     }
     //调整背景透明度

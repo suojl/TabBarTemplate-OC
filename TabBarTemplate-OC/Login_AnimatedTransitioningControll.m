@@ -16,7 +16,7 @@
     UIView *containerView = [transitionContext containerView];
     NSTimeInterval duration = [self transitionDuration:transitionContext];
     
-    if (!self.reverse) {
+    if (self.reverse) {
         // 获取最终视图frame
         CGRect finalFrame = [transitionContext finalFrameForViewController:toVC];
         toView.frame = finalFrame; // 设置视图为最终frame,即自动布局完成后的状态

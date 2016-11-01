@@ -36,8 +36,8 @@
 
 @interface BasePresentationController : UIPresentationController
 
-@property (nonatomic, assign) BOOL blur_Flag;
-@property (nonatomic, assign) BOOL shouldDismissWhenTap;
+@property (nonatomic, assign) BOOL blur_Flag;   //是否模糊背景
+@property (nonatomic, assign) BOOL shouldDismissWhenTap;    //点击背景是否关闭
 
 @property (nonatomic, weak) id<PopPresentationControllerDelegate> popPresentDelegate;
 @end

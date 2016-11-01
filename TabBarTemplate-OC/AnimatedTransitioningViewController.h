@@ -10,8 +10,10 @@
 #import "BasePresentationController.h"
 #import "BaseAnimatedTransitioningControll.h"
 
-@interface AnimatedTransitioningViewController : ViewController
+@interface AnimatedTransitioningViewController : ViewController<UIViewControllerTransitioningDelegate,PopPresentationControllerDelegate>
 
 @property (nonatomic, weak) BasePresentationController *presentController;
 @property (nonatomic, strong) NSString *animateControllerClass;
+
+@property (nonatomic,assign) BOOL blurBackground;
 @end

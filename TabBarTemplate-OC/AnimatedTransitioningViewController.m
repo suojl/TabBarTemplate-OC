@@ -10,7 +10,7 @@
 
 #import "Login_AnimatedTransitioningControll.h"
 
-@interface AnimatedTransitioningViewController ()<UIViewControllerTransitioningDelegate,PopPresentationControllerDelegate>
+@interface AnimatedTransitioningViewController ()
 
 @end
 
@@ -34,6 +34,7 @@
     if(!_presentController){
         BasePresentationController *presentControl = [[BasePresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
         presentControl.popPresentDelegate = self;
+        presentControl.blur_Flag = self.blurBackground;
         _presentController = presentControl;
         return _presentController;
     }
@@ -58,9 +59,9 @@
 
 -(id<UIViewControllerAnimatedTransitioning>)transitionAnimate:(NSString *)toNew{
     
-    Class clazz = NSClassFromString(_animateControllerClass);
+    Class clazz = NSClassFromString(@"Login_AnimatedTransitioningControll");
     id animate = [[clazz alloc] init];
-    [animate setObject:toNew forKey:@"reverse"];
+    [animate setValue:toNew forKey:@"reverse"];
     return animate;
 }
 

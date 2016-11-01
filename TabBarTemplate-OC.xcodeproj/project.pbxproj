@@ -95,7 +95,6 @@
 		65DA0F771CE570A300B64405 /* LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F761CE570A300B64405 /* LaunchView.m */; };
 		65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F791CE5735700B64405 /* DGAaimaView.m */; };
 		65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DA0F7C1CE573AC00B64405 /* DGEarthView.m */; };
-		65E1879C1DB619EF00857009 /* Login_PresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1879B1DB619EF00857009 /* Login_PresentController.m */; };
 		65E1879F1DB61DA600857009 /* Login_AnimatedTransitioningControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E1879E1DB61DA600857009 /* Login_AnimatedTransitioningControll.m */; };
 		65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */; };
 		65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */; };
@@ -249,8 +248,6 @@
 		65DA0F791CE5735700B64405 /* DGAaimaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGAaimaView.m; sourceTree = "<group>"; };
 		65DA0F7B1CE573AC00B64405 /* DGEarthView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DGEarthView.h; sourceTree = "<group>"; };
 		65DA0F7C1CE573AC00B64405 /* DGEarthView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DGEarthView.m; sourceTree = "<group>"; };
-		65E1879A1DB619EF00857009 /* Login_PresentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_PresentController.h; sourceTree = "<group>"; };
-		65E1879B1DB619EF00857009 /* Login_PresentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_PresentController.m; sourceTree = "<group>"; };
 		65E1879D1DB61DA600857009 /* Login_AnimatedTransitioningControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_AnimatedTransitioningControll.h; sourceTree = "<group>"; };
 		65E1879E1DB61DA600857009 /* Login_AnimatedTransitioningControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_AnimatedTransitioningControll.m; sourceTree = "<group>"; };
 		65EE41A11D3E13E60092C271 /* PanGestureInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PanGestureInteractiveTransition.h; sourceTree = "<group>"; };
@@ -324,8 +321,6 @@
 				650EB7EF1D3CDC9500BA4AD7 /* Present2PageControll.m */,
 				6590CC351D3F092A00FF1F07 /* SimplePresentationControll.h */,
 				6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */,
-				65E1879A1DB619EF00857009 /* Login_PresentController.h */,
-				65E1879B1DB619EF00857009 /* Login_PresentController.m */,
 				650CECC71DC84459003BB119 /* BasePresentationController.h */,
 				650CECC81DC84459003BB119 /* BasePresentationController.m */,
 			);
@@ -880,7 +875,6 @@
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
 				653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */,
-				65E1879C1DB619EF00857009 /* Login_PresentController.m in Sources */,
 				65C880371DB4BFAF0049B5A5 /* UIImage+FKCategory.m in Sources */,
 				657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */,
 				650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */,
