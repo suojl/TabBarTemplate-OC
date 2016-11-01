@@ -1,19 +1,22 @@
 //
-//  Login_PresentController.m
+//  BasePresentationController.m
 //  TabBarTemplate-OC
 //
-//  Created by issuser on 2016/10/18.
+//  Created by issuser on 2016/11/1.
 //  Copyright © 2016年 suojl. All rights reserved.
 //
 
-#import "Login_PresentController.h"
+#import "BasePresentationController.h"
 #import "UIImage+FKCategory.h"
 #import "UIImageEffects.h"
 
-@implementation Login_PresentController
+@interface BasePresentationController()
 {
     UIControl* dimmingView;
 }
+@end
+
+@implementation BasePresentationController
 
 /**呈现弹出开始*/
 - (void)presentationTransitionWillBegin{
@@ -21,20 +24,23 @@
     
     //
     UIImage *clipImg = [UIImage captureView:self.presentingViewController.view];
-    UIColor *tintColor = [UIColor colorWithWhite:0.10 alpha:0.3];
-    UIImage *blurImg = [UIImageEffects imageByApplyingBlurToImage:clipImg withRadius:10 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
-    UIImageView *bgImgView = [[UIImageView alloc] initWithImage:blurImg];
-    
+    if (_blur_Flag) {
+        UIColor *tintColor = [UIColor colorWithWhite:0.10 alpha:0.3];
+        clipImg = [UIImageEffects imageByApplyingBlurToImage:clipImg withRadius:10 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
+    }
+    UIImageView *bgImgView = [[UIImageView alloc] initWithImage:clipImg];
+    [dimmingView addSubview:bgImgView];
     
     if (!dimmingView) {
         dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
     }
     //    dimmingView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.5];
     dimmingView.alpha = 0;
-    [dimmingView addSubview:bgImgView];
     
     [self.containerView addSubview:dimmingView];//设置转场动画的背景
-    
+    if (_shouldDismissWhenTap) {
+        [dimmingView addTarget:self action:@selector(closePresentedVC) forControlEvents:UIControlEventTouchUpInside];
+    }
     //调整背景透明度
     [self.presentingViewController.transitionCoordinator animateAlongsideTransition:^(id anima){
         
@@ -63,14 +69,19 @@
 // 返回将要呈现的视图的最终Rect
 -(CGRect)frameOfPresentedViewInContainerView{
     
-    if (self.frameDelegate && [self.frameDelegate respondsToSelector:@selector(frameOfPresentedViewForPresentationController:)]) {
+    if (self.popPresentDelegate && [self.popPresentDelegate respondsToSelector:@selector(frameOfPresentedViewForPresentationController:)]) {
         
-        return [self.frameDelegate frameOfPresentedViewForPresentationController:self];
+        return [self.popPresentDelegate frameOfPresentedViewForPresentationController:self];
     }
     CGRect finalRect = CGRectInset(self.containerView.frame, 50, 50);
     return finalRect;
 }
 
+-(void)closePresentedVC{
+    DLog(@"---%@",[self.presentingViewController class]);
+    DLog(@"---%@",[self.presentedViewController class]);
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];;
+}
 -(void)dealloc{
     
     dimmingView = nil;

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4CBB0CC385953B2A0AA9B89B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519BF7C0CC0CC067CFFCD395 /* libPods.a */; };
+		650CECC51DC83858003BB119 /* AnimatedTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CECC41DC83858003BB119 /* AnimatedTransitioningViewController.m */; };
+		650CECC91DC84459003BB119 /* BasePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CECC81DC84459003BB119 /* BasePresentationController.m */; };
 		650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7CF1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m */; };
 		650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7E81D3CAE7800BA4AD7 /* SimpleAnimatedControll.m */; };
 		650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7EB1D3CC19D00BA4AD7 /* TwoPageControll.m */; };
@@ -121,6 +123,10 @@
 
 /* Begin PBXFileReference section */
 		519BF7C0CC0CC067CFFCD395 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		650CECC31DC83858003BB119 /* AnimatedTransitioningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioningViewController.h; sourceTree = "<group>"; };
+		650CECC41DC83858003BB119 /* AnimatedTransitioningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioningViewController.m; sourceTree = "<group>"; };
+		650CECC71DC84459003BB119 /* BasePresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresentationController.h; sourceTree = "<group>"; };
+		650CECC81DC84459003BB119 /* BasePresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasePresentationController.m; sourceTree = "<group>"; };
 		650EB7CE1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseAnimatedTransitioningControll.h; sourceTree = "<group>"; };
 		650EB7CF1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseAnimatedTransitioningControll.m; sourceTree = "<group>"; };
 		650EB7E71D3CAE7800BA4AD7 /* SimpleAnimatedControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnimatedControll.h; sourceTree = "<group>"; };
@@ -320,6 +326,8 @@
 				6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */,
 				65E1879A1DB619EF00857009 /* Login_PresentController.h */,
 				65E1879B1DB619EF00857009 /* Login_PresentController.m */,
+				650CECC71DC84459003BB119 /* BasePresentationController.h */,
+				650CECC81DC84459003BB119 /* BasePresentationController.m */,
 			);
 			name = PresentationController;
 			sourceTree = "<group>";
@@ -582,6 +590,8 @@
 				653F13CA1DB4765D000FED51 /* Login_VC.h */,
 				653F13CB1DB4765D000FED51 /* Login_VC.m */,
 				653F13CC1DB4765D000FED51 /* Login_VC.xib */,
+				650CECC31DC83858003BB119 /* AnimatedTransitioningViewController.h */,
+				650CECC41DC83858003BB119 /* AnimatedTransitioningViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -853,6 +863,7 @@
 				65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */,
 				654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */,
 				65DA0F771CE570A300B64405 /* LaunchView.m in Sources */,
+				650CECC51DC83858003BB119 /* AnimatedTransitioningViewController.m in Sources */,
 				6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
 				6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */,
@@ -880,6 +891,7 @@
 				65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */,
 				6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */,
 				65E1879F1DB61DA600857009 /* Login_AnimatedTransitioningControll.m in Sources */,
+				650CECC91DC84459003BB119 /* BasePresentationController.m in Sources */,
 				654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				654DA1841CE46E3400CFF129 /* LaunchScreenVC.m in Sources */,
 				65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */,
