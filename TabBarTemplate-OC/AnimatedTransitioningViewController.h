@@ -10,7 +10,7 @@
 #import "BasePresentationController.h"
 #import "BaseAnimatedTransitioningControll.h"
 
-@interface AnimatedTransitioningViewController : ViewController<UIViewControllerTransitioningDelegate,PopPresentationControllerDelegate>
+@interface AnimatedTransitioningViewController : UIViewController<UIViewControllerTransitioningDelegate,PopPresentationControllerDelegate>
 
 @property (nonatomic, weak) BasePresentationController *presentController;
 @property (nonatomic, strong) NSString *animateControllerClass;

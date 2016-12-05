@@ -14,9 +14,9 @@
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
 #import "AuxFileManage.h"
+#import "Masonry.h"
 
 #import "Login_VC.h"
-
 @interface ViewController ()<UIAlertViewDelegate,DismissViewControllerProtocol>
 
 @end
@@ -28,7 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.userNameTF.shouldHideTitle = YES;
+//    self.userNameTF.shouldHideTitle = YES;
     // Do any additional setup after loading the view, typically from a nib.
     /**
 //    设置状态栏样式
@@ -53,7 +53,6 @@
     
 //    [AFMInfoBanner showAndHideWithText:@"hello" style:AFMInfoBannerStyleInfo];
     /* --------------AFMInfoBanner---警告提示----------------*/
-    
     AFMInfoBanner* afmtest = [[AFMInfoBanner alloc] initWithTargetView:self.centerView viewAboveBanner:nil additionalTopSpacing:0];
     
     afmtest.style = AFMInfoBannerStyleInfo;

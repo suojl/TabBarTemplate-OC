@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>CWStatusBarNotification.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -39,7 +34,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods.xcscheme</key>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TabBarTemplate-OC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -54,15 +54,30 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UICountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03E1ADCE7D50DC9A512DA1EF336FCFA9</key>
+		<key>058226ACBB47261D906BDEF73B85E715</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>407ADEFA62030F7CA0205AEC52CCD245</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>49FA755157762774AB25A7F75E85CFED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,27 +97,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B5C395534E2C486EAEFC16719DEE9A92</key>
+		<key>AF9D889E7E3CDE4010D854AC2155C953</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C743C42395D3C33F9883CB4690B475A0</key>
+		<key>D058B89EB3B3DF45457A2DCD3971AFFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D56177F0C73AB96D4237F3D5F8F73C88</key>
+		<key>D0D0C9D20C43FA94D4C88FBFE2601B8E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D7C7D5BE80D9A225BF88F0CA731F4383</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FE2F1D7B9D9FCEA148517E4657B243F4</key>
+		<key>E8A07CEAD40DC006200B7900720361D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

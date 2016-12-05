@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CBB0CC385953B2A0AA9B89B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 519BF7C0CC0CC067CFFCD395 /* libPods.a */; };
+		0B1B824DE202A5B881597E17 /* libPods-TabBarTemplate-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */; };
 		650CECC51DC83858003BB119 /* AnimatedTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CECC41DC83858003BB119 /* AnimatedTransitioningViewController.m */; };
 		650CECC91DC84459003BB119 /* BasePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CECC81DC84459003BB119 /* BasePresentationController.m */; };
 		650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7CF1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m */; };
@@ -121,7 +121,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		519BF7C0CC0CC067CFFCD395 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		650CECC31DC83858003BB119 /* AnimatedTransitioningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioningViewController.h; sourceTree = "<group>"; };
 		650CECC41DC83858003BB119 /* AnimatedTransitioningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioningViewController.m; sourceTree = "<group>"; };
 		650CECC71DC84459003BB119 /* BasePresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresentationController.h; sourceTree = "<group>"; };
@@ -237,7 +236,6 @@
 		65918B901D51C2E6009DA4AE /* CellStatusEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellStatusEntity.m; sourceTree = "<group>"; };
 		65B0E2CB1D34B5FF004F948C /* SB2_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB2_ViewController.h; sourceTree = "<group>"; };
 		65B0E2CC1D34B5FF004F948C /* SB2_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB2_ViewController.m; sourceTree = "<group>"; };
-		65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		65C880321DB4B33F0049B5A5 /* UIImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageEffects.h; sourceTree = "<group>"; };
 		65C880331DB4B33F0049B5A5 /* UIImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageEffects.m; sourceTree = "<group>"; };
 		65C880351DB4BFAF0049B5A5 /* UIImage+FKCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FKCategory.h"; sourceTree = "<group>"; };
@@ -259,7 +257,9 @@
 		65EE5AA41D4892DA008FBCF7 /* CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
 		65F504E91D227885006C27BA /* LXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworking.h; sourceTree = "<group>"; };
 		65F504EA1D227885006C27BA /* LXNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworking.m; sourceTree = "<group>"; };
-		E86B0DC0BFA16633F41AF06E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.release.xcconfig"; sourceTree = "<group>"; };
+		C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarTemplate-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,7 +267,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBB0CC385953B2A0AA9B89B /* libPods.a in Frameworks */,
+				0B1B824DE202A5B881597E17 /* libPods-TabBarTemplate-OC.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,13 +288,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		20F3C005D28072D0F349264D /* Pods */ = {
+		4EA74AD41F695B710268F112 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */,
-				E86B0DC0BFA16633F41AF06E /* Pods.release.xcconfig */,
+				DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		650EB7CD1D3C76D800BA4AD7 /* AnimationControllers */ = {
@@ -470,8 +469,8 @@
 				657217E91CE2FCF600A04525 /* TabBarTemplate-OCTests */,
 				657217F41CE2FCF600A04525 /* TabBarTemplate-OCUITests */,
 				657217CE1CE2FCF500A04525 /* Products */,
-				657218031CE2FE7500A04525 /* Frameworks */,
-				20F3C005D28072D0F349264D /* Pods */,
+				FB90BA643953D7CCE96E8263 /* Pods */,
+				4EA74AD41F695B710268F112 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -537,14 +536,6 @@
 				657217F71CE2FCF600A04525 /* Info.plist */,
 			);
 			path = "TabBarTemplate-OCUITests";
-			sourceTree = "<group>";
-		};
-		657218031CE2FE7500A04525 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				519BF7C0CC0CC067CFFCD395 /* libPods.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		657218061CE302BC00A04525 /* 3rdLibs */ = {
@@ -617,6 +608,15 @@
 			name = InteractionControllers;
 			sourceTree = "<group>";
 		};
+		FB90BA643953D7CCE96E8263 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */,
+				9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -624,12 +624,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 657217FA1CE2FCF600A04525 /* Build configuration list for PBXNativeTarget "TabBarTemplate-OC" */;
 			buildPhases = (
-				57FF7EF08E0776FF29201399 /* Check Pods Manifest.lock */,
+				669969FA9957686C44F9816D /* [CP] Check Pods Manifest.lock */,
 				657217C91CE2FCF500A04525 /* Sources */,
 				657217CA1CE2FCF500A04525 /* Frameworks */,
 				657217CB1CE2FCF500A04525 /* Resources */,
-				2742B87BFC014EB8A6EA165F /* Embed Pods Frameworks */,
-				82C99AB70A84EE817ACFBB72 /* Copy Pods Resources */,
+				FBD5367864DDF1944DCDB1E1 /* [CP] Embed Pods Frameworks */,
+				8FEC16F7D52CDA001A5CCE08 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -801,49 +801,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2742B87BFC014EB8A6EA165F /* Embed Pods Frameworks */ = {
+		669969FA9957686C44F9816D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		57FF7EF08E0776FF29201399 /* Check Pods Manifest.lock */ = {
+		8FEC16F7D52CDA001A5CCE08 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		82C99AB70A84EE817ACFBB72 /* Copy Pods Resources */ = {
+		FBD5367864DDF1944DCDB1E1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1033,7 +1033,7 @@
 		};
 		657217FB1CE2FCF600A04525 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65C0C7CB48310F60588FD2CE /* Pods.debug.xcconfig */;
+			baseConfigurationReference = C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";
@@ -1052,7 +1052,7 @@
 		};
 		657217FC1CE2FCF600A04525 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E86B0DC0BFA16633F41AF06E /* Pods.release.xcconfig */;
+			baseConfigurationReference = 9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";

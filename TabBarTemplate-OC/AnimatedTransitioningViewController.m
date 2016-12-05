@@ -27,7 +27,7 @@
 }
 
 #pragma mark - UIViewControllerTransitioningDelegate    自定义转场动画代理实现
-// 返回 转场动画控制器() ①
+// 返回 转场动画控制器(提供转场动画的背景) ①
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source NS_AVAILABLE_IOS(8_0){
     //        弱引用类型变量不能直接使用新建对象指针
     //        _presentController = [[Login_PresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
