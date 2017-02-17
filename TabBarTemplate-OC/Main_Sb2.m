@@ -108,7 +108,7 @@
     if ([segue.identifier isEqualToString:@"VC1ToVC2_Segue"]){
         self.segueFlag = @"VC1ToVC2_Segue";
         
-        ViewController2* vc2 = [segue destinationViewController];
+        UIViewController* vc2 = [segue destinationViewController];
         vc2.modalPresentationStyle = UIModalPresentationCustom;
         vc2.transitioningDelegate = self;
         
@@ -118,7 +118,7 @@
     if ([segue.identifier isEqualToString:@"VC1ToVC2_Segue2"]){
         self.segueFlag = @"VC1ToVC2_Segue2";
         
-        ViewController2* vc2 = [segue destinationViewController];
+        UIViewController* vc2 = [segue destinationViewController];
         vc2.modalPresentationStyle = UIModalPresentationCustom;
         vc2.transitioningDelegate = self;
         
