@@ -101,6 +101,7 @@
 		65EE5AA21D4892A1008FBCF7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 65EE5AA11D4892A1008FBCF7 /* File */; };
 		65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5AA41D4892DA008FBCF7 /* CommonTool.m */; };
 		65F504EB1D227885006C27BA /* LXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F504EA1D227885006C27BA /* LXNetworking.m */; };
+		D841B7872180757D001F9A96 /* SJLSignalHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = D841B7862180757D001F9A96 /* SJLSignalHandler.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -259,6 +260,8 @@
 		65F504EA1D227885006C27BA /* LXNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworking.m; sourceTree = "<group>"; };
 		9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.release.xcconfig"; sourceTree = "<group>"; };
 		C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		D841B7852180757D001F9A96 /* SJLSignalHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLSignalHandler.h; sourceTree = "<group>"; };
+		D841B7862180757D001F9A96 /* SJLSignalHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SJLSignalHandler.mm; sourceTree = "<group>"; };
 		DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarTemplate-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -415,6 +418,8 @@
 				657217D91CE2FCF600A04525 /* Main.storyboard */,
 				654B4B101D0EB9E00064B637 /* ViewController2.h */,
 				654B4B111D0EB9E00064B637 /* ViewController2.m */,
+				D841B7852180757D001F9A96 /* SJLSignalHandler.h */,
+				D841B7862180757D001F9A96 /* SJLSignalHandler.mm */,
 			);
 			name = storyboard1;
 			sourceTree = "<group>";
@@ -688,8 +693,8 @@
 				TargetAttributes = {
 					657217CC1CE2FCF500A04525 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 9R6K2YQ2VF;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 69D23G4KSB;
+						ProvisioningStyle = Automatic;
 					};
 					657217E51CE2FCF600A04525 = {
 						CreatedOnToolsVersion = 7.3;
@@ -874,6 +879,7 @@
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
+				D841B7872180757D001F9A96 /* SJLSignalHandler.mm in Sources */,
 				653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */,
 				65C880371DB4BFAF0049B5A5 /* UIImage+FKCategory.m in Sources */,
 				657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */,
@@ -1036,17 +1042,18 @@
 			baseConfigurationReference = C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9R6K2YQ2VF;
+				CODE_SIGN_IDENTITY = "iPhone Developer: 静龙 索 (W7LFNQAV36)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69D23G4KSB;
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.isoftstone.innovationCenter.TabBarTemplate-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjl.TabBarTemplateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a6da136e-e71f-4e2f-ab9c-f809b2eda78a";
-				PROVISIONING_PROFILE_SPECIFIER = MultiAppProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1055,17 +1062,18 @@
 			baseConfigurationReference = 9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: zhang chunyun (53ZT864Y45)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 静龙 索 (W7LFNQAV36)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 9R6K2YQ2VF;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 69D23G4KSB;
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.isoftstone.innovationCenter.TabBarTemplate-OC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sjl.TabBarTemplateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "a6da136e-e71f-4e2f-ab9c-f809b2eda78a";
-				PROVISIONING_PROFILE_SPECIFIER = MultiAppProfile;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

@@ -11,7 +11,7 @@ target 'TabBarTemplate-OC' do
 #网络状态监测
     pod 'Reachability'
 
-#显示通知
+#显示提示信息
     pod 'AFMInfoBanner'
     pod 'MBProgressHUD'
 
