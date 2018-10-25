@@ -17,6 +17,8 @@ target 'TabBarTemplate-OC' do
 
 #label数字自动增长
     pod 'UICountingLabel'
+    #发送邮件
+    pod 'skpsmtpmessage'
 
 
     pod 'AFNetworking'
