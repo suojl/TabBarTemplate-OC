@@ -40,7 +40,7 @@
 //    returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
 //    [returnKeyHandler setLastTextFieldReturnKeyType:UIReturnKeyDone];
 //    [SJLSignalHandler RegisterSignalHandler];
-    [DSSignalHandler RegisterSignalExceptionHandler];
+//    [DSSignalHandler RegisterSignalExceptionHandler];
 }
 
 -(void)viewDidAppear:(BOOL)animated{

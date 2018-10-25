@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cPQ-Xv-0U6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cPQ-Xv-0U6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,10 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="gKs-lK-aVb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Uzg-4S-iPD" customClass="IQPreviousNextView">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIY-2s-D3w">
+                                <rect key="frame" x="27" y="28" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="2Ys-jU-ndW"/>
                                     <constraint firstAttribute="height" constant="30" id="Day-a1-vC4"/>
@@ -43,6 +45,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqr-9G-Bem">
+                                <rect key="frame" x="167" y="219" width="136" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="EQD-BF-vLh"/>
                                     <constraint firstAttribute="height" constant="30" id="a94-i5-K65"/>
@@ -63,6 +66,7 @@
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E6W-zh-bFj">
+                                <rect key="frame" x="171" y="274" width="136" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="136" id="FOe-W6-yg1"/>
                                     <constraint firstAttribute="height" constant="30" id="lJN-Ue-zRf"/>
@@ -82,6 +86,13 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koJ-Y5-lS3">
+                                <rect key="frame" x="172" y="75" width="31" height="30"/>
+                                <state key="normal" title="发送"/>
+                                <connections>
+                                    <action selector="sendBtnAction:" destination="g0u-KZ-kGV" eventType="touchUpInside" id="l7e-wK-Tqr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -92,6 +103,8 @@
                             <constraint firstItem="lIY-2s-D3w" firstAttribute="leading" secondItem="Uzg-4S-iPD" secondAttribute="leading" constant="28" id="DHq-Zy-USr">
                                 <variation key="heightClass=regular-widthClass=compact" constant="27"/>
                             </constraint>
+                            <constraint firstItem="koJ-Y5-lS3" firstAttribute="leading" secondItem="Uzg-4S-iPD" secondAttribute="leading" constant="172" id="KuZ-Ke-oyr"/>
+                            <constraint firstItem="koJ-Y5-lS3" firstAttribute="top" secondItem="TSP-32-yfS" secondAttribute="bottom" constant="55" id="MC8-3s-20P"/>
                             <constraint firstItem="E6W-zh-bFj" firstAttribute="top" secondItem="mqr-9G-Bem" secondAttribute="bottom" constant="25" id="UqQ-Xz-qRP"/>
                             <constraint firstAttribute="trailing" secondItem="mqr-9G-Bem" secondAttribute="trailing" constant="72" id="ns6-Rr-ElY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="E6W-zh-bFj" secondAttribute="trailing" constant="52" id="yof-n3-hec"/>
@@ -103,12 +116,12 @@
                                 <exclude reference="E6W-zh-bFj"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="UqQ-Xz-qRP"/>
-                                <exclude reference="yof-n3-hec"/>
                                 <exclude reference="BGc-iA-VGg"/>
                                 <exclude reference="DHq-Zy-USr"/>
                                 <exclude reference="5AZ-zK-NyR"/>
                                 <exclude reference="ns6-Rr-ElY"/>
+                                <exclude reference="UqQ-Xz-qRP"/>
+                                <exclude reference="yof-n3-hec"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -118,12 +131,12 @@
                                 <include reference="E6W-zh-bFj"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="UqQ-Xz-qRP"/>
-                                <include reference="yof-n3-hec"/>
                                 <include reference="BGc-iA-VGg"/>
                                 <include reference="DHq-Zy-USr"/>
                                 <include reference="5AZ-zK-NyR"/>
                                 <include reference="ns6-Rr-ElY"/>
+                                <include reference="UqQ-Xz-qRP"/>
+                                <include reference="yof-n3-hec"/>
                             </mask>
                         </variation>
                     </view>
@@ -142,12 +155,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueu-Qi-CeI" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pn-BN-blL">
+                                        <rect key="frame" x="317" y="26" width="42" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="RP8-OY-03d"/>
                                             <constraint firstAttribute="width" constant="42" id="vdz-HX-vLw"/>
@@ -198,13 +213,16 @@
                                 </variation>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jB0-So-ICa" userLabel="CenterView" customClass="UIImageView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="215"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc0-Wx-DaH">
+                                        <rect key="frame" x="143.5" y="97.5" width="88.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5f-Jz-A6o">
+                                        <rect key="frame" x="192" y="135" width="46" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="Wby-BT-MuS"/>
                                             <constraint firstAttribute="width" constant="46" id="hDI-Ze-RK1"/>
@@ -263,8 +281,10 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4A-cL-713" userLabel="BottomView">
+                                <rect key="frame" x="0.0" y="279" width="375" height="388"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="test" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OwU-JI-96t">
+                                        <rect key="frame" x="138" y="130" width="190" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="190" id="YMr-Ph-Pt8"/>
                                             <constraint firstAttribute="height" constant="30" id="bYB-b3-pFN"/>
@@ -288,6 +308,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lho-64-JVN">
+                                        <rect key="frame" x="138" y="192" width="190" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="190" id="SW6-SF-2iy"/>
                                             <constraint firstAttribute="height" constant="30" id="lFH-qY-q0i"/>
@@ -324,10 +345,10 @@
                                         <exclude reference="Lho-64-JVN"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="D6e-GG-UUI"/>
-                                        <exclude reference="cAz-lj-pdP"/>
                                         <exclude reference="Y9I-Qc-h2i"/>
                                         <exclude reference="x2T-jo-6Xr"/>
+                                        <exclude reference="D6e-GG-UUI"/>
+                                        <exclude reference="cAz-lj-pdP"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
@@ -336,10 +357,10 @@
                                         <include reference="Lho-64-JVN"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="D6e-GG-UUI"/>
-                                        <include reference="cAz-lj-pdP"/>
                                         <include reference="Y9I-Qc-h2i"/>
                                         <include reference="x2T-jo-6Xr"/>
+                                        <include reference="D6e-GG-UUI"/>
+                                        <include reference="cAz-lj-pdP"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -366,16 +387,16 @@
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="vIy-Ra-fBg"/>
-                                <exclude reference="1qK-HB-sML"/>
-                                <exclude reference="RYP-OO-cHH"/>
-                                <exclude reference="qS2-Pk-pSC"/>
-                                <exclude reference="7CY-Qv-DIX"/>
-                                <exclude reference="F3E-wL-VcP"/>
-                                <exclude reference="Lfn-ku-KFi"/>
                                 <exclude reference="Mik-Nm-vPr"/>
                                 <exclude reference="dKK-by-LLv"/>
                                 <exclude reference="srk-sM-TE7"/>
                                 <exclude reference="uNt-iU-lhm"/>
+                                <exclude reference="7CY-Qv-DIX"/>
+                                <exclude reference="F3E-wL-VcP"/>
+                                <exclude reference="Lfn-ku-KFi"/>
+                                <exclude reference="1qK-HB-sML"/>
+                                <exclude reference="RYP-OO-cHH"/>
+                                <exclude reference="qS2-Pk-pSC"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -386,16 +407,16 @@
                             </mask>
                             <mask key="constraints">
                                 <include reference="vIy-Ra-fBg"/>
-                                <include reference="1qK-HB-sML"/>
-                                <include reference="RYP-OO-cHH"/>
-                                <include reference="qS2-Pk-pSC"/>
-                                <include reference="7CY-Qv-DIX"/>
-                                <include reference="F3E-wL-VcP"/>
-                                <include reference="Lfn-ku-KFi"/>
                                 <include reference="Mik-Nm-vPr"/>
                                 <include reference="dKK-by-LLv"/>
                                 <exclude reference="srk-sM-TE7"/>
                                 <include reference="uNt-iU-lhm"/>
+                                <include reference="7CY-Qv-DIX"/>
+                                <include reference="F3E-wL-VcP"/>
+                                <include reference="Lfn-ku-KFi"/>
+                                <include reference="1qK-HB-sML"/>
+                                <include reference="RYP-OO-cHH"/>
+                                <include reference="qS2-Pk-pSC"/>
                             </mask>
                         </variation>
                     </view>
@@ -418,12 +439,10 @@
                 <navigationController storyboardIdentifier="main" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="cPQ-Xv-0U6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gva-2X-OO9">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="DC8-v0-ikc">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
