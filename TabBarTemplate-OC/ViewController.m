@@ -15,7 +15,7 @@
 #import "UIImageView+WebCache.h"
 #import "AuxFileManage.h"
 #import "Masonry.h"
-#import "SJLSignalHandler.h"
+#import "DSSignalHandler.h"
 
 #import "Login_VC.h"
 @interface ViewController ()<UIAlertViewDelegate,DismissViewControllerProtocol>
@@ -39,8 +39,8 @@
 //    
 //    returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
 //    [returnKeyHandler setLastTextFieldReturnKeyType:UIReturnKeyDone];
-    [SJLSignalHandler RegisterSignalHandler];
-    
+//    [SJLSignalHandler RegisterSignalHandler];
+    [DSSignalHandler RegisterSignalExceptionHandler];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -60,6 +60,7 @@
 //    AFMInfoBanner* afmtest = [[AFMInfoBanner alloc] initWithTargetView:self.centerView viewAboveBanner:nil additionalTopSpacing:0];
     NSArray *list = @[@0,@1];
     DLog(@"-----list%@",list[12]);
+//    [self performSelector:@selector(aaaaaa:)];
 //
 //    afmtest.style = AFMInfoBannerStyleInfo;
 //    afmtest.text = @"hello test";

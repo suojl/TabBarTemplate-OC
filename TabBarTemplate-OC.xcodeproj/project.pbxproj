@@ -101,7 +101,7 @@
 		65EE5AA21D4892A1008FBCF7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 65EE5AA11D4892A1008FBCF7 /* File */; };
 		65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5AA41D4892DA008FBCF7 /* CommonTool.m */; };
 		65F504EB1D227885006C27BA /* LXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F504EA1D227885006C27BA /* LXNetworking.m */; };
-		D841B7872180757D001F9A96 /* SJLSignalHandler.mm in Sources */ = {isa = PBXBuildFile; fileRef = D841B7862180757D001F9A96 /* SJLSignalHandler.mm */; };
+		D84D234C21819117001356C7 /* DSSignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D234B21819116001356C7 /* DSSignalHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -260,8 +260,8 @@
 		65F504EA1D227885006C27BA /* LXNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworking.m; sourceTree = "<group>"; };
 		9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.release.xcconfig"; sourceTree = "<group>"; };
 		C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.debug.xcconfig"; sourceTree = "<group>"; };
-		D841B7852180757D001F9A96 /* SJLSignalHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLSignalHandler.h; sourceTree = "<group>"; };
-		D841B7862180757D001F9A96 /* SJLSignalHandler.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = SJLSignalHandler.mm; sourceTree = "<group>"; };
+		D84D234A21819116001356C7 /* DSSignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSignalHandler.h; sourceTree = "<group>"; };
+		D84D234B21819116001356C7 /* DSSignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSignalHandler.m; sourceTree = "<group>"; };
 		DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarTemplate-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -418,8 +418,6 @@
 				657217D91CE2FCF600A04525 /* Main.storyboard */,
 				654B4B101D0EB9E00064B637 /* ViewController2.h */,
 				654B4B111D0EB9E00064B637 /* ViewController2.m */,
-				D841B7852180757D001F9A96 /* SJLSignalHandler.h */,
-				D841B7862180757D001F9A96 /* SJLSignalHandler.mm */,
 			);
 			name = storyboard1;
 			sourceTree = "<group>";
@@ -554,6 +552,7 @@
 		657218071CE3049600A04525 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D84D2346218161F7001356C7 /* SignalHandler */,
 				65C880351DB4BFAF0049B5A5 /* UIImage+FKCategory.h */,
 				65C880361DB4BFAF0049B5A5 /* UIImage+FKCategory.m */,
 				65C880321DB4B33F0049B5A5 /* UIImageEffects.h */,
@@ -611,6 +610,15 @@
 				65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */,
 			);
 			name = InteractionControllers;
+			sourceTree = "<group>";
+		};
+		D84D2346218161F7001356C7 /* SignalHandler */ = {
+			isa = PBXGroup;
+			children = (
+				D84D234A21819116001356C7 /* DSSignalHandler.h */,
+				D84D234B21819116001356C7 /* DSSignalHandler.m */,
+			);
+			path = SignalHandler;
 			sourceTree = "<group>";
 		};
 		FB90BA643953D7CCE96E8263 /* Pods */ = {
@@ -879,13 +887,13 @@
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
-				D841B7872180757D001F9A96 /* SJLSignalHandler.mm in Sources */,
 				653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */,
 				65C880371DB4BFAF0049B5A5 /* UIImage+FKCategory.m in Sources */,
 				657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */,
 				650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */,
 				650EB7F01D3CDC9500BA4AD7 /* Present2PageControll.m in Sources */,
 				657217D21CE2FCF600A04525 /* main.m in Sources */,
+				D84D234C21819117001356C7 /* DSSignalHandler.m in Sources */,
 				654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */,
 				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,
 				65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */,
@@ -1048,7 +1056,7 @@
 				DEVELOPMENT_TEAM = 69D23G4KSB;
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sjl.TabBarTemplateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1068,7 +1076,7 @@
 				DEVELOPMENT_TEAM = 69D23G4KSB;
 				GCC_PREFIX_HEADER = "TabBarTemplate-OC/PrefixHeader.pch";
 				INFOPLIST_FILE = "TabBarTemplate-OC/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sjl.TabBarTemplateTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
