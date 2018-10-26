@@ -15,7 +15,6 @@
 #import "UIImageView+WebCache.h"
 #import "AuxFileManage.h"
 #import "Masonry.h"
-#import "DSSignalHandler.h"
 
 #import "Login_VC.h"
 @interface ViewController ()<UIAlertViewDelegate,DismissViewControllerProtocol>
@@ -40,7 +39,6 @@
 //    returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
 //    [returnKeyHandler setLastTextFieldReturnKeyType:UIReturnKeyDone];
 //    [SJLSignalHandler RegisterSignalHandler];
-//    [DSSignalHandler RegisterSignalExceptionHandler];
 }
 
 -(void)viewDidAppear:(BOOL)animated{

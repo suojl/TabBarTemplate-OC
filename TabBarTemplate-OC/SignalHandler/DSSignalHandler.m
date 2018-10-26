@@ -41,9 +41,8 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
     int i;
     NSMutableArray *backtrace = [NSMutableArray arrayWithCapacity:frames];
     for (
-         i = UncaughtExceptionHandlerSkipAddressCount;
-         i < UncaughtExceptionHandlerSkipAddressCount +
-         UncaughtExceptionHandlerReportAddressCount;
+         i = 0;
+         i < frames;
          i++)
     {
         [backtrace addObject:[NSString stringWithUTF8String:strs[i]]];
@@ -65,7 +64,7 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
 //处理异常信息
 - (void)handleException:(NSException *)exception{
     
-    
+    NSLog(@"%@",[exception name]);
     UIAlertView *alert = [[UIAlertView alloc]
                           initWithTitle:NSLocalizedString(@"Unhandled exception", nil)
                           message:[NSString stringWithFormat:NSLocalizedString(
@@ -100,7 +99,6 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 5;
     signal(SIGBUS, SIG_DFL);
     signal(SIGPIPE, SIG_DFL);
     
-    NSLog(@"%@",[exception name]);
     if ([[exception name] isEqual:UncaughtExceptionHandlerSignalExceptionName])
     {
         kill(getpid(), [[[exception userInfo] objectForKey:UncaughtExceptionHandlerSignalKey] intValue]);
@@ -126,6 +124,12 @@ void HandleException(NSException *exception){
     
     //渠道回溯的堆栈
     NSArray *callStack = [DSSignalHandler backtrace];
+    
+    // 异常的堆栈信息
+    NSArray *stackArray = [exception callStackSymbols];
+    NSLog(@"-----%@",callStack);
+    NSLog(@"-----%@",stackArray);
+    
     NSMutableDictionary *userInfo =
     [NSMutableDictionary dictionaryWithDictionary:[exception userInfo]];
     

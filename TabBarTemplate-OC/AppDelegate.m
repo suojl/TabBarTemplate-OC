@@ -12,6 +12,7 @@
 #import "AFNetworking.h"
 #import "IQKeyboardManager.h"
 #import "AFNetworkActivityIndicatorManager.h"
+#import "DSSignalHandler.h"
 
 @interface AppDelegate (){
     DGAaimaView *animaView;
@@ -26,11 +27,15 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [DSSignalHandler RegisterSignalExceptionHandler];
     /*设置键盘*/
     [IQKeyboardManager sharedManager].toolbarManageBehaviour = IQAutoToolbarByTag;
     [[IQKeyboardManager sharedManager] setEnableAutoToolbar:YES];//显示工具条
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;//点击空白收回键盘
 //    [IQKeyboardManager sharedManager].shouldPlayInputClicks = NO;
+    [IQKeyboardManager sharedManager].toolbarTintColor = [UIColor redColor];
+    [IQKeyboardManager sharedManager].toolbarBarTintColor = [UIColor greenColor];
     
     self.window.rootViewController = [[BaseTabBarController alloc] init];
     
