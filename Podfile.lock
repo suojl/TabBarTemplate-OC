@@ -23,12 +23,15 @@ PODS:
   - IQKeyboardManager (6.2.0)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
+  - MyCocoapods (1.4)
   - Reachability (3.2)
+  - ReactiveObjC (3.1.0)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - skpsmtpmessage (0.0.1)
   - UICountingLabel (1.4.1)
+  - "UITableView+FDTemplateLayoutCell (1.6)"
 
 DEPENDENCIES:
   - AFMInfoBanner
@@ -37,12 +40,17 @@ DEPENDENCIES:
   - IQKeyboardManager
   - Masonry
   - MBProgressHUD
+  - MyCocoapods
   - Reachability
+  - ReactiveObjC (~> 3.1.0)
   - SDWebImage (~> 3.8)
   - skpsmtpmessage
   - UICountingLabel
+  - "UITableView+FDTemplateLayoutCell (~> 1.6)"
 
 SPEC REPOS:
+  https://git.coding.net/suojl/PrivateCocoapods.git:
+    - MyCocoapods
   https://github.com/cocoapods/specs.git:
     - AFMInfoBanner
     - AFNetworking
@@ -52,9 +60,11 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - Reachability
+    - ReactiveObjC
     - SDWebImage
     - skpsmtpmessage
     - UICountingLabel
+    - "UITableView+FDTemplateLayoutCell"
 
 SPEC CHECKSUMS:
   AFMInfoBanner: a7bcfd409faa624f043e604ae4fb789c84b22815
@@ -64,11 +74,14 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 6194101620b73af5e67900b8f89707a99de0b804
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MyCocoapods: ec0c35f51d38855905113a1f524f8b97dc13c527
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   skpsmtpmessage: f6e913380c784dd8d4a9f83c8790a302445a5e05
   UICountingLabel: faf890b505d96312e324a86718f031fafffb0ccb
+  "UITableView+FDTemplateLayoutCell": 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: 57e427a702628117bffc0e32e7efeb4621a93282
+PODFILE CHECKSUM: 080785005e491ace3c9fe136f3129cd4788e6266
 
 COCOAPODS: 1.5.3

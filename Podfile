@@ -1,4 +1,10 @@
-platform :ios,’8.0’
+platform :ios,'8.0'
+
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.coding.net/suojl/PrivateCocoapods.git'
+source 'https://git.coding.net/LiuXiaoZhuang/HomePageModule.git'
+
 target 'TabBarTemplate-OC' do
 #    pod 'SBJson'
 #    pod 'SDAutoLayout'
@@ -24,7 +30,12 @@ target 'TabBarTemplate-OC' do
     pod 'AFNetworking'
     pod 'SDWebImage', '~>3.8'
     pod 'Masonry'
+    
+    pod 'ReactiveObjC', '~> 3.1.0'
+    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
 
+    pod 'MyCocoapods'
+	pod 'HomePageModule'
 end
 
 
