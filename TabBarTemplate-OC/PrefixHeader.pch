@@ -42,4 +42,25 @@
 #import <UIKit/UIKit.h>
 #endif
 
+/** 打印日志 */
+
+#define XCODE_COLORS_ESCAPE_MAC @"\033["
+#define XCODE_COLORS_ESCAPE_IOS @"\xC2\xA0["
+//#define XCODE_COLORS_ESCAPE_IOS XCODE_COLORS_ESCAPE_MAC
+
+#if TARGET_OS_IPHONE
+#define XCODE_COLORS_ESCAPE  XCODE_COLORS_ESCAPE_IOS
+#else
+#define XCODE_COLORS_ESCAPE  XCODE_COLORS_ESCAPE_MAC
+#endif
+
+#define LOG_LEVEL_DEF ddLogLevel
+#import <CocoaLumberjack/CocoaLumberjack.h>
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif  /* DEBUG */
+
 #endif /* PrefixHeader_pch */

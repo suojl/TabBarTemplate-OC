@@ -9,8 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "FMDB.h"
 
-@interface AuxDBOperation : NSObject
-@property (nonatomic, strong) FMDatabase *fmdb;
+@interface FMDBDataManager : NSObject
 
 +(instancetype) sharedISSDBWIthPath;
 

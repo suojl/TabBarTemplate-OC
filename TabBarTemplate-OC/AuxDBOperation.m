@@ -6,16 +6,20 @@
 //  Copyright © 2016年 suojl. All rights reserved.
 //
 
-#import "AuxDBOperation.h"
+#import "FMDBDataManager.h"
 #import "AuxFileManage.h"
 
-@implementation AuxDBOperation
+@interface FMDBDataManager()
+
+@property (nonatomic, strong) FMDatabase *fmdb;
+@end
+@implementation FMDBDataManager
 
 
 
 +(instancetype) sharedISSDBWIthPath{
     
-    static AuxDBOperation *sharedDBOperation;
+    static FMDBDataManager *sharedDBOperation;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
@@ -30,7 +34,10 @@
             [[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:path error:nil];
         }
         
-        sharedDBOperation = [[AuxDBOperation alloc] initWithPath:path];
+        sharedDBOperation = [[FMDBDataManager alloc] initWithPath:path];
+        if (![sharedDBOperation.fmdb open]) {
+            DDLogWarn(@"---数据库打开失败!!!---");
+        }
         /* create dataTable BY Existing */
         
         /* create dataTable BY Code */
@@ -38,7 +45,7 @@
         //        NSString * creatTable = @"create table if not exists table1 (id integer primary key autoincrement, name text,age integer);"
         //        "create table if not exists table2 (id integer primary key autoincrement, name text,age integer);"
         //        "create table if not exists table3 (id integer primary key autoincrement, name text,age integer);";
-        //        [sharedDBOperation.fmdb open];
+        //
         //        BOOL isCreate = [sharedDBOperation.fmdb executeStatements:creatTable];
         //        if (isCreate) {
         //            NSLog(@"数据库创建完成！");
@@ -90,22 +97,17 @@
 
 // 单条信息更新
 -(BOOL)executeUpdate:(NSString *)sql{
-    [self.fmdb open];
     BOOL isSuccesss = [self.fmdb executeUpdate:sql];
-    [self.fmdb close];
     return isSuccesss;
 }
 // 批量信息更新(添加)
 -(BOOL)executeStatements:(NSString *)staSql{
-    [self.fmdb open];
     BOOL isSuccesss = [self.fmdb executeStatements:staSql];
-    [self.fmdb close];
     return isSuccesss;
 }
 
 -(NSArray *)executeQuery:(NSString *)sql{
     NSMutableArray *arr = [[NSMutableArray alloc] initWithCapacity:10];
-    [self.fmdb open];
     FMResultSet * rs = [self.fmdb executeQuery:sql];
     while (rs.next) {
         NSMutableDictionary * dic = [[NSMutableDictionary alloc] initWithCapacity:2];
@@ -117,7 +119,6 @@
         
         [arr addObject:dic];
     }
-    [self.fmdb close];
     return arr;
 }
 @end

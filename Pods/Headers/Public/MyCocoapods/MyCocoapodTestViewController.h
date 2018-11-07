@@ -1,0 +1,1 @@
+../../../MyCocoapods/PrivateCocoapodsTest/PrivateCocoapodsTest/class/MyCocoapodTestViewController.h

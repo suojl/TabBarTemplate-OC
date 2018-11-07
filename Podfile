@@ -33,7 +33,14 @@ target 'TabBarTemplate-OC' do
     
     pod 'ReactiveObjC', '~> 3.1.0'
     pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
-
+    #管理日志
+    pod 'CocoaLumberjack'
+    #日期选择控件
+    pod 'FSCalendar'
+    #动画组件
+    pod 'pop'
+    
+    #私有组件
     pod 'MyCocoapods'
 end
 

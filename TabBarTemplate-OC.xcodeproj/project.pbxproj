@@ -81,7 +81,7 @@
 		657217EB1CE2FCF600A04525 /* TabBarTemplate_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657217EA1CE2FCF600A04525 /* TabBarTemplate_OCTests.m */; };
 		657217F61CE2FCF600A04525 /* TabBarTemplate_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657217F51CE2FCF600A04525 /* TabBarTemplate_OCUITests.m */; };
 		6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180A1CE3198400A04525 /* AuxFileManage.m */; };
-		6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* AuxDBOperation.m */; };
+		6572180E1CE31A1500A04525 /* FMDBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* FMDBDataManager.m */; };
 		657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657218111CE32FAF00A04525 /* BaseTabBarController.m */; };
 		658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D55441D4704D4007B8788 /* CustomTableViewCell.m */; };
 		6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */; };
@@ -102,6 +102,7 @@
 		65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5AA41D4892DA008FBCF7 /* CommonTool.m */; };
 		65F504EB1D227885006C27BA /* LXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F504EA1D227885006C27BA /* LXNetworking.m */; };
 		D84D234C21819117001356C7 /* DSSignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D234B21819116001356C7 /* DSSignalHandler.m */; };
+		D8CC3033218FF62E00941B85 /* SJLCustomFormatterLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -219,8 +220,8 @@
 		657218051CE3018D00A04525 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		657218091CE3198400A04525 /* AuxFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuxFileManage.h; sourceTree = "<group>"; };
 		6572180A1CE3198400A04525 /* AuxFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuxFileManage.m; sourceTree = "<group>"; };
-		6572180C1CE31A1500A04525 /* AuxDBOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuxDBOperation.h; sourceTree = "<group>"; };
-		6572180D1CE31A1500A04525 /* AuxDBOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuxDBOperation.m; sourceTree = "<group>"; };
+		6572180C1CE31A1500A04525 /* FMDBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBDataManager.h; sourceTree = "<group>"; };
+		6572180D1CE31A1500A04525 /* FMDBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBDataManager.m; sourceTree = "<group>"; };
 		657218101CE32FAF00A04525 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		657218111CE32FAF00A04525 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		658D55431D4704D4007B8788 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -262,6 +263,8 @@
 		C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.debug.xcconfig"; sourceTree = "<group>"; };
 		D84D234A21819116001356C7 /* DSSignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSignalHandler.h; sourceTree = "<group>"; };
 		D84D234B21819116001356C7 /* DSSignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSignalHandler.m; sourceTree = "<group>"; };
+		D8CC3031218FF62E00941B85 /* SJLCustomFormatterLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLCustomFormatterLog.h; sourceTree = "<group>"; };
+		D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLCustomFormatterLog.m; sourceTree = "<group>"; };
 		DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarTemplate-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -561,13 +564,15 @@
 				65F504EA1D227885006C27BA /* LXNetworking.m */,
 				657218091CE3198400A04525 /* AuxFileManage.h */,
 				6572180A1CE3198400A04525 /* AuxFileManage.m */,
-				6572180C1CE31A1500A04525 /* AuxDBOperation.h */,
-				6572180D1CE31A1500A04525 /* AuxDBOperation.m */,
+				6572180C1CE31A1500A04525 /* FMDBDataManager.h */,
+				6572180D1CE31A1500A04525 /* FMDBDataManager.m */,
 				65EE5A9E1D489090008FBCF7 /* UIColor+Tool.h */,
 				65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */,
 				65EE5AA11D4892A1008FBCF7 /* File */,
 				65EE5AA31D4892DA008FBCF7 /* CommonTool.h */,
 				65EE5AA41D4892DA008FBCF7 /* CommonTool.m */,
+				D8CC3031218FF62E00941B85 /* SJLCustomFormatterLog.h */,
+				D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -867,7 +872,7 @@
 				6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */,
 				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
 				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
-				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
+				6572180E1CE31A1500A04525 /* FMDBDataManager.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
 				65C880341DB4B33F0049B5A5 /* UIImageEffects.m in Sources */,
 				658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */,
@@ -876,6 +881,7 @@
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
+				D8CC3033218FF62E00941B85 /* SJLCustomFormatterLog.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
 				653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */,
 				65C880371DB4BFAF0049B5A5 /* UIImage+FKCategory.m in Sources */,
