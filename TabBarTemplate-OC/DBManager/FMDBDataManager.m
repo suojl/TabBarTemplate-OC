@@ -9,30 +9,26 @@
 #import "FMDBDataManager.h"
 #import "AuxFileManage.h"
 
-@interface FMDBDataManager()
-
-@property (nonatomic, strong) FMDatabase *fmdb;
-@end
 @implementation FMDBDataManager
 
 
 
-+(instancetype) sharedISSDBWIthPath{
++(instancetype) sharedDBMInstance{
     
     static FMDBDataManager *sharedDBOperation;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
         
-        NSString * path = [AuxFileManage getPathForFileName:@"FMDBTest.db" toCreate:NO];
-        NSLog(@"----%@",path);
+        NSString * path = [AuxFileManage getPathForFileName:@"FMDBTest.db" makeSureExists:NO];
+        DDLogInfo(path);
         
         /* create dataTable BY Existing */
-        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
-            NSLog(@"数据库文件不存在!!!");
-            NSString* dbPath = [[NSBundle mainBundle] pathForResource:@"FMDBTest" ofType:@"db"];
-            [[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:path error:nil];
-        }
+//        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+//            NSLog(@"数据库文件不存在!!!");
+//            NSString* dbPath = [[NSBundle mainBundle] pathForResource:@"FMDBTest" ofType:@"db"];
+//            [[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:path error:nil];
+//        }
         
         sharedDBOperation = [[FMDBDataManager alloc] initWithPath:path];
         if (![sharedDBOperation.fmdb open]) {
@@ -56,10 +52,44 @@
     return sharedDBOperation;
 }
 
++ (instancetype)sharedInstanceWithQueue {
+    static FMDBDataManager *sharedDBOperation;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        
+        NSString * path = [AuxFileManage getPathForFileName:@"FMDBQueueTest.db" makeSureExists:NO];
+        DDLogInfo(path);
+        /* create dataTable BY Existing */
+//        if (![[NSFileManager defaultManager] fileExistsAtPath:path]) {
+//            NSLog(@"数据库文件不存在!!!");
+//            NSString* dbPath = [[NSBundle mainBundle] pathForResource:@"FMDBTest" ofType:@"db"];
+//            [[NSFileManager defaultManager] copyItemAtPath:dbPath toPath:path error:nil];
+//        }
+        sharedDBOperation = [[FMDBDataManager alloc] initWithDBPath:path];
+    });
+    return sharedDBOperation;
+}
+
+- (id)init
+{
+    DDLogError(@"FMDBDataManager:不能调用init创建对象，请使用单例方法获取");
+    NSAssert(FALSE, @"FMDBDataManager 不能调用init创建对象，请使用单例方法获取。");
+    return nil;
+}
+
 -(id)initWithPath:(NSString *)path{
     self = [super init];
     if (self) {
         self.fmdb = [FMDatabase databaseWithPath:path];
+    }
+    return self;
+}
+
+-(id)initWithDBPath:(NSString *)path{
+    self = [super init];
+    if (self) {
+        self.commonDBQueue = [FMDatabaseQueue databaseQueueWithPath:path];
     }
     return self;
 }

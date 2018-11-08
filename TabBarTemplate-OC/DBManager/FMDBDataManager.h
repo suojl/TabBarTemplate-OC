@@ -7,13 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FMDB.h"
+#import <FMDB/FMDB.h>
 
 @interface FMDBDataManager : NSObject
 
-+(instancetype) sharedISSDBWIthPath;
+@property (nonatomic, strong) FMDatabase *fmdb;
+@property (nonatomic, strong) FMDatabaseQueue *commonDBQueue;
 
--(id) initWithPath:(NSString *)path;
+/**
+ 非线程安全FMDatabase
+ */
++(instancetype) sharedDBMInstance;
+
+/**
+ 使用多线程安全FMDatabaseQueue
+ */
++(instancetype) sharedInstanceWithQueue;
+
 
 /**添加信息
  * @parameter (arr)
