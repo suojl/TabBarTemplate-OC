@@ -44,7 +44,10 @@ target 'TabBarTemplate-OC' do
     pod 'MyCocoapods'
 end
 
-
+target 'TabBarTemplate-OCTests' do
+    #数据库操作
+    pod 'FMDB'
+end
 
 #Using AFMInfoBanner (1.2.1)
 #Using AFNetworking (3.1.0)

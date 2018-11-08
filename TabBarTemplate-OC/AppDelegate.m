@@ -52,7 +52,7 @@
     fileLogger.rollingFrequency = 60 * 60 * 24; // 刷新频率为24小时
     fileLogger.logFileManager.maximumNumberOfLogFiles = 7; // 保存一周的日志，即7天
     fileLogger.logFormatter = [SJLCustomFormatterLog new];
-    [DDLog addLogger:fileLogger];
+    [DDLog addLogger:fileLogger withLevel:DDLogLevelWarning];
     
     [DDLog allLoggersWithLevel];
     

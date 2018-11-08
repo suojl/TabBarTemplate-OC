@@ -8,7 +8,7 @@
 
 #import "TestVCAnimatedTransitionController.h"
 #import "TestViewController.h"
-#import "UIImage+FKCategory.m"
+#import "UIImage+FKCategory.h"
 
 @implementation TestVCAnimatedTransitionController
 
