@@ -24,7 +24,6 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -80,53 +79,18 @@
     
     [self checkNetwork];
     //-----------------------------------------------------
-    /*
-    UIStoryboard *main=[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:[NSBundle mainBundle]];
-    UIViewController *vc1=[main instantiateViewControllerWithIdentifier:@"launchScreen"];
-    UIView* launchView = vc1.view;
-
-    [self.window addSubview:launchView];
+    [self showLaunchingWithAnimation];
     
-    [launchView layoutIfNeeded];    //刷新布局
-    
-    UIImageView* bgView = (UIImageView* )[launchView viewWithTag:110];
-    UIImageView* labView = (UIImageView* )[launchView viewWithTag:111];
-    CGRect labFrame = labView.frame;
-    
-//    animaView = [[DGAaimaView alloc]initWithFrame:launchView.bounds];
-//    [bgView addSubview:animaView];
-//    [animaView DGAaimaView:animaView BigCloudSpeed:1.5 smallCloudSpeed:1 earthSepped:1.0 huojianSepped:2.0 littleSpeed:2];
-    
-    UIImageView* labCopy = [[UIImageView alloc] initWithFrame:labFrame];
-    labCopy.image = labView.image;
-    
-    [bgView addSubview:labCopy];
-    [bgView bringSubviewToFront:labCopy];
-    
-    [labView removeFromSuperview];
-    
-    CGRect mainRect = CGRectOffset(labFrame, 0, bgView.frame.size.height/2.0);
-    [UIView animateWithDuration:1.5f animations:^{
-        launchView.backgroundColor = [UIColor redColor];
-        labCopy.frame = mainRect;
-    } completion:^(BOOL finished){
-        if ([self respondsToSelector:@selector(removeView:)]) {
-            [self performSelector:@selector(removeView:) withObject:launchView afterDelay:.5f];
-        }
-    }];
-    
-//    [UIView animateWithDuration:3.0 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-//        launchView.backgroundColor = [UIColor redColor];
-//        labCopy.frame = mainRect;
-//    } completion:^(BOOL finished){
-//        [launchView removeFromSuperview];
-//    }];
-    */
     return YES;
 }
 
--(void)removeView:(UIView*)subView{
-    [subView removeFromSuperview];
+-(void)removeView:(UIView*)subView {
+    [UIView animateWithDuration:2 animations:^{
+        subView.transform = CGAffineTransformMakeScale(1.3, 1.3);
+        subView.alpha = .0f;
+    } completion:^(BOOL finished) {
+        [subView removeFromSuperview];
+    }];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -149,6 +113,41 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)showLaunchingWithAnimation {
+    UIStoryboard *main=[UIStoryboard storyboardWithName:@"LaunchScreen" bundle:[NSBundle mainBundle]];
+    UIViewController *vc1=[main instantiateViewControllerWithIdentifier:@"launchScreen"];
+    UIView* launchView = vc1.view;
+    
+    [self.window addSubview:launchView];
+    
+    [launchView layoutIfNeeded];    //刷新布局
+    
+    UIImageView* bgView = (UIImageView* )[launchView viewWithTag:110];
+    UIImageView* labView = (UIImageView* )[launchView viewWithTag:111];
+    CGRect labFrame = labView.frame;
+    
+    //    animaView = [[DGAaimaView alloc]initWithFrame:launchView.bounds];
+    //    [bgView addSubview:animaView];
+    //    [animaView DGAaimaView:animaView BigCloudSpeed:1.5 smallCloudSpeed:1 earthSepped:1.0 huojianSepped:2.0 littleSpeed:2];
+    
+    UIImageView* labCopy = [[UIImageView alloc] initWithFrame:labFrame];
+    labCopy.image = labView.image;
+    
+    [bgView addSubview:labCopy];
+    [bgView bringSubviewToFront:labCopy];
+    
+    [labView removeFromSuperview];
+    
+    CGRect mainRect = CGRectOffset(labFrame, 0, bgView.frame.size.height/2.0);
+    [UIView animateWithDuration:1.5f animations:^{
+        labCopy.frame = mainRect;
+    } completion:^(BOOL finished){
+        if ([self respondsToSelector:@selector(removeView:)]) {
+            [self performSelector:@selector(removeView:) withObject:launchView afterDelay:.5f];
+        }
+    }];
 }
 
 - (void)checkNetwork{

@@ -12,7 +12,7 @@
 
 @interface BasePresentationController()
 {
-    UIControl* dimmingView;
+    UIControl* _dimmingView;
 }
 @end
 
@@ -22,8 +22,8 @@
 - (void)presentationTransitionWillBegin{
     [super presentationTransitionWillBegin];
     
-    if (!dimmingView) {
-        dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
+    if (!_dimmingView) {
+        _dimmingView = [[UIControl alloc] initWithFrame:self.containerView.bounds];
     }
     //
     UIImage *clipImg = [UIImage captureView:self.presentingViewController.view];
@@ -33,36 +33,36 @@
     }
     UIImageView *bgImgView = [[UIImageView alloc] initWithImage:clipImg];
 //    dimmingView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:1.0 alpha:0.5];
-    dimmingView.alpha = 0;
-    [dimmingView addSubview:bgImgView];
+    _dimmingView.alpha = 0;
+    [_dimmingView addSubview:bgImgView];
     
-    [self.containerView addSubview:dimmingView];//设置转场动画的背景
+    [self.containerView addSubview:_dimmingView];//设置转场动画的背景
     if (_shouldDismissWhenTap) {//点击背景是否关闭
-        [dimmingView addTarget:self action:@selector(closePresentedVC) forControlEvents:UIControlEventTouchUpInside];
+        [_dimmingView addTarget:self action:@selector(closePresentedVC) forControlEvents:UIControlEventTouchUpInside];
     }
     //调整背景透明度
     [self.presentingViewController.transitionCoordinator animateAlongsideTransition:^(id anima){
         
-        dimmingView.alpha = 1;
+        self->       _dimmingView.alpha = 1;
     } completion:nil];
 }
 /**呈现弹出结束*/
 - (void)presentationTransitionDidEnd:(BOOL)completed{
     if (!completed) { // 过程失败
-        [dimmingView removeFromSuperview];
+        [_dimmingView removeFromSuperview];
     }
 }
 /**解除呈现开始*/
 - (void)dismissalTransitionWillBegin{
     
     [self.presentingViewController.transitionCoordinator animateAlongsideTransition:^(id anima){
-        dimmingView.alpha = 0;
+        self->_dimmingView.alpha = 0;
     } completion:nil];
 }
 /**解除呈现结束*/
 - (void)dismissalTransitionDidEnd:(BOOL)completed{
     if (completed) {
-        [dimmingView removeFromSuperview];
+        [_dimmingView removeFromSuperview];
     }
 }
 // 返回将要呈现的视图的最终Rect
@@ -83,6 +83,6 @@
 }
 -(void)dealloc{
     
-    dimmingView = nil;
+    _dimmingView = nil;
 }
 @end

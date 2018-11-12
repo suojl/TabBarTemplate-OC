@@ -50,7 +50,7 @@
     [_imagesRULArr enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * stop) {
         CellStatusEntity* cellEntity = [[CellStatusEntity alloc] init];
         cellEntity.showAllLines = NO;
-        [_cellInfoArr addObject:cellEntity];
+        [self->_cellInfoArr addObject:cellEntity];
     }];
 
 //    _offscreenCells = [[NSMutableDictionary alloc] initWithCapacity:5];

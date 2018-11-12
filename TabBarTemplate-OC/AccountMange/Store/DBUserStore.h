@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)updateUser:(UserModel *)user;
 
 /**
+ *  更新用户信息
+ */
+- (BOOL)updateUsers:(NSArray<UserModel *> *)users;
+/**
  *  获取用户信息
  */
 - (UserModel *)userByID:(NSString *)userID;

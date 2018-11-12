@@ -37,8 +37,25 @@
                         user.nikeName,
                         user.avatarURL,
                         user.remarkName,
-                        @"", @"", @"", @"", @"", nil];
+                        [NSNumber numberWithInteger:user.userAge], @"", @"", @"", @"", nil];
     BOOL ok = [self executeSQL:sqlString withArrParameter:arrPara];
+    return ok;
+}
+
+- (BOOL)updateUsers:(NSArray<UserModel *> *)users{
+    NSString *sqlString = [NSString stringWithFormat:SQL_UPDATE_USER, USER_TABLE_NAME];
+    NSMutableArray *parametersArray = [NSMutableArray new];
+    for (UserModel *user in users) {
+        NSArray *arrPara = [NSArray arrayWithObjects:
+                            user.userID,
+                            user.username,
+                            user.nikeName,
+                            user.avatarURL,
+                            user.remarkName,
+                            [NSNumber numberWithInteger:user.userAge], @"", @"", @"", @"", nil];
+        [parametersArray addObject:arrPara];
+    }
+    BOOL ok = [self transactionExecuteSQL:sqlString withArray:parametersArray];
     return ok;
 }
 
@@ -84,6 +101,7 @@
     user.nikeName = [retSet stringForColumn:@"nikename"];
     user.avatarURL = [retSet stringForColumn:@"avatar"];
     user.remarkName = [retSet stringForColumn:@"remark"];
+    user.userAge = [retSet intForColumn:@"age"];
     return user;
 }
 @end

@@ -96,7 +96,7 @@
 {
     [indexPaths enumerateObjectsUsingBlock:^(NSIndexPath *indexPath, NSUInteger idx, BOOL *stop) {
         NSString *cacheKey = [NSString stringWithFormat:@"%ld%ld", (long)indexPath.section, (long)indexPath.row];
-        [_cacheDictionary removeObjectForKey:cacheKey];
+        [self->_cacheDictionary removeObjectForKey:cacheKey];
     }];
 }
 

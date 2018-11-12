@@ -6,7 +6,7 @@
 //  Copyright © 2016年 suojl. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+//#import <Foundation/Foundation.h>
 #import <FMDB/FMDB.h>
 
 @interface FMDBDataManager : NSObject

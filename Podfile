@@ -1,5 +1,5 @@
 platform :ios,'8.0'
-
+inhibit_all_warnings!
 
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://git.coding.net/suojl/PrivateCocoapods.git'
@@ -13,16 +13,16 @@ target 'TabBarTemplate-OC' do
 
 #    pod 'CWStatusBarNotification'
 #数据库操作
-    pod 'FMDB'
+    pod 'FMDB', :inhibit_warnings => true
 #网络状态监测
-    pod 'Reachability'
+    pod 'Reachability', :inhibit_warnings => true
 
 #显示提示信息
-    pod 'AFMInfoBanner'
-    pod 'MBProgressHUD'
+    pod 'AFMInfoBanner', :inhibit_warnings => true
+    pod 'MBProgressHUD', :inhibit_warnings => true
 
 #label数字自动增长
-    pod 'UICountingLabel'
+    pod 'UICountingLabel' , :inhibit_warnings => true
     #发送邮件
     pod 'skpsmtpmessage'
 

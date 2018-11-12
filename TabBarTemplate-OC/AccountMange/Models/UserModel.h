@@ -33,6 +33,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 界面显示名称
 @property (nonatomic, strong, readonly) NSString *showName;
 
+@property (nonatomic, assign) NSInteger userAge;
+
 
 
 #pragma mark - 列表用
