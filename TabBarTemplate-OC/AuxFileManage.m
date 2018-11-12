@@ -10,7 +10,7 @@
 
 @implementation AuxFileManage
 
-+(NSString *)getPathForFileName:(NSString *)fileName toCreate:(BOOL)flag{
++(NSString *)getPathForFileName:(NSString *)fileName makeSureExists:(BOOL)flag{
     NSString * filePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"/Documents"] stringByAppendingPathComponent:fileName];
     
     if (flag && ![[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
@@ -20,7 +20,7 @@
 }
 
 
-+(NSString *) getPathForFileName:(NSString *)fileName Component:(NSString *)component toCreate:(BOOL)flag{
++(NSString *) getPathForFileName:(NSString *)fileName Component:(NSString *)component makeSureExists:(BOOL)flag{
     
     NSString *homePath = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents"];
     

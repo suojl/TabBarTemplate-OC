@@ -84,7 +84,7 @@
 //}
 #pragma mark - PopPresentationControllerDelegate
 -(CGRect)frameOfPresentedViewForPresentationController:(UIPresentationController *)presentationController{
-    return CGRectInset(presentationController.containerView.frame, 50, 100);
+    return CGRectInset(presentationController.containerView.frame, 10, 100);
 }
 
 //-(void)dealloc{

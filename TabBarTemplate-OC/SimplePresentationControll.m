@@ -38,7 +38,7 @@
     //调整背景亮度
     [self.presentingViewController.transitionCoordinator animateAlongsideTransition:^(id anima){
         
-        dimmingView.alpha = 1;
+        self->dimmingView.alpha = 1;
     } completion:nil];
 }
 /**呈现弹出结束*/
@@ -51,7 +51,7 @@
 - (void)dismissalTransitionWillBegin{
     
     [self.presentingViewController.transitionCoordinator animateAlongsideTransition:^(id anima){
-        dimmingView.alpha = 0;
+        self->dimmingView.alpha = 0;
     } completion:nil];
 }
 /**解除呈现结束*/

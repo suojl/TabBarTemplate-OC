@@ -15,7 +15,7 @@
  * @param toCreate 文件不存在是否需要创建
  * @return  文件的完整路径
  */
-+(NSString *) getPathForFileName:(NSString *)fileName toCreate:(BOOL)flag;
++(NSString *) getPathForFileName:(NSString *)fileName makeSureExists:(BOOL)flag;
 
 /** 
  * 在Documents目录下新建目录和文件
@@ -24,7 +24,7 @@
  * @param toCreate 文件不存在是否需要创建
  * @return  文件的完整路径
  */
-+(NSString *) getPathForFileName:(NSString *)fileName Component:(NSString *)component toCreate:(BOOL)flag;
++(NSString *) getPathForFileName:(NSString *)fileName Component:(NSString *)component makeSureExists:(BOOL)flag;
 
 /** 获取APP的HOME路径
  *

@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "SJLMathematicsTool.h"
 
 @interface TabBarTemplate_OCTests : XCTestCase
 
@@ -30,7 +31,7 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
-    
+    NSLog(@"-------------%@",[SJLMathematicsTool wantDecimalWithFormat:@"0.00" floatValue:12.345678]);
 }
 
 - (void)testPerformanceExample {

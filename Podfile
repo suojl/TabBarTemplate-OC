@@ -1,4 +1,10 @@
-platform :ios,’8.0’
+platform :ios,'8.0'
+inhibit_all_warnings!
+
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://git.coding.net/suojl/PrivateCocoapods.git'
+#source 'https://git.coding.net/LiuXiaoZhuang/HomePageModule.git'
+
 target 'TabBarTemplate-OC' do
 #    pod 'SBJson'
 #    pod 'SDAutoLayout'
@@ -7,16 +13,16 @@ target 'TabBarTemplate-OC' do
 
 #    pod 'CWStatusBarNotification'
 #数据库操作
-    pod 'FMDB'
+    pod 'FMDB', :inhibit_warnings => true
 #网络状态监测
-    pod 'Reachability'
+    pod 'Reachability', :inhibit_warnings => true
 
 #显示提示信息
-    pod 'AFMInfoBanner'
-    pod 'MBProgressHUD'
+    pod 'AFMInfoBanner', :inhibit_warnings => true
+    pod 'MBProgressHUD', :inhibit_warnings => true
 
 #label数字自动增长
-    pod 'UICountingLabel'
+    pod 'UICountingLabel' , :inhibit_warnings => true
     #发送邮件
     pod 'skpsmtpmessage'
 
@@ -24,10 +30,24 @@ target 'TabBarTemplate-OC' do
     pod 'AFNetworking'
     pod 'SDWebImage', '~>3.8'
     pod 'Masonry'
-
+    
+    pod 'ReactiveObjC', '~> 3.1.0'
+    pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
+    #管理日志
+    pod 'CocoaLumberjack'
+    #日期选择控件
+    pod 'FSCalendar'
+    #动画组件
+    pod 'pop'
+    
+    #私有组件
+    pod 'MyCocoapods'
 end
 
-
+target 'TabBarTemplate-OCTests' do
+    #数据库操作
+    pod 'FMDB'
+end
 
 #Using AFMInfoBanner (1.2.1)
 #Using AFNetworking (3.1.0)

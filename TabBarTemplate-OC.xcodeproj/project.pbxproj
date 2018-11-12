@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B1B824DE202A5B881597E17 /* libPods-TabBarTemplate-OC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */; };
+		2ECFF47C939AF816FE2ACF07 /* libPods-TabBarTemplate-OCTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AAEFC0F807E18B5C313E566 /* libPods-TabBarTemplate-OCTests.a */; };
 		650CECC51DC83858003BB119 /* AnimatedTransitioningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CECC41DC83858003BB119 /* AnimatedTransitioningViewController.m */; };
 		650CECC91DC84459003BB119 /* BasePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 650CECC81DC84459003BB119 /* BasePresentationController.m */; };
 		650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 650EB7CF1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m */; };
@@ -81,7 +82,6 @@
 		657217EB1CE2FCF600A04525 /* TabBarTemplate_OCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657217EA1CE2FCF600A04525 /* TabBarTemplate_OCTests.m */; };
 		657217F61CE2FCF600A04525 /* TabBarTemplate_OCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 657217F51CE2FCF600A04525 /* TabBarTemplate_OCUITests.m */; };
 		6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180A1CE3198400A04525 /* AuxFileManage.m */; };
-		6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6572180D1CE31A1500A04525 /* AuxDBOperation.m */; };
 		657218131CE32FAF00A04525 /* BaseTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657218111CE32FAF00A04525 /* BaseTabBarController.m */; };
 		658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D55441D4704D4007B8788 /* CustomTableViewCell.m */; };
 		6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 6590CC361D3F092A00FF1F07 /* SimplePresentationControll.m */; };
@@ -99,9 +99,16 @@
 		65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE41A21D3E13E60092C271 /* PanGestureInteractiveTransition.m */; };
 		65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */; };
 		65EE5AA21D4892A1008FBCF7 /* File in Resources */ = {isa = PBXBuildFile; fileRef = 65EE5AA11D4892A1008FBCF7 /* File */; };
-		65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 65EE5AA41D4892DA008FBCF7 /* CommonTool.m */; };
 		65F504EB1D227885006C27BA /* LXNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 65F504EA1D227885006C27BA /* LXNetworking.m */; };
+		D813BEA7219952DB00793255 /* NSObject+Coding.m in Sources */ = {isa = PBXBuildFile; fileRef = D813BEA6219952DB00793255 /* NSObject+Coding.m */; };
 		D84D234C21819117001356C7 /* DSSignalHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D84D234B21819116001356C7 /* DSSignalHandler.m */; };
+		D861F8382192C6EC0005CE48 /* DBQueueBaseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8372192C6EC0005CE48 /* DBQueueBaseStore.m */; };
+		D861F8452192E6C30005CE48 /* DBUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8442192E6C30005CE48 /* DBUserStore.m */; };
+		D861F8482192EE220005CE48 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8472192EE220005CE48 /* UserModel.m */; };
+		D8CC3033218FF62E00941B85 /* SJLCustomFormatterLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */; };
+		D8F75EDB2193C7CD00FB0855 /* SJLUserModelDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F75EDA2193C7CD00FB0855 /* SJLUserModelDBTests.m */; };
+		D8FD495921928D9600A0E426 /* FMDBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD495821928D9600A0E426 /* FMDBDataManager.m */; };
+		D8FD4963219295CC00A0E426 /* SJLMathematicsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD4962219295CC00A0E426 /* SJLMathematicsTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +129,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AAEFC0F807E18B5C313E566 /* libPods-TabBarTemplate-OCTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarTemplate-OCTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		650CECC31DC83858003BB119 /* AnimatedTransitioningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioningViewController.h; sourceTree = "<group>"; };
 		650CECC41DC83858003BB119 /* AnimatedTransitioningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioningViewController.m; sourceTree = "<group>"; };
 		650CECC71DC84459003BB119 /* BasePresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePresentationController.h; sourceTree = "<group>"; };
@@ -219,8 +227,6 @@
 		657218051CE3018D00A04525 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		657218091CE3198400A04525 /* AuxFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuxFileManage.h; sourceTree = "<group>"; };
 		6572180A1CE3198400A04525 /* AuxFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuxFileManage.m; sourceTree = "<group>"; };
-		6572180C1CE31A1500A04525 /* AuxDBOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuxDBOperation.h; sourceTree = "<group>"; };
-		6572180D1CE31A1500A04525 /* AuxDBOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuxDBOperation.m; sourceTree = "<group>"; };
 		657218101CE32FAF00A04525 /* BaseTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabBarController.h; sourceTree = "<group>"; };
 		657218111CE32FAF00A04525 /* BaseTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTabBarController.m; sourceTree = "<group>"; };
 		658D55431D4704D4007B8788 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -254,15 +260,31 @@
 		65EE5A9E1D489090008FBCF7 /* UIColor+Tool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Tool.h"; sourceTree = "<group>"; };
 		65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Tool.m"; sourceTree = "<group>"; };
 		65EE5AA11D4892A1008FBCF7 /* File */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = File; sourceTree = "<group>"; };
-		65EE5AA31D4892DA008FBCF7 /* CommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTool.h; sourceTree = "<group>"; };
-		65EE5AA41D4892DA008FBCF7 /* CommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTool.m; sourceTree = "<group>"; };
 		65F504E91D227885006C27BA /* LXNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXNetworking.h; sourceTree = "<group>"; };
 		65F504EA1D227885006C27BA /* LXNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXNetworking.m; sourceTree = "<group>"; };
+		733E99AAD8981C93F3CA1143 /* Pods-TabBarTemplate-OCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OCTests/Pods-TabBarTemplate-OCTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.release.xcconfig"; sourceTree = "<group>"; };
 		C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC.debug.xcconfig"; sourceTree = "<group>"; };
+		D813BEA5219952DB00793255 /* NSObject+Coding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Coding.h"; sourceTree = "<group>"; };
+		D813BEA6219952DB00793255 /* NSObject+Coding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Coding.m"; sourceTree = "<group>"; };
 		D84D234A21819116001356C7 /* DSSignalHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSSignalHandler.h; sourceTree = "<group>"; };
 		D84D234B21819116001356C7 /* DSSignalHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSSignalHandler.m; sourceTree = "<group>"; };
+		D861F8362192C6EC0005CE48 /* DBQueueBaseStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBQueueBaseStore.h; sourceTree = "<group>"; };
+		D861F8372192C6EC0005CE48 /* DBQueueBaseStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBQueueBaseStore.m; sourceTree = "<group>"; };
+		D861F8422192E0E90005CE48 /* DBStoreSQL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBStoreSQL.h; sourceTree = "<group>"; };
+		D861F8432192E6C30005CE48 /* DBUserStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBUserStore.h; sourceTree = "<group>"; };
+		D861F8442192E6C30005CE48 /* DBUserStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBUserStore.m; sourceTree = "<group>"; };
+		D861F8462192EE220005CE48 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		D861F8472192EE220005CE48 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		D8CC3031218FF62E00941B85 /* SJLCustomFormatterLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLCustomFormatterLog.h; sourceTree = "<group>"; };
+		D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLCustomFormatterLog.m; sourceTree = "<group>"; };
+		D8F75EDA2193C7CD00FB0855 /* SJLUserModelDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLUserModelDBTests.m; sourceTree = "<group>"; };
+		D8FD495721928D9500A0E426 /* FMDBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBDataManager.h; sourceTree = "<group>"; };
+		D8FD495821928D9600A0E426 /* FMDBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBDataManager.m; sourceTree = "<group>"; };
+		D8FD4961219295CC00A0E426 /* SJLMathematicsTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLMathematicsTool.h; sourceTree = "<group>"; };
+		D8FD4962219295CC00A0E426 /* SJLMathematicsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLMathematicsTool.m; sourceTree = "<group>"; };
 		DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarTemplate-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7DAA27A5B47727F15A5245B /* Pods-TabBarTemplate-OCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OCTests/Pods-TabBarTemplate-OCTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +300,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ECFF47C939AF816FE2ACF07 /* libPods-TabBarTemplate-OCTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */,
+				5AAEFC0F807E18B5C313E566 /* libPods-TabBarTemplate-OCTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -413,6 +437,7 @@
 		654DA1771CE42C8800CFF129 /* storyboard1 */ = {
 			isa = PBXGroup;
 			children = (
+				D861F83C2192DF8E0005CE48 /* AccountMange */,
 				657217D61CE2FCF600A04525 /* ViewController.h */,
 				657217D71CE2FCF600A04525 /* ViewController.m */,
 				657217D91CE2FCF600A04525 /* Main.storyboard */,
@@ -490,6 +515,7 @@
 		657217CF1CE2FCF500A04525 /* TabBarTemplate-OC */ = {
 			isa = PBXGroup;
 			children = (
+				D861F83A2192DE730005CE48 /* Store */,
 				6590CC3D1D3F4E7600FF1F07 /* Protocol */,
 				65EE41A01D3E117F0092C271 /* InteractionControllers */,
 				650EB7ED1D3CDA9400BA4AD7 /* PresentationController */,
@@ -499,6 +525,7 @@
 				654DA1781CE42CAB00CFF129 /* storyboard2 */,
 				654DA1771CE42C8800CFF129 /* storyboard1 */,
 				6572180F1CE32EBA00A04525 /* Controllers */,
+				D8FD4960219293DD00A0E426 /* Common */,
 				657218071CE3049600A04525 /* Utils */,
 				657218061CE302BC00A04525 /* 3rdLibs */,
 				657217D31CE2FCF600A04525 /* AppDelegate.h */,
@@ -528,6 +555,7 @@
 			children = (
 				657217EA1CE2FCF600A04525 /* TabBarTemplate_OCTests.m */,
 				657217EC1CE2FCF600A04525 /* Info.plist */,
+				D8F75EDA2193C7CD00FB0855 /* SJLUserModelDBTests.m */,
 			);
 			path = "TabBarTemplate-OCTests";
 			sourceTree = "<group>";
@@ -552,22 +580,13 @@
 		657218071CE3049600A04525 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D8FD495E21928E7200A0E426 /* DBManager */,
 				D84D2346218161F7001356C7 /* SignalHandler */,
-				65C880351DB4BFAF0049B5A5 /* UIImage+FKCategory.h */,
-				65C880361DB4BFAF0049B5A5 /* UIImage+FKCategory.m */,
-				65C880321DB4B33F0049B5A5 /* UIImageEffects.h */,
-				65C880331DB4B33F0049B5A5 /* UIImageEffects.m */,
 				65F504E91D227885006C27BA /* LXNetworking.h */,
 				65F504EA1D227885006C27BA /* LXNetworking.m */,
 				657218091CE3198400A04525 /* AuxFileManage.h */,
 				6572180A1CE3198400A04525 /* AuxFileManage.m */,
-				6572180C1CE31A1500A04525 /* AuxDBOperation.h */,
-				6572180D1CE31A1500A04525 /* AuxDBOperation.m */,
-				65EE5A9E1D489090008FBCF7 /* UIColor+Tool.h */,
-				65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */,
 				65EE5AA11D4892A1008FBCF7 /* File */,
-				65EE5AA31D4892DA008FBCF7 /* CommonTool.h */,
-				65EE5AA41D4892DA008FBCF7 /* CommonTool.m */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -612,6 +631,15 @@
 			name = InteractionControllers;
 			sourceTree = "<group>";
 		};
+		D813BEA42199526400793255 /* NSObjectCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D813BEA5219952DB00793255 /* NSObject+Coding.h */,
+				D813BEA6219952DB00793255 /* NSObject+Coding.m */,
+			);
+			path = NSObjectCategory;
+			sourceTree = "<group>";
+		};
 		D84D2346218161F7001356C7 /* SignalHandler */ = {
 			isa = PBXGroup;
 			children = (
@@ -621,11 +649,77 @@
 			path = SignalHandler;
 			sourceTree = "<group>";
 		};
+		D861F83A2192DE730005CE48 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		D861F83C2192DF8E0005CE48 /* AccountMange */ = {
+			isa = PBXGroup;
+			children = (
+				D861F8402192E0880005CE48 /* Models */,
+				D861F83F2192E0750005CE48 /* Store */,
+			);
+			path = AccountMange;
+			sourceTree = "<group>";
+		};
+		D861F83F2192E0750005CE48 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				D861F8422192E0E90005CE48 /* DBStoreSQL.h */,
+				D861F8432192E6C30005CE48 /* DBUserStore.h */,
+				D861F8442192E6C30005CE48 /* DBUserStore.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		D861F8402192E0880005CE48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D861F8462192EE220005CE48 /* UserModel.h */,
+				D861F8472192EE220005CE48 /* UserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D8FD495E21928E7200A0E426 /* DBManager */ = {
+			isa = PBXGroup;
+			children = (
+				D8FD495721928D9500A0E426 /* FMDBDataManager.h */,
+				D8FD495821928D9600A0E426 /* FMDBDataManager.m */,
+				D861F8362192C6EC0005CE48 /* DBQueueBaseStore.h */,
+				D861F8372192C6EC0005CE48 /* DBQueueBaseStore.m */,
+			);
+			path = DBManager;
+			sourceTree = "<group>";
+		};
+		D8FD4960219293DD00A0E426 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D813BEA42199526400793255 /* NSObjectCategory */,
+				65C880351DB4BFAF0049B5A5 /* UIImage+FKCategory.h */,
+				65C880361DB4BFAF0049B5A5 /* UIImage+FKCategory.m */,
+				65C880321DB4B33F0049B5A5 /* UIImageEffects.h */,
+				65C880331DB4B33F0049B5A5 /* UIImageEffects.m */,
+				65EE5A9E1D489090008FBCF7 /* UIColor+Tool.h */,
+				65EE5A9F1D489090008FBCF7 /* UIColor+Tool.m */,
+				D8CC3031218FF62E00941B85 /* SJLCustomFormatterLog.h */,
+				D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */,
+				D8FD4961219295CC00A0E426 /* SJLMathematicsTool.h */,
+				D8FD4962219295CC00A0E426 /* SJLMathematicsTool.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		FB90BA643953D7CCE96E8263 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				C48E1D401092C3D097C2ED51 /* Pods-TabBarTemplate-OC.debug.xcconfig */,
 				9B88990A94E217EDA2884797 /* Pods-TabBarTemplate-OC.release.xcconfig */,
+				E7DAA27A5B47727F15A5245B /* Pods-TabBarTemplate-OCTests.debug.xcconfig */,
+				733E99AAD8981C93F3CA1143 /* Pods-TabBarTemplate-OCTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -656,6 +750,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 657217FD1CE2FCF600A04525 /* Build configuration list for PBXNativeTarget "TabBarTemplate-OCTests" */;
 			buildPhases = (
+				23F9387CA935F56C6995B981 /* [CP] Check Pods Manifest.lock */,
 				657217E21CE2FCF600A04525 /* Sources */,
 				657217E31CE2FCF600A04525 /* Frameworks */,
 				657217E41CE2FCF600A04525 /* Resources */,
@@ -695,7 +790,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = SJL;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = suojl;
 				TargetAttributes = {
 					657217CC1CE2FCF500A04525 = {
@@ -813,6 +908,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		23F9387CA935F56C6995B981 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabBarTemplate-OCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		669969FA9957686C44F9816D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -837,7 +954,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -846,7 +963,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TabBarTemplate-OC/Pods-TabBarTemplate-OC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -856,7 +973,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D861F8382192C6EC0005CE48 /* DBQueueBaseStore.m in Sources */,
 				65B0E2CD1D34B600004F948C /* SB2_ViewController.m in Sources */,
+				D861F8452192E6C30005CE48 /* DBUserStore.m in Sources */,
 				654DA1811CE42D7800CFF129 /* Main_Sb2.m in Sources */,
 				65DA0F7D1CE573AC00B64405 /* DGEarthView.m in Sources */,
 				654B4B121D0EB9E00064B637 /* ViewController2.m in Sources */,
@@ -864,18 +983,18 @@
 				650CECC51DC83858003BB119 /* AnimatedTransitioningViewController.m in Sources */,
 				6590CC481D3F5CBD00FF1F07 /* TestVCAnimatedTransitionController.m in Sources */,
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
+				D8FD495921928D9600A0E426 /* FMDBDataManager.m in Sources */,
 				6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */,
 				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
 				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
-				6572180E1CE31A1500A04525 /* AuxDBOperation.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
 				65C880341DB4B33F0049B5A5 /* UIImageEffects.m in Sources */,
 				658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */,
-				65EE5AA51D4892DA008FBCF7 /* CommonTool.m in Sources */,
 				65918B911D51C2E6009DA4AE /* CellStatusEntity.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
+				D8CC3033218FF62E00941B85 /* SJLCustomFormatterLog.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
 				653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */,
 				65C880371DB4BFAF0049B5A5 /* UIImage+FKCategory.m in Sources */,
@@ -883,7 +1002,10 @@
 				650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */,
 				650EB7F01D3CDC9500BA4AD7 /* Present2PageControll.m in Sources */,
 				657217D21CE2FCF600A04525 /* main.m in Sources */,
+				D861F8482192EE220005CE48 /* UserModel.m in Sources */,
 				D84D234C21819117001356C7 /* DSSignalHandler.m in Sources */,
+				D813BEA7219952DB00793255 /* NSObject+Coding.m in Sources */,
+				D8FD4963219295CC00A0E426 /* SJLMathematicsTool.m in Sources */,
 				654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */,
 				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,
 				65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */,
@@ -900,6 +1022,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8F75EDB2193C7CD00FB0855 /* SJLUserModelDBTests.m in Sources */,
 				657217EB1CE2FCF600A04525 /* TabBarTemplate_OCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -956,14 +1079,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1004,14 +1135,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1081,6 +1220,7 @@
 		};
 		657217FE1CE2FCF600A04525 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7DAA27A5B47727F15A5245B /* Pods-TabBarTemplate-OCTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "TabBarTemplate-OCTests/Info.plist";
@@ -1093,6 +1233,7 @@
 		};
 		657217FF1CE2FCF600A04525 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733E99AAD8981C93F3CA1143 /* Pods-TabBarTemplate-OCTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "TabBarTemplate-OCTests/Info.plist";

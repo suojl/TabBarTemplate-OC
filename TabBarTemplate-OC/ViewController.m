@@ -15,7 +15,6 @@
 #import "UIImageView+WebCache.h"
 #import "AuxFileManage.h"
 #import "Masonry.h"
-#import "DSSignalHandler.h"
 
 #import "Login_VC.h"
 @interface ViewController ()<UIAlertViewDelegate,DismissViewControllerProtocol>
@@ -40,7 +39,6 @@
 //    returnKeyHandler = [[IQKeyboardReturnKeyHandler alloc] initWithViewController:self];
 //    [returnKeyHandler setLastTextFieldReturnKeyType:UIReturnKeyDone];
 //    [SJLSignalHandler RegisterSignalHandler];
-//    [DSSignalHandler RegisterSignalExceptionHandler];
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -57,22 +55,22 @@
     
 //    [AFMInfoBanner showAndHideWithText:@"hello" style:AFMInfoBannerStyleInfo];
     /* --------------AFMInfoBanner---警告提示----------------*/
-//    AFMInfoBanner* afmtest = [[AFMInfoBanner alloc] initWithTargetView:self.centerView viewAboveBanner:nil additionalTopSpacing:0];
-    NSArray *list = @[@0,@1];
-    DLog(@"-----list%@",list[12]);
+    AFMInfoBanner* afmtest = [[AFMInfoBanner alloc] initWithTargetView:self.centerView viewAboveBanner:nil additionalTopSpacing:0];
+//    NSArray *list = @[@0,@1];
+//    DLog(@"-----list%@",list[12]);
 //    [self performSelector:@selector(aaaaaa:)];
 //
-//    afmtest.style = AFMInfoBannerStyleInfo;
-//    afmtest.text = @"hello test";
-//
-//    [afmtest showAndHideAfter:2.0 animated:YES];
+    afmtest.style = AFMInfoBannerStyleInfo;
+    afmtest.text = @"hello test";
+
+    [afmtest showAndHideAfter:2.0 animated:YES];
     /* --------------AFMInfoBanner-------------------*/
     
-//    Login_VC *loginVC = [[Login_VC alloc] initWithNibName:@"Login_VC" bundle:nil];
-//    loginVC.delegate = self;
-//    loginVC.blurBackground = YES;
+    Login_VC *loginVC = [[Login_VC alloc] initWithNibName:@"Login_VC" bundle:nil];
+    loginVC.delegate = self;
+    loginVC.blurBackground = YES;
 //    loginVC.animateControllerClass = @"Login_PresentController";
-//    [self presentViewController:loginVC animated:YES completion:nil];
+    [self presentViewController:loginVC animated:YES completion:nil];
 }
 
 
