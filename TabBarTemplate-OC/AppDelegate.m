@@ -61,7 +61,7 @@
     DDLogInfo(@"Info");         // 信息日志
     DDLogWarn(@"Warn");         // 警告日志
     DDLogError(@"Error");       // 错误日志
-    DDLogInfo(@"----%@",[AuxFileManage getCachesPath]);
+//    DDLogInfo(@"----%@",[AuxFileManage getCachesPath]);
     /*-----------------------------记录日志设置结束-------------------------------*/
     // 注册捕获异常信号
     [DSSignalHandler RegisterSignalExceptionHandler];

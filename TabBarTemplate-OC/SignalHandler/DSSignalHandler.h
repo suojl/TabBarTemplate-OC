@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 捕获异常信息
+ */
 @interface DSSignalHandler : NSObject{
     
     BOOL dismissed;

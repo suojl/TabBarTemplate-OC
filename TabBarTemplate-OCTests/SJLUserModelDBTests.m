@@ -55,11 +55,11 @@
     DBUserStore *userStore = [DBUserStore new];
     NSArray *datas = [userStore userData];
     for (UserModel *model in datas) {
-        NSLog(@"userID:%@, username:%@, remarkName:%@, userAge:%ld",model.userID,model.username,model.remarkName,model.userAge);
+        NSLog(@"userID:%@, username:%@, remarkName:%@, userAge:%ld",model.userID,model.username,model.remarkName,(long)model.userAge);
     }
     
     UserModel *userModel = [userStore userByID:@"id1234560"];
-    NSLog(@"------userID:%@, username:%@, remarkName:%@, userAge:%ld",userModel.userID,userModel.username,userModel.remarkName,userModel.userAge);
+    NSLog(@"------userID:%@, username:%@, remarkName:%@, userAge:%ld",userModel.userID,userModel.username,userModel.remarkName,(long)userModel.userAge);
 }
 
 /**
@@ -71,7 +71,7 @@
     if (success) {
         NSArray *datas = [userStore userData];
         for (UserModel *model in datas) {
-            NSLog(@"userID:%@, username:%@, remarkName:%@, userAge:%ld",model.userID,model.username,model.remarkName,model.userAge);
+            NSLog(@"userID:%@, username:%@, remarkName:%@, userAge:%ld",model.userID,model.username,model.remarkName,(long)model.userAge);
         }
     }
 }
@@ -94,7 +94,7 @@
     if (success) {
         NSArray *datas = [userStore userData];
         for (UserModel *model in datas) {
-            NSLog(@"userID:%@, username:%@, remarkName:%@, userAge:%ld",model.userID,model.username,model.remarkName,model.userAge);
+            NSLog(@"userID:%@, username:%@, remarkName:%@, userAge:%ld",model.userID,model.username,model.remarkName,(long)model.userAge);
         }
     }
 }

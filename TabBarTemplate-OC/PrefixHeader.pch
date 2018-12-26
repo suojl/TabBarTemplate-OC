@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#import "PhoneModels.h"
+
 #define USER_LOGINED @"logined"
 #define USER_account @"account"
 #define USER_password @"password"
@@ -20,15 +22,7 @@
 #define ScreenWidth  [UIScreen mainScreen].bounds.size.width   //屏幕宽
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height  //屏幕高
 
-
-#define iphone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : 0)
-#define iphone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : 0)
-#define iphone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1136), [[UIScreen mainScreen] currentMode].size) : 0)
-#define iphone6p ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : 0)
-
-
 #define AppDelegateAccessor ((AppDelegate *)[[UIApplication sharedApplication] delegate])
-
 
 //weakSelf
 #define __WeakSelf(weakSelf) __weak __typeof(self) weakSelf = self;
@@ -46,7 +40,7 @@
 #import <UIKit/UIKit.h>
 #endif
 
-/** 打印日志 */
+/**-------------------------------- 设置打印日志 --------------------------------**/
 
 #define XCODE_COLORS_ESCAPE_MAC @"\033["
 #define XCODE_COLORS_ESCAPE_IOS @"\xC2\xA0["
@@ -65,6 +59,7 @@
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelWarning;
-#endif  /* DEBUG */
+#endif
+/*------------------------------ 设置打印日志结束 ------------------------------*/
 
 #endif /* PrefixHeader_pch */

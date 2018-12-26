@@ -86,7 +86,7 @@
         cell.reloadCellBlock = ^(NSIndexPath* cellIndexPath){
             CellStatusEntity* cellStatus = weakSelf.cellInfoArr[cellIndexPath.row];
             cellStatus.showAllLines = !cellStatus.showAllLines;
-            DLog(@"xxxxxxxxxxxxxx%ld",cellIndexPath.row);
+            DLog(@"xxxxxxxxxxxxxx%ld",(long)cellIndexPath.row);
             [weakSelf.tableView reloadRowsAtIndexPaths:@[cellIndexPath] withRowAnimation:UITableViewRowAnimationNone];
         };
     }

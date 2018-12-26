@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +14,8 @@
             <objects>
                 <viewController storyboardIdentifier="main" id="Fdx-6Z-Jis" customClass="Main_ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="dzY-PL-jL6"/>
-                        <viewControllerLayoutGuide type="bottom" id="ocS-fY-Qlq"/>
+                        <viewControllerLayoutGuide type="top" id="WCC-ky-0TY"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Fh-PR-szC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="chi-Vd-j8a">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -31,7 +30,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1Rz-6o-5qN" id="uEz-j6-cRQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKC-VM-jmo">
@@ -83,10 +82,10 @@
                                                     </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4x5-WG-GlB">
-                                                    <rect key="frame" x="0.0" y="58" width="375" height="30"/>
+                                                    <rect key="frame" x="0.0" y="58" width="375" height="29.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label拉开点是否按键ISD看垃圾是冬季时间段开始可视对讲佛圣诞节圣诞节哦胜利大街就啥都减肥asdf adasdf 撒地方阿斯顿发违法撒的发生" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WS5-ne-peA">
-                                                            <rect key="frame" x="17" y="8" width="348" height="17"/>
+                                                            <rect key="frame" x="17" y="8" width="348" height="16.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -156,17 +155,17 @@
                                                     <exclude reference="4x5-WG-GlB"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="C6H-vn-h2g"/>
-                                                    <exclude reference="iac-Mc-1XP"/>
-                                                    <exclude reference="mCC-C5-Foy"/>
-                                                    <exclude reference="xS3-IG-Fee"/>
+                                                    <exclude reference="o0w-nR-eu4"/>
+                                                    <exclude reference="wwt-VE-4FE"/>
                                                     <exclude reference="QXl-EU-3xz"/>
                                                     <exclude reference="nuV-AJ-qDI"/>
                                                     <exclude reference="pPA-Xr-gry"/>
                                                     <exclude reference="RQL-E5-EZS"/>
                                                     <exclude reference="g2W-bK-8n7"/>
-                                                    <exclude reference="o0w-nR-eu4"/>
-                                                    <exclude reference="wwt-VE-4FE"/>
+                                                    <exclude reference="C6H-vn-h2g"/>
+                                                    <exclude reference="iac-Mc-1XP"/>
+                                                    <exclude reference="mCC-C5-Foy"/>
+                                                    <exclude reference="xS3-IG-Fee"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
@@ -177,17 +176,17 @@
                                                     <include reference="4x5-WG-GlB"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="C6H-vn-h2g"/>
-                                                    <include reference="iac-Mc-1XP"/>
-                                                    <include reference="mCC-C5-Foy"/>
-                                                    <include reference="xS3-IG-Fee"/>
+                                                    <include reference="o0w-nR-eu4"/>
+                                                    <include reference="wwt-VE-4FE"/>
                                                     <include reference="QXl-EU-3xz"/>
                                                     <include reference="nuV-AJ-qDI"/>
                                                     <include reference="pPA-Xr-gry"/>
                                                     <include reference="RQL-E5-EZS"/>
                                                     <include reference="g2W-bK-8n7"/>
-                                                    <include reference="o0w-nR-eu4"/>
-                                                    <include reference="wwt-VE-4FE"/>
+                                                    <include reference="C6H-vn-h2g"/>
+                                                    <include reference="iac-Mc-1XP"/>
+                                                    <include reference="mCC-C5-Foy"/>
+                                                    <include reference="xS3-IG-Fee"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
@@ -208,11 +207,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WXz-UG-y3F" secondAttribute="trailing" id="l6a-B6-b8m"/>
-                            <constraint firstItem="ocS-fY-Qlq" firstAttribute="top" secondItem="WXz-UG-y3F" secondAttribute="bottom" constant="48" id="pRg-oY-Iwe">
+                            <constraint firstItem="7Fh-PR-szC" firstAttribute="top" secondItem="WXz-UG-y3F" secondAttribute="bottom" constant="48" id="pRg-oY-Iwe">
                                 <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="WXz-UG-y3F" firstAttribute="leading" secondItem="chi-Vd-j8a" secondAttribute="leading" id="xh0-CE-Py1"/>
-                            <constraint firstItem="WXz-UG-y3F" firstAttribute="top" secondItem="dzY-PL-jL6" secondAttribute="bottom" id="zSd-UR-EFT"/>
+                            <constraint firstItem="WXz-UG-y3F" firstAttribute="top" secondItem="WCC-ky-0TY" secondAttribute="bottom" id="zSd-UR-EFT"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -252,8 +251,8 @@
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="y4S-yH-LTQ" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FNE-a0-mMf"/>
-                        <viewControllerLayoutGuide type="bottom" id="3FQ-tc-bTv"/>
+                        <viewControllerLayoutGuide type="top" id="MlE-pV-gNT"/>
+                        <viewControllerLayoutGuide type="bottom" id="cx8-S4-PJz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p1I-kg-pLZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -352,7 +351,6 @@
                 <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NPp-sc-eH0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TdN-O2-Tah">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

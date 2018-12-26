@@ -6,8 +6,6 @@ source 'https://git.coding.net/suojl/PrivateCocoapods.git'
 #source 'https://git.coding.net/LiuXiaoZhuang/HomePageModule.git'
 
 target 'TabBarTemplate-OC' do
-#    pod 'SBJson'
-#    pod 'SDAutoLayout'
 #键盘自动调整框架
     pod 'IQKeyboardManager’
 
@@ -32,8 +30,9 @@ target 'TabBarTemplate-OC' do
     pod 'Masonry'
     
     pod 'ReactiveObjC', '~> 3.1.0'
+    # 优化TableView的组件
     pod 'UITableView+FDTemplateLayoutCell', '~> 1.6'
-    #管理日志
+    #管理日志组件
     pod 'CocoaLumberjack'
     #日期选择控件
     pod 'FSCalendar'

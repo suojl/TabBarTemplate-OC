@@ -64,8 +64,6 @@
 		651B08741D4AF1750083EBFB /* test4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 651B08451D4AF1750083EBFB /* test4.jpg */; };
 		653F13CD1DB4765D000FED51 /* Login_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 653F13CB1DB4765D000FED51 /* Login_VC.m */; };
 		653F13CE1DB4765D000FED51 /* Login_VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 653F13CC1DB4765D000FED51 /* Login_VC.xib */; };
-		654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */; };
-		654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */; };
 		654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 654476BE1D00152E005659D5 /* Storyboard3.storyboard */; };
 		654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 654476C11D0015AD005659D5 /* Main_ViewController.m */; };
 		65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 65449AD41D4F22FF0060D068 /* CustomTableViewCell2.m */; };
@@ -192,10 +190,6 @@
 		653F13CA1DB4765D000FED51 /* Login_VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login_VC.h; sourceTree = "<group>"; };
 		653F13CB1DB4765D000FED51 /* Login_VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login_VC.m; sourceTree = "<group>"; };
 		653F13CC1DB4765D000FED51 /* Login_VC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Login_VC.xib; sourceTree = "<group>"; };
-		654476B81D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
-		654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
-		654476BA1D001503005659D5 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
-		654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
 		654476BE1D00152E005659D5 /* Storyboard3.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard3.storyboard; sourceTree = "<group>"; };
 		654476C01D0015AD005659D5 /* Main_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Main_ViewController.h; sourceTree = "<group>"; };
 		654476C11D0015AD005659D5 /* Main_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Main_ViewController.m; sourceTree = "<group>"; };
@@ -283,6 +277,7 @@
 		D8FD495821928D9600A0E426 /* FMDBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBDataManager.m; sourceTree = "<group>"; };
 		D8FD4961219295CC00A0E426 /* SJLMathematicsTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLMathematicsTool.h; sourceTree = "<group>"; };
 		D8FD4962219295CC00A0E426 /* SJLMathematicsTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLMathematicsTool.m; sourceTree = "<group>"; };
+		D8FD96B921A55E2900DFD941 /* PhoneModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneModels.h; sourceTree = "<group>"; };
 		DE9BACDC988A335E4FC03018 /* libPods-TabBarTemplate-OC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TabBarTemplate-OC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7DAA27A5B47727F15A5245B /* Pods-TabBarTemplate-OCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabBarTemplate-OCTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabBarTemplate-OCTests/Pods-TabBarTemplate-OCTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -323,7 +318,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		650EB7CD1D3C76D800BA4AD7 /* AnimationControllers */ = {
+		650EB7CD1D3C76D800BA4AD7 /* AnimationTransitioningControllers */ = {
 			isa = PBXGroup;
 			children = (
 				650EB7CE1D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.h */,
@@ -337,7 +332,7 @@
 				65E1879D1DB61DA600857009 /* Login_AnimatedTransitioningControll.h */,
 				65E1879E1DB61DA600857009 /* Login_AnimatedTransitioningControll.m */,
 			);
-			name = AnimationControllers;
+			name = AnimationTransitioningControllers;
 			sourceTree = "<group>";
 		};
 		650EB7ED1D3CDA9400BA4AD7 /* PresentationController */ = {
@@ -423,21 +418,11 @@
 			path = test;
 			sourceTree = "<group>";
 		};
-		654476B71D001503005659D5 /* SDAutoLayout */ = {
-			isa = PBXGroup;
-			children = (
-				654476B81D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.h */,
-				654476B91D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m */,
-				654476BA1D001503005659D5 /* UIView+SDAutoLayout.h */,
-				654476BB1D001503005659D5 /* UIView+SDAutoLayout.m */,
-			);
-			path = SDAutoLayout;
-			sourceTree = "<group>";
-		};
 		654DA1771CE42C8800CFF129 /* storyboard1 */ = {
 			isa = PBXGroup;
 			children = (
-				D861F83C2192DF8E0005CE48 /* AccountMange */,
+				D861F8402192E0880005CE48 /* ViewModels */,
+				D861F83F2192E0750005CE48 /* Store */,
 				657217D61CE2FCF600A04525 /* ViewController.h */,
 				657217D71CE2FCF600A04525 /* ViewController.m */,
 				657217D91CE2FCF600A04525 /* Main.storyboard */,
@@ -515,11 +500,12 @@
 		657217CF1CE2FCF500A04525 /* TabBarTemplate-OC */ = {
 			isa = PBXGroup;
 			children = (
+				D8AA2BB821B7DF4D0041BF08 /* Models */,
 				D861F83A2192DE730005CE48 /* Store */,
 				6590CC3D1D3F4E7600FF1F07 /* Protocol */,
 				65EE41A01D3E117F0092C271 /* InteractionControllers */,
 				650EB7ED1D3CDA9400BA4AD7 /* PresentationController */,
-				650EB7CD1D3C76D800BA4AD7 /* AnimationControllers */,
+				650EB7CD1D3C76D800BA4AD7 /* AnimationTransitioningControllers */,
 				654DA1851CE46E5100CFF129 /* Views */,
 				654DA1791CE42CB500CFF129 /* storyboard3 */,
 				654DA1781CE42CAB00CFF129 /* storyboard2 */,
@@ -546,6 +532,7 @@
 				651B08141D4AF1740083EBFB /* Images */,
 				657217D11CE2FCF500A04525 /* main.m */,
 				657218051CE3018D00A04525 /* PrefixHeader.pch */,
+				D8FD96B921A55E2900DFD941 /* PhoneModels.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -572,7 +559,6 @@
 		657218061CE302BC00A04525 /* 3rdLibs */ = {
 			isa = PBXGroup;
 			children = (
-				654476B71D001503005659D5 /* SDAutoLayout */,
 			);
 			name = 3rdLibs;
 			sourceTree = "<group>";
@@ -656,15 +642,6 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
-		D861F83C2192DF8E0005CE48 /* AccountMange */ = {
-			isa = PBXGroup;
-			children = (
-				D861F8402192E0880005CE48 /* Models */,
-				D861F83F2192E0750005CE48 /* Store */,
-			);
-			path = AccountMange;
-			sourceTree = "<group>";
-		};
 		D861F83F2192E0750005CE48 /* Store */ = {
 			isa = PBXGroup;
 			children = (
@@ -672,10 +649,18 @@
 				D861F8432192E6C30005CE48 /* DBUserStore.h */,
 				D861F8442192E6C30005CE48 /* DBUserStore.m */,
 			);
-			path = Store;
+			name = Store;
+			path = AccountMange/Store;
 			sourceTree = "<group>";
 		};
-		D861F8402192E0880005CE48 /* Models */ = {
+		D861F8402192E0880005CE48 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D8AA2BB821B7DF4D0041BF08 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				D861F8462192EE220005CE48 /* UserModel.h */,
@@ -1006,13 +991,11 @@
 				D84D234C21819117001356C7 /* DSSignalHandler.m in Sources */,
 				D813BEA7219952DB00793255 /* NSObject+Coding.m in Sources */,
 				D8FD4963219295CC00A0E426 /* SJLMathematicsTool.m in Sources */,
-				654476BD1D001503005659D5 /* UIView+SDAutoLayout.m in Sources */,
 				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,
 				65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */,
 				6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */,
 				65E1879F1DB61DA600857009 /* Login_AnimatedTransitioningControll.m in Sources */,
 				650CECC91DC84459003BB119 /* BasePresentationController.m in Sources */,
-				654476BC1D001503005659D5 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				654DA1841CE46E3400CFF129 /* LaunchScreenVC.m in Sources */,
 				65EE5AA01D489090008FBCF7 /* UIColor+Tool.m in Sources */,
 			);
