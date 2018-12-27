@@ -104,6 +104,18 @@
 		D861F8452192E6C30005CE48 /* DBUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8442192E6C30005CE48 /* DBUserStore.m */; };
 		D861F8482192EE220005CE48 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8472192EE220005CE48 /* UserModel.m */; };
 		D8CC3033218FF62E00941B85 /* SJLCustomFormatterLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */; };
+		D8D5E51321D4D0C3007D84B3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D8D5E4FF21D4D0C0007D84B3 /* index.html */; };
+		D8D5E51421D4D0C3007D84B3 /* TWRLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50021D4D0C0007D84B3 /* TWRLineChart.m */; };
+		D8D5E51521D4D0C3007D84B3 /* TWRChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50221D4D0C1007D84B3 /* TWRChartView.m */; };
+		D8D5E51621D4D0C3007D84B3 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50421D4D0C1007D84B3 /* UIColor+HexString.m */; };
+		D8D5E51721D4D0C3007D84B3 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D8D5E50521D4D0C1007D84B3 /* Chart.min.js */; };
+		D8D5E51821D4D0C3007D84B3 /* ChartNew.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D8D5E50921D4D0C2007D84B3 /* ChartNew.min.js */; };
+		D8D5E51921D4D0C3007D84B3 /* TWRDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50C21D4D0C2007D84B3 /* TWRDataSet.m */; };
+		D8D5E51A21D4D0C3007D84B3 /* TWRCircularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50E21D4D0C2007D84B3 /* TWRCircularChart.m */; };
+		D8D5E51B21D4D0C3007D84B3 /* TWRDataSet+Strings.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50F21D4D0C2007D84B3 /* TWRDataSet+Strings.m */; };
+		D8D5E51C21D4D0C3007D84B3 /* TWRBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E51021D4D0C2007D84B3 /* TWRBarChart.m */; };
+		D8D5E51D21D4D0C3007D84B3 /* TWRChartBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E51121D4D0C2007D84B3 /* TWRChartBuilder.m */; };
+		D8D5E52021D4D1E9007D84B3 /* TWRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E51E21D4D1E9007D84B3 /* TWRViewController.m */; };
 		D8F75EDB2193C7CD00FB0855 /* SJLUserModelDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F75EDA2193C7CD00FB0855 /* SJLUserModelDBTests.m */; };
 		D8FD495921928D9600A0E426 /* FMDBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD495821928D9600A0E426 /* FMDBDataManager.m */; };
 		D8FD4963219295CC00A0E426 /* SJLMathematicsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD4962219295CC00A0E426 /* SJLMathematicsTool.m */; };
@@ -272,6 +284,28 @@
 		D861F8472192EE220005CE48 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		D8CC3031218FF62E00941B85 /* SJLCustomFormatterLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLCustomFormatterLog.h; sourceTree = "<group>"; };
 		D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLCustomFormatterLog.m; sourceTree = "<group>"; };
+		D8D5E4FF21D4D0C0007D84B3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		D8D5E50021D4D0C0007D84B3 /* TWRLineChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRLineChart.m; sourceTree = "<group>"; };
+		D8D5E50121D4D0C1007D84B3 /* TWRChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChart.h; sourceTree = "<group>"; };
+		D8D5E50221D4D0C1007D84B3 /* TWRChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRChartView.m; sourceTree = "<group>"; };
+		D8D5E50321D4D0C1007D84B3 /* TWRChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartView.h; sourceTree = "<group>"; };
+		D8D5E50421D4D0C1007D84B3 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		D8D5E50521D4D0C1007D84B3 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.min.js; sourceTree = "<group>"; };
+		D8D5E50621D4D0C1007D84B3 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		D8D5E50721D4D0C1007D84B3 /* TWRBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRBarChart.h; sourceTree = "<group>"; };
+		D8D5E50821D4D0C1007D84B3 /* TWRCircularChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCircularChart.h; sourceTree = "<group>"; };
+		D8D5E50921D4D0C2007D84B3 /* ChartNew.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ChartNew.min.js; sourceTree = "<group>"; };
+		D8D5E50A21D4D0C2007D84B3 /* TWRDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRDataSet.h; sourceTree = "<group>"; };
+		D8D5E50B21D4D0C2007D84B3 /* TWRLineChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRLineChart.h; sourceTree = "<group>"; };
+		D8D5E50C21D4D0C2007D84B3 /* TWRDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRDataSet.m; sourceTree = "<group>"; };
+		D8D5E50D21D4D0C2007D84B3 /* TWRDataSet+Strings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TWRDataSet+Strings.h"; sourceTree = "<group>"; };
+		D8D5E50E21D4D0C2007D84B3 /* TWRCircularChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRCircularChart.m; sourceTree = "<group>"; };
+		D8D5E50F21D4D0C2007D84B3 /* TWRDataSet+Strings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TWRDataSet+Strings.m"; sourceTree = "<group>"; };
+		D8D5E51021D4D0C2007D84B3 /* TWRBarChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRBarChart.m; sourceTree = "<group>"; };
+		D8D5E51121D4D0C2007D84B3 /* TWRChartBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRChartBuilder.m; sourceTree = "<group>"; };
+		D8D5E51221D4D0C2007D84B3 /* TWRChartBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartBuilder.h; sourceTree = "<group>"; };
+		D8D5E51E21D4D1E9007D84B3 /* TWRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRViewController.m; sourceTree = "<group>"; };
+		D8D5E51F21D4D1E9007D84B3 /* TWRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRViewController.h; sourceTree = "<group>"; };
 		D8F75EDA2193C7CD00FB0855 /* SJLUserModelDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLUserModelDBTests.m; sourceTree = "<group>"; };
 		D8FD495721928D9500A0E426 /* FMDBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBDataManager.h; sourceTree = "<group>"; };
 		D8FD495821928D9600A0E426 /* FMDBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBDataManager.m; sourceTree = "<group>"; };
@@ -450,6 +484,8 @@
 		654DA1791CE42CB500CFF129 /* storyboard3 */ = {
 			isa = PBXGroup;
 			children = (
+				D8D5E51F21D4D1E9007D84B3 /* TWRViewController.h */,
+				D8D5E51E21D4D1E9007D84B3 /* TWRViewController.m */,
 				65918B8E1D51C28A009DA4AE /* Models */,
 				654476BE1D00152E005659D5 /* Storyboard3.storyboard */,
 				654476C01D0015AD005659D5 /* Main_ViewController.h */,
@@ -566,6 +602,7 @@
 		657218071CE3049600A04525 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D8D5E4FC21D4D02C007D84B3 /* chartsJS */,
 				D8FD495E21928E7200A0E426 /* DBManager */,
 				D84D2346218161F7001356C7 /* SignalHandler */,
 				65F504E91D227885006C27BA /* LXNetworking.h */,
@@ -667,6 +704,33 @@
 				D861F8472192EE220005CE48 /* UserModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		D8D5E4FC21D4D02C007D84B3 /* chartsJS */ = {
+			isa = PBXGroup;
+			children = (
+				D8D5E50521D4D0C1007D84B3 /* Chart.min.js */,
+				D8D5E50921D4D0C2007D84B3 /* ChartNew.min.js */,
+				D8D5E4FF21D4D0C0007D84B3 /* index.html */,
+				D8D5E50721D4D0C1007D84B3 /* TWRBarChart.h */,
+				D8D5E51021D4D0C2007D84B3 /* TWRBarChart.m */,
+				D8D5E50121D4D0C1007D84B3 /* TWRChart.h */,
+				D8D5E51221D4D0C2007D84B3 /* TWRChartBuilder.h */,
+				D8D5E51121D4D0C2007D84B3 /* TWRChartBuilder.m */,
+				D8D5E50321D4D0C1007D84B3 /* TWRChartView.h */,
+				D8D5E50221D4D0C1007D84B3 /* TWRChartView.m */,
+				D8D5E50821D4D0C1007D84B3 /* TWRCircularChart.h */,
+				D8D5E50E21D4D0C2007D84B3 /* TWRCircularChart.m */,
+				D8D5E50A21D4D0C2007D84B3 /* TWRDataSet.h */,
+				D8D5E50C21D4D0C2007D84B3 /* TWRDataSet.m */,
+				D8D5E50D21D4D0C2007D84B3 /* TWRDataSet+Strings.h */,
+				D8D5E50F21D4D0C2007D84B3 /* TWRDataSet+Strings.m */,
+				D8D5E50B21D4D0C2007D84B3 /* TWRLineChart.h */,
+				D8D5E50021D4D0C0007D84B3 /* TWRLineChart.m */,
+				D8D5E50621D4D0C1007D84B3 /* UIColor+HexString.h */,
+				D8D5E50421D4D0C1007D84B3 /* UIColor+HexString.m */,
+			);
+			path = chartsJS;
 			sourceTree = "<group>";
 		};
 		D8FD495E21928E7200A0E426 /* DBManager */ = {
@@ -832,6 +896,7 @@
 				651B084B1D4AF1750083EBFB /* 13.jpg in Resources */,
 				651B08631D4AF1750083EBFB /* icon3.jpg in Resources */,
 				651B08521D4AF1750083EBFB /* 2.jpg in Resources */,
+				D8D5E51721D4D0C3007D84B3 /* Chart.min.js in Resources */,
 				651B08611D4AF1750083EBFB /* icon1.jpg in Resources */,
 				651B08571D4AF1750083EBFB /* 3.jpg in Resources */,
 				651B08661D4AF1750083EBFB /* pic0.jpg in Resources */,
@@ -839,6 +904,7 @@
 				651B08491D4AF1750083EBFB /* 11.jpg in Resources */,
 				651B085B1D4AF1750083EBFB /* 7.jpg in Resources */,
 				651B08641D4AF1750083EBFB /* icon4.jpg in Resources */,
+				D8D5E51321D4D0C3007D84B3 /* index.html in Resources */,
 				651B08481D4AF1750083EBFB /* 10.jpg in Resources */,
 				651B085E1D4AF1750083EBFB /* Discover.xcassets in Resources */,
 				651B08701D4AF1750083EBFB /* test0.jpg in Resources */,
@@ -848,6 +914,7 @@
 				651B084D1D4AF1750083EBFB /* 15.jpg in Resources */,
 				65EE5AA21D4892A1008FBCF7 /* File in Resources */,
 				651B085F1D4AF1750083EBFB /* Home.xcassets in Resources */,
+				D8D5E51821D4D0C3007D84B3 /* ChartNew.min.js in Resources */,
 				651B08581D4AF1750083EBFB /* 4.jpg in Resources */,
 				651B08671D4AF1750083EBFB /* pic1.jpg in Resources */,
 				651B085A1D4AF1750083EBFB /* 6.jpg in Resources */,
@@ -970,14 +1037,20 @@
 				657217D81CE2FCF600A04525 /* ViewController.m in Sources */,
 				D8FD495921928D9600A0E426 /* FMDBDataManager.m in Sources */,
 				6590CC3B1D3F246E00FF1F07 /* TestViewController.m in Sources */,
+				D8D5E51421D4D0C3007D84B3 /* TWRLineChart.m in Sources */,
+				D8D5E51521D4D0C3007D84B3 /* TWRChartView.m in Sources */,
 				65F504EB1D227885006C27BA /* LXNetworking.m in Sources */,
 				650EB7E91D3CAE7800BA4AD7 /* SimpleAnimatedControll.m in Sources */,
 				6572180B1CE3198400A04525 /* AuxFileManage.m in Sources */,
 				65C880341DB4B33F0049B5A5 /* UIImageEffects.m in Sources */,
+				D8D5E51D21D4D0C3007D84B3 /* TWRChartBuilder.m in Sources */,
 				658D55451D4704D4007B8788 /* CustomTableViewCell.m in Sources */,
 				65918B911D51C2E6009DA4AE /* CellStatusEntity.m in Sources */,
+				D8D5E51A21D4D0C3007D84B3 /* TWRCircularChart.m in Sources */,
 				65DA0F7A1CE5735700B64405 /* DGAaimaView.m in Sources */,
+				D8D5E51621D4D0C3007D84B3 /* UIColor+HexString.m in Sources */,
 				657217D51CE2FCF600A04525 /* AppDelegate.m in Sources */,
+				D8D5E51C21D4D0C3007D84B3 /* TWRBarChart.m in Sources */,
 				65449AD51D4F22FF0060D068 /* CustomTableViewCell2.m in Sources */,
 				D8CC3033218FF62E00941B85 /* SJLCustomFormatterLog.m in Sources */,
 				650EB7EC1D3CC19D00BA4AD7 /* TwoPageControll.m in Sources */,
@@ -987,12 +1060,15 @@
 				650EB7D01D3C7F3900BA4AD7 /* BaseAnimatedTransitioningControll.m in Sources */,
 				650EB7F01D3CDC9500BA4AD7 /* Present2PageControll.m in Sources */,
 				657217D21CE2FCF600A04525 /* main.m in Sources */,
+				D8D5E51B21D4D0C3007D84B3 /* TWRDataSet+Strings.m in Sources */,
 				D861F8482192EE220005CE48 /* UserModel.m in Sources */,
 				D84D234C21819117001356C7 /* DSSignalHandler.m in Sources */,
+				D8D5E52021D4D1E9007D84B3 /* TWRViewController.m in Sources */,
 				D813BEA7219952DB00793255 /* NSObject+Coding.m in Sources */,
 				D8FD4963219295CC00A0E426 /* SJLMathematicsTool.m in Sources */,
 				654476C21D0015AD005659D5 /* Main_ViewController.m in Sources */,
 				65EE41A31D3E13E60092C271 /* PanGestureInteractiveTransition.m in Sources */,
+				D8D5E51921D4D0C3007D84B3 /* TWRDataSet.m in Sources */,
 				6590CC371D3F092A00FF1F07 /* SimplePresentationControll.m in Sources */,
 				65E1879F1DB61DA600857009 /* Login_AnimatedTransitioningControll.m in Sources */,
 				650CECC91DC84459003BB119 /* BasePresentationController.m in Sources */,

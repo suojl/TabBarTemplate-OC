@@ -79,7 +79,7 @@
     
     [self checkNetwork];
     //-----------------------------------------------------
-    [self showLaunchingWithAnimation];
+//    [self showLaunchingWithAnimation];
     
     return YES;
 }
