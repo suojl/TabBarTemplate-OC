@@ -103,12 +103,13 @@
 		D861F8382192C6EC0005CE48 /* DBQueueBaseStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8372192C6EC0005CE48 /* DBQueueBaseStore.m */; };
 		D861F8452192E6C30005CE48 /* DBUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8442192E6C30005CE48 /* DBUserStore.m */; };
 		D861F8482192EE220005CE48 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D861F8472192EE220005CE48 /* UserModel.m */; };
+		D8C163FD21D4D5720011BCD5 /* Chart.bundle.js in Resources */ = {isa = PBXBuildFile; fileRef = D8C163FC21D4D5720011BCD5 /* Chart.bundle.js */; };
+		D8C163FF21D4DA110011BCD5 /* Chart.js in Resources */ = {isa = PBXBuildFile; fileRef = D8C163FE21D4DA100011BCD5 /* Chart.js */; };
 		D8CC3033218FF62E00941B85 /* SJLCustomFormatterLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */; };
 		D8D5E51321D4D0C3007D84B3 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = D8D5E4FF21D4D0C0007D84B3 /* index.html */; };
 		D8D5E51421D4D0C3007D84B3 /* TWRLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50021D4D0C0007D84B3 /* TWRLineChart.m */; };
 		D8D5E51521D4D0C3007D84B3 /* TWRChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50221D4D0C1007D84B3 /* TWRChartView.m */; };
 		D8D5E51621D4D0C3007D84B3 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50421D4D0C1007D84B3 /* UIColor+HexString.m */; };
-		D8D5E51721D4D0C3007D84B3 /* Chart.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D8D5E50521D4D0C1007D84B3 /* Chart.min.js */; };
 		D8D5E51821D4D0C3007D84B3 /* ChartNew.min.js in Resources */ = {isa = PBXBuildFile; fileRef = D8D5E50921D4D0C2007D84B3 /* ChartNew.min.js */; };
 		D8D5E51921D4D0C3007D84B3 /* TWRDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50C21D4D0C2007D84B3 /* TWRDataSet.m */; };
 		D8D5E51A21D4D0C3007D84B3 /* TWRCircularChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E50E21D4D0C2007D84B3 /* TWRCircularChart.m */; };
@@ -116,6 +117,7 @@
 		D8D5E51C21D4D0C3007D84B3 /* TWRBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E51021D4D0C2007D84B3 /* TWRBarChart.m */; };
 		D8D5E51D21D4D0C3007D84B3 /* TWRChartBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E51121D4D0C2007D84B3 /* TWRChartBuilder.m */; };
 		D8D5E52021D4D1E9007D84B3 /* TWRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D5E51E21D4D1E9007D84B3 /* TWRViewController.m */; };
+		D8D8A99021D5F8A400C99D28 /* area-stack.html in Resources */ = {isa = PBXBuildFile; fileRef = D8D8A98F21D5F8A400C99D28 /* area-stack.html */; };
 		D8F75EDB2193C7CD00FB0855 /* SJLUserModelDBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D8F75EDA2193C7CD00FB0855 /* SJLUserModelDBTests.m */; };
 		D8FD495921928D9600A0E426 /* FMDBDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD495821928D9600A0E426 /* FMDBDataManager.m */; };
 		D8FD4963219295CC00A0E426 /* SJLMathematicsTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FD4962219295CC00A0E426 /* SJLMathematicsTool.m */; };
@@ -282,6 +284,8 @@
 		D861F8442192E6C30005CE48 /* DBUserStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBUserStore.m; sourceTree = "<group>"; };
 		D861F8462192EE220005CE48 /* UserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		D861F8472192EE220005CE48 /* UserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		D8C163FC21D4D5720011BCD5 /* Chart.bundle.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.bundle.js; sourceTree = "<group>"; };
+		D8C163FE21D4DA100011BCD5 /* Chart.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.js; sourceTree = "<group>"; };
 		D8CC3031218FF62E00941B85 /* SJLCustomFormatterLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJLCustomFormatterLog.h; sourceTree = "<group>"; };
 		D8CC3032218FF62E00941B85 /* SJLCustomFormatterLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLCustomFormatterLog.m; sourceTree = "<group>"; };
 		D8D5E4FF21D4D0C0007D84B3 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -290,7 +294,6 @@
 		D8D5E50221D4D0C1007D84B3 /* TWRChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRChartView.m; sourceTree = "<group>"; };
 		D8D5E50321D4D0C1007D84B3 /* TWRChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartView.h; sourceTree = "<group>"; };
 		D8D5E50421D4D0C1007D84B3 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
-		D8D5E50521D4D0C1007D84B3 /* Chart.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Chart.min.js; sourceTree = "<group>"; };
 		D8D5E50621D4D0C1007D84B3 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
 		D8D5E50721D4D0C1007D84B3 /* TWRBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRBarChart.h; sourceTree = "<group>"; };
 		D8D5E50821D4D0C1007D84B3 /* TWRCircularChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRCircularChart.h; sourceTree = "<group>"; };
@@ -306,6 +309,7 @@
 		D8D5E51221D4D0C2007D84B3 /* TWRChartBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRChartBuilder.h; sourceTree = "<group>"; };
 		D8D5E51E21D4D1E9007D84B3 /* TWRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRViewController.m; sourceTree = "<group>"; };
 		D8D5E51F21D4D1E9007D84B3 /* TWRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRViewController.h; sourceTree = "<group>"; };
+		D8D8A98F21D5F8A400C99D28 /* area-stack.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "area-stack.html"; sourceTree = "<group>"; };
 		D8F75EDA2193C7CD00FB0855 /* SJLUserModelDBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJLUserModelDBTests.m; sourceTree = "<group>"; };
 		D8FD495721928D9500A0E426 /* FMDBDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBDataManager.h; sourceTree = "<group>"; };
 		D8FD495821928D9600A0E426 /* FMDBDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBDataManager.m; sourceTree = "<group>"; };
@@ -709,7 +713,9 @@
 		D8D5E4FC21D4D02C007D84B3 /* chartsJS */ = {
 			isa = PBXGroup;
 			children = (
-				D8D5E50521D4D0C1007D84B3 /* Chart.min.js */,
+				D8D8A98F21D5F8A400C99D28 /* area-stack.html */,
+				D8C163FE21D4DA100011BCD5 /* Chart.js */,
+				D8C163FC21D4D5720011BCD5 /* Chart.bundle.js */,
 				D8D5E50921D4D0C2007D84B3 /* ChartNew.min.js */,
 				D8D5E4FF21D4D0C0007D84B3 /* index.html */,
 				D8D5E50721D4D0C1007D84B3 /* TWRBarChart.h */,
@@ -896,7 +902,6 @@
 				651B084B1D4AF1750083EBFB /* 13.jpg in Resources */,
 				651B08631D4AF1750083EBFB /* icon3.jpg in Resources */,
 				651B08521D4AF1750083EBFB /* 2.jpg in Resources */,
-				D8D5E51721D4D0C3007D84B3 /* Chart.min.js in Resources */,
 				651B08611D4AF1750083EBFB /* icon1.jpg in Resources */,
 				651B08571D4AF1750083EBFB /* 3.jpg in Resources */,
 				651B08661D4AF1750083EBFB /* pic0.jpg in Resources */,
@@ -905,12 +910,15 @@
 				651B085B1D4AF1750083EBFB /* 7.jpg in Resources */,
 				651B08641D4AF1750083EBFB /* icon4.jpg in Resources */,
 				D8D5E51321D4D0C3007D84B3 /* index.html in Resources */,
+				D8C163FD21D4D5720011BCD5 /* Chart.bundle.js in Resources */,
 				651B08481D4AF1750083EBFB /* 10.jpg in Resources */,
 				651B085E1D4AF1750083EBFB /* Discover.xcassets in Resources */,
+				D8C163FF21D4DA110011BCD5 /* Chart.js in Resources */,
 				651B08701D4AF1750083EBFB /* test0.jpg in Resources */,
 				654DA17B1CE42CDC00CFF129 /* Storyboard2.storyboard in Resources */,
 				654476BF1D00152E005659D5 /* Storyboard3.storyboard in Resources */,
 				651B08601D4AF1750083EBFB /* icon0.jpg in Resources */,
+				D8D8A99021D5F8A400C99D28 /* area-stack.html in Resources */,
 				651B084D1D4AF1750083EBFB /* 15.jpg in Resources */,
 				65EE5AA21D4892A1008FBCF7 /* File in Resources */,
 				651B085F1D4AF1750083EBFB /* Home.xcassets in Resources */,

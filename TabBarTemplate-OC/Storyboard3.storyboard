@@ -194,7 +194,6 @@
                                             <outlet property="label" destination="DCQ-0M-QIt" id="Owm-55-ZQD"/>
                                             <outlet property="loadImageView" destination="wKC-VM-jmo" id="cMU-Cz-FcK"/>
                                             <outlet property="moreBtn" destination="hUb-5W-KjT" id="HfP-nj-ZLJ"/>
-                                            <segue destination="y4S-yH-LTQ" kind="show" id="eG8-K8-aAk"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

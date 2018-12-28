@@ -2,182 +2,126 @@
 <html>
 	<head>
 		<title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
-        <script src="ChartNew.min.js"></script>
+        <script src="Chart.bundle.js"></script>
 		<style>
 		</style>
 	</head>
 	<body style="background-color: transparent;">
-		<canvas id="canvas" height="300" width="300"></canvas>
+		<canvas id="canvas"></canvas>
         <a id="callback" href="callback:whatever"></a>
 <!--        <script src="ChartNew.min.js"></script>-->
 <script>
-    
+    Chart.defaults.global.defaultFontColor = '#999999'
+    Chart.defaults.global.defaultFontSize = 12
     var lineChartData = {
-        　　　　　　　// x轴的标示
-        labels : ["January","February","March","April","May","June","July"],
-        　　　　　　　// 数据，数组中的每一个object代表一条线
+        labels : ["11.11","11.12","11.13","11.14","11.15","11.16","昨天"],
         datasets : [
                     {
-                    　　　　　　　　　　　　// 颜色的使用类似于CSS，你也可以使用RGB、HEX或者HSL
-                    　　　　　　　　　　　　// rgba颜色中最后一个值代表透明度
-                    　　　　　　　　　　　　// 填充颜色
-                    fillColor : "rgba(220,220,220,0.5)",
-                    　　　　　　　　　　　　// 线的颜色
-                    strokeColor : "rgba(220,220,220,1)",
-                    　　　　　　　　　　　　// 点的填充颜色
-                    pointColor : "rgba(220,220,220,1)",
-                    　　　　　　　　　　　　// 点的边线颜色
-                    pointStrokeColor : "#fff",
-                    　　　　　　　　　　　　// 与x轴标示对应的数据
-                    data : [65,59,90,81,56,55,40]
-                    },
-                    {
-                    fillColor : "rgba(151,187,205,0.5)",
-                    strokeColor : "rgba(151,187,205,1)",
-                    pointColor : "rgba(151,187,205,1)",
-                    pointStrokeColor : "#fff",
-                    data : [28,48,40,19,96,27,100]
+                    label:'线的说明标签',
+                    data : [35,19,40,21,32,12,40],
+                    backgroundColor: 'rgba(255,94,132,0.4)',
+                    borderColor: 'rgba(255,94,132,1)',
+                    pointBackgroundColor :'rgba(255,94,132,1)',
+                    borderWidth: 1,
+                    pointRadius: 2,
                     }
                     ]
                     
     }
+
 var options = {
-    //Boolean - If we show the scale above the chart data
-    // 网格线是否在数据线的上面
-    scaleOverlay : false,
+    title: {
+        display: false,
+        text: 'Custom Chart Title'
+    },
+    layout: {
+        padding: {
+            left: 0,
+            right: 20,
+            top: 30,
+            bottom: 0
+        }
+    },
+    scales: {
+        fontColor:'red',
+        xAxes: [{   //设置Y轴
+                display:true,//显示或隐藏Y轴
+                gridLines:{
+                    display:false,
+                    tickMarkLength:0,
+                    lineWidth:1,
+                    zeroLineWidth:1
+                },
+                ticks: {    // 刻度线
+                <!--                    display:false,-->
+                beginAtZero:true,//Y轴从零开始
+                //返回应该在图表上显示的刻度值的字符串表示形式。
+                callback: function(value, index, values) {
+                                return value;
+                }
+                }
+                }],
+        yAxes: [{   //设置Y轴
+                display:true,//显示或隐藏Y轴
+<!--                zeroLineWidth:10,-->
+<!--                zeroLineColor-->
+                gridLines:{
+                    display:true,
+                    tickMarkLength:0,
+                    lineWidth:1,
+                    zeroLineWidth:1
+                },
+                ticks: {    // 刻度线
+<!--                    display:false,-->
+                    beginAtZero:true,//Y轴从零开始
+                    //返回应该在图表上显示的刻度值的字符串表示形式。
+                    callback: function(value, index, values) {
+    <!--                return '$' + value;-->
+                    return '';
+                }
+                }
+                }]
+    },
     
-    //Boolean - If we want to override with a hard coded scale
-    // 是否用硬编码重写y轴网格线
-    scaleOverride : false,
+    legend: {   //设置说明标签属性
+        //设置说明标签显示/隐藏
+        display:false,
+<!--        position:'top',-->
+        labels: {
+            // This more specific font property overrides the global property
+            fontColor: 'red'
+        }
+    },
     
-    //** Required if scaleOverride is true **
-    //Number - The number of steps in a hard coded scale
-    // y轴刻度的个数
-    scaleSteps : null,
-    //Number - The value jump in the hard coded scale
-    // y轴每个刻度的宽度
-    scaleStepWidth : null,
-    //Number - The scale starting value
-    // y轴的起始值
-    scaleStartValue : null,
-    
-    //String - Colour of the scale line
-    // x轴y轴的颜色
-    scaleLineColor : "rgba(0,0,0,1)",
-    
-    //Number - Pixel width of the scale line
-    // x轴y轴的线宽
-    scaleLineWidth : 1,
-    
-    //Boolean - Whether to show labels on the scale
-    // 是否显示y轴的标签
-    scaleShowLabels : true,
-    
-    //Interpolated JS string - can access value
-    // 标签显示值
-    scaleLabel : "<%=value%>",
-    
-    //String - Scale label font declaration for the scale label
-    // 标签的字体
-    scaleFontFamily : "'Arial'",
-    
-    //Number - Scale label font size in pixels
-    // 标签字体的大小
-    scaleFontSize : 12,
-    
-    //String - Scale label font weight style
-    // 标签字体的样式
-    scaleFontStyle : "normal",
-    
-    //String - Scale label font colour
-    // 标签字体的颜色
-    scaleFontColor : "#666",
-    
-    ///Boolean - Whether grid lines are shown across the chart
-    // 是否显示网格线
-    scaleShowGridLines : true,
-    
-    //String - Colour of the grid lines
-    // 网格线的颜色
-    scaleGridLineColor : "rgba(0,0,0,.1)",
-    
-    //Number - Width of the grid lines
-    // 网格线的线宽
-    scaleGridLineWidth : 1,
-    
-    //Boolean - Whether the line is curved between points
-    // 是否是曲线
-    bezierCurve : true,
-    
-    //Boolean - Whether to show a dot for each point
-    // 是否显示点
-    pointDot : true,
-    
-    //Number - Radius of each point dot in pixels
-    // 点的半径
-    pointDotRadius : 3,
-    
-    //Number - Pixel width of point dot stroke
-    // 点的线宽
-    pointDotStrokeWidth : 1,
-    
-    //Boolean - Whether to show a stroke for datasets
-    datasetStroke : true,
-    
-    //Number - Pixel width of dataset stroke
-    // 数据线的线宽
-    datasetStrokeWidth : 3,
-    
-    //Boolean - Whether to fill the dataset with a colour
-    // 数据线是否填充颜色
-    datasetFill : true,
-    
-    //Boolean - Whether to animate the chart
-    // 是否有动画效果
-    animation : true,
-    
-    //Number - Number of animation steps
-    // 动画的步数
-<!--    animationSteps : 60,-->
-
-    //String - Animation easing effect
-    // 动画的效果
-<!--    animationEasing : "easeOutQuart",-->
-
-    //Function - Fires when the animation is complete
-    // 动画完成后调用
-    onAnimationComplete : function(){
-        var chart = this.chart;
-        var ctx = chart.ctx;
-        
-        this.data.datasets.forEach(function(dataset, i) {
-               var meta = chart.controller.getDatasetMeta(i);
-               if (!meta.hidden) {
-               meta.data.forEach(function(element, index) {
-                                 // Draw the text in black, with the specified font
-                                 ctx.fillStyle = layoutColors.defaultText;
-                                 var fontSize = 16;
-                                 ctx.font = Chart.helpers.fontString(fontSize, 'normal', 'Helvetica Neue');
-                                 
-                                 // Just naively convert to string for now
-                                 var dataString = dataset.data[index].toString();
-                                 
-                                 // Make sure alignment settings are correct
-                                 ctx.textAlign = 'center';
-                                 ctx.textBaseline = 'middle';
-                                 
-                                 var padding = 5;
-                                 var position = element.tooltipPosition();
-                                 ctx.fillText(dataString, position.x, position.y - (fontSize / 2) - padding);
-                                 });
-               }
-               });
+    animation: {
+        duration: 0,
+        onComplete: function() {
+            var chartInstance = this.chart,
+            ctx = chartInstance.ctx;
+            
+            ctx.font = Chart.helpers.fontString(10, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'bottom';
+            
+            this.data.datasets.forEach(function(dataset, i) {
+                                       var meta = chartInstance.controller.getDatasetMeta(i);
+                                       meta.data.forEach(function(bar, index) {
+                                                         var data = dataset.data[index];
+                                                         
+                                                         ctx.fillText(data+"分钟", bar._model.x, bar._model.y - 5);
+                                                         });
+                                       });
+        }
     }
-    
 }
 
-var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData, options);
+var myLine = new Chart(document.getElementById("canvas").getContext("2d"),{
+                       type : 'line',
+                       data : lineChartData,
+                       options : options
+                       });
     </script>
 	</body>
 </html>

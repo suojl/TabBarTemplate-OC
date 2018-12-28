@@ -10,6 +10,7 @@
 #import "CustomTableViewCell.h"
 #import "UIImageView+WebCache.h"
 #import "CellStatusEntity.h"
+#import "TWRViewController.h"
 
 @interface Main_ViewController () <UITableViewDataSource,UITableViewDelegate>
 {
@@ -153,6 +154,8 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     DLog(@"---------%ld",indexPath.row);
+    TWRViewController *vc = [TWRViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 //-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
