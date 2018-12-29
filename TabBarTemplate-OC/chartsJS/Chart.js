@@ -7091,7 +7091,7 @@ defaults._set('scale', {
 	// grid line settings
 	gridLines: {
 		display: true,
-		color: 'rgba(0, 0, 0, 0.1)',
+		color: 'rgba(238, 238, 238, 0.1)',
 		lineWidth: 1,
 		drawBorder: true,
 		drawOnChartArea: true,
@@ -7133,7 +7133,7 @@ defaults._set('scale', {
 		padding: 0,
 		reverse: false,
 		display: true,
-		autoSkip: true,
+		autoSkip: false,
 		autoSkipPadding: 0,
 		labelOffset: 0,
 		// We pass through arrays to be rendered as multiline labels, we convert Others to strings here.

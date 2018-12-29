@@ -26,6 +26,7 @@
     _chartView.backgroundColor = [UIColor clearColor];
 
     [self.view addSubview:_chartView];
+    [self loadLineChart];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,19 +37,19 @@
 /**
 *  Loads a line chart using native code
 */
-//- (void)loadLineChart {
-//    // Build chart data
-//    TWRDataSet *dataSet1 = [[TWRDataSet alloc] initWithDataPoints:@[@10, @15, @5, @15, @5]];
-//    TWRDataSet *dataSet2 = [[TWRDataSet alloc] initWithDataPoints:@[@5, @10, @5, @15, @10]];
-//
-//    NSArray *labels = @[@"A", @"B", @"C", @"D", @"E"];
-//
-//    TWRLineChart *line = [[TWRLineChart alloc] initWithLabels:labels
-//                                                     dataSets:@[dataSet1, dataSet2]
-//                                                     animated:NO];
-//    // Load data
-//    [_chartView loadLineChart:line];
-//}
+- (void)loadLineChart {
+    // Build chart data
+    TWRDataSet *dataSet1 = [[TWRDataSet alloc] initWithDataPoints:@[@10, @15, @5, @15, @5]];
+    TWRDataSet *dataSet2 = [[TWRDataSet alloc] initWithDataPoints:@[@5, @10, @5, @15, @10]];
+
+    NSArray *labels = @[@"A", @"B", @"C", @"D", @"E"];
+
+    TWRLineChart *line = [[TWRLineChart alloc] initWithLabels:labels
+                                                     dataSets:@[dataSet1, dataSet2]
+                                                     animated:NO];
+    // Load data
+    [_chartView loadLineChart:line];
+}
 
 
 @end
